@@ -1,0 +1,10 @@
+*.py
+requirements.txt
+Procfile
+render.yaml
+Dockerfile
+docker-compose.yml
+applicant_cards.db*
+ntc_model/
+msme_model/
+__pycache__/
