@@ -1,0 +1,84 @@
+=== cs-training.csv ===
+Shape (first load): (150000, 12)
+Columns: ['Unnamed: 0', 'SeriousDlqin2yrs', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'MonthlyIncome', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'NumberOfDependents']
+Dtypes:
+Unnamed: 0                                int64
+SeriousDlqin2yrs                          int64
+RevolvingUtilizationOfUnsecuredLines    float64
+age                                       int64
+NumberOfTime30-59DaysPastDueNotWorse      int64
+DebtRatio                               float64
+MonthlyIncome                             int64
+NumberOfOpenCreditLinesAndLoans           int64
+NumberOfTimes90DaysLate                   int64
+NumberRealEstateLoansOrLines              int64
+NumberOfTime60-89DaysPastDueNotWorse      int64
+NumberOfDependents                        int64
+Sample:
+   Unnamed: 0  SeriousDlqin2yrs  RevolvingUtilizationOfUnsecuredLines  age  NumberOfTime30-59DaysPastDueNotWorse  DebtRatio  MonthlyIncome  NumberOfOpenCreditLinesAndLoans  NumberOfTimes90DaysLate  NumberRealEstateLoansOrLines  NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+0           1                 1                              0.766127   45                                     2   0.802982           9120                               13                        0                             6                                     0                   2
+1           2                 0                              0.957151   40                                     0   0.121876           2600                                4                        0                             0                                     0                   1
+
+=== cs-test.csv ===
+Shape (first load): (101503, 12)
+Columns: ['Unnamed: 0', 'SeriousDlqin2yrs', 'RevolvingUtilizationOfUnsecuredLines', 'age', 'NumberOfTime30-59DaysPastDueNotWorse', 'DebtRatio', 'MonthlyIncome', 'NumberOfOpenCreditLinesAndLoans', 'NumberOfTimes90DaysLate', 'NumberRealEstateLoansOrLines', 'NumberOfTime60-89DaysPastDueNotWorse', 'NumberOfDependents']
+Dtypes:
+Unnamed: 0                                int64
+SeriousDlqin2yrs                        float64
+RevolvingUtilizationOfUnsecuredLines    float64
+age                                       int64
+NumberOfTime30-59DaysPastDueNotWorse      int64
+DebtRatio                               float64
+MonthlyIncome                             int64
+NumberOfOpenCreditLinesAndLoans           int64
+NumberOfTimes90DaysLate                   int64
+NumberRealEstateLoansOrLines              int64
+NumberOfTime60-89DaysPastDueNotWorse      int64
+NumberOfDependents                        int64
+Sample:
+   Unnamed: 0  SeriousDlqin2yrs  RevolvingUtilizationOfUnsecuredLines  age  NumberOfTime30-59DaysPastDueNotWorse  DebtRatio  MonthlyIncome  NumberOfOpenCreditLinesAndLoans  NumberOfTimes90DaysLate  NumberRealEstateLoansOrLines  NumberOfTime60-89DaysPastDueNotWorse  NumberOfDependents
+0           1               NaN                              0.885519   43                                     0   0.177513           5700                                4                        0                             0                                     0                   0
+1           2               NaN                              0.463295   57                                     0   0.527237           9141                               15                        0                             4                                     0                   2
+
+=== loan_dataset_20000.csv ===
+Shape (first load): (20000, 22)
+Columns: ['age', 'gender', 'marital_status', 'education_level', 'annual_income', 'monthly_income', 'employment_status', 'debt_to_income_ratio', 'credit_score', 'loan_amount', 'loan_purpose', 'interest_rate', 'loan_term', 'installment', 'grade_subgrade', 'num_of_open_accounts', 'total_credit_limit', 'current_balance', 'delinquency_history', 'public_records', 'num_of_delinquencies', 'loan_paid_back']
+Dtypes:
+age                       int64
+gender                   object
+marital_status           object
+education_level          object
+annual_income           float64
+monthly_income          float64
+employment_status        object
+debt_to_income_ratio    float64
+credit_score              int64
+loan_amount             float64
+loan_purpose             object
+interest_rate           float64
+loan_term                 int64
+installment             float64
+grade_subgrade           object
+num_of_open_accounts      int64
+total_credit_limit      float64
+current_balance         float64
+delinquency_history       int64
+public_records            int64
+num_of_delinquencies      int64
+loan_paid_back            int64
+Sample:
+   age  gender marital_status education_level  annual_income  monthly_income employment_status  debt_to_income_ratio  credit_score  loan_amount        loan_purpose  interest_rate  loan_term  installment grade_subgrade  num_of_open_accounts  total_credit_limit  current_balance  delinquency_history  public_records  num_of_delinquencies  loan_paid_back
+0   59    Male        Married        Master's       24240.19         2020.02          Employed                 0.074           743     17173.72                 Car          13.39         36       581.88             B5                     7            40833.47         24302.07                    1               0                     1               1
+1   72  Female        Married      Bachelor's       20172.98         1681.08          Employed                 0.219           531     22663.89  Debt consolidation          17.81         60       573.17             F1                     5            27968.01         10803.01                    1               0                     3               1
+
+=== sampleEntry.csv ===
+Shape (first load): (101503, 2)
+Columns: ['Id', 'Probability']
+Dtypes:
+Id               int64
+Probability    float64
+Sample:
+   Id  Probability
+0   1     0.080807
+1   2     0.040719
+

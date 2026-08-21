@@ -1,0 +1,92 @@
+=== CS-TRAINING (Give Me Some Credit - Kaggle) ===
+Rows: 150000, Cols: 12
+TARGET (SeriousDlqin2yrs): 6.68% default rate
+Missing values:
+  MonthlyIncome: 29731 (19.8%)
+  NumberOfDependents: 3924 (2.6%)
+
+Key columns:
+  RevolvingUtilization: median=0.1542
+  DebtRatio: median=0.3665
+  MonthlyIncome: median=5400.0
+  30-59DPD: 16.0% have late payments
+  90+DPD: 5.6% severely late
+  60-89DPD: 5.1%
+  Age: 0-109, mean=52.3
+  OpenCreditLines: mean=8.5
+  RealEstateLoans: mean=1.0
+  Dependents: mean=0.8
+
+CRITICAL FINDING:
+  This dataset has REAL behavioral credit data:
+  - RevolvingUtilization = how much credit they USE (actual behavior)
+  - DebtRatio = income vs debt (real financial health)
+  - DPD counts = ACTUAL past-due payment behavior
+  - MonthlyIncome = real income
+  - TARGET = REAL 2-year serious delinquency flag
+  - 150,000 rows with REAL labels!
+
+
+=== LOAN DATASET (20K rows) ===
+Rows: 20000, Cols: 22
+TARGET (loan_paid_back): 79.99% paid back
+DEFAULT RATE: 20.01%
+
+Demographic columns:
+  age: 21-75, mean=48.0
+  gender: ['Male', 'Female', 'Other']
+  marital_status: ['Married', 'Single', 'Divorced', 'Widowed']
+  education_level: ["Master's", "Bachelor's", 'High School', 'Other', 'PhD']
+  employment_status: ['Employed', 'Unemployed', 'Self-employed', 'Student', 'Retired']
+
+Behavioral columns:
+  debt_to_income_ratio: mean=0.1770
+  credit_score: mean=679, range=373-850
+  delinquency_history: 85.1% have delinquencies
+  num_of_delinquencies: mean=2.49
+  num_of_open_accounts: mean=5.0
+  credit utilization: mean=0.5002
+
+CRITICAL FINDING:
+  This dataset has BOTH demographics AND behavioral:
+  - Demographics: age, gender, marital, education, employment
+  - Behavioral: debt_ratio, delinquencies, credit_utilization
+  - TARGET = REAL loan repayment outcome
+  - Loan details: amount, purpose, rate, term, grade
+  - 20,000 rows
+
+
+=== HOW THESE MAP TO OUR 49 FEATURES ===
+
+CS-TRAINING -> Our Features:
+  RevolvingUtilization -> cash_withdrawal_dependency (proxy)
+  DebtRatio           -> rent_wallet_share (debt burden proxy)
+  MonthlyIncome       -> emergency_buffer_months (can compute)
+  30-59DPD            -> avg_utility_dpd, bounced_transaction_count
+  60-89DPD            -> min_balance_violation_count
+  90+DPD              -> utility_payment_consistency (inverse)
+  Age                 -> applicant_age_years (DIRECT)
+  Dependents          -> family_burden_ratio (DIRECT)
+  OpenCreditLines     -> contactability_score (proxy)
+  RealEstateLoans     -> owns_property (proxy)
+  SeriousDlqin2yrs    -> TARGET (REAL, NOT SYNTHETIC!)
+
+LOAN DATASET -> Our Features:
+  age                 -> applicant_age_years (DIRECT)
+  education_level     -> academic_background_tier (DIRECT)
+  employment_status   -> income_type_risk_score (map)
+  debt_to_income_ratio-> rent_wallet_share (proxy)
+  delinquency_history -> bounced_transaction_count
+  num_of_delinquencies-> min_balance_violation_count
+  credit_score        -> income_stability_score (proxy)
+  current_balance/limit -> eod_balance_volatility
+  loan_paid_back      -> TARGET (REAL, NOT SYNTHETIC!)
+
+
+=== THE GAME CHANGER ===
+CS-TRAINING has 150K rows with:
+  REAL behavioral features (DPD, debt ratio, utilization)
+  REAL TARGET (2-year delinquency, not synthetic)
+  These ARE independent behavioral signals!
+  DPD counts are NOT derived from demographics!
+  This BREAKS the circularity Claude identified!

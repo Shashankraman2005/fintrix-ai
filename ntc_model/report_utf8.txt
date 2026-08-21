@@ -1,0 +1,13 @@
+Key features for stressed_gig_ntc:
+  utility_payment_consistency : 0.2
+  bounced_transaction_count   : 2
+  emergency_buffer_months     : 0.2878
+  rent_wallet_share           : 0.5330
+
+Profile decisions:
+  good_salaried_ntc  P(default): 0.1408 Decision: APPROVE        Match: PASS
+  stressed_gig_ntc   P(default): 0.9235 Decision: REJECT         Match: FAIL
+  high_risk_ntc      P(default): 0.9221 Decision: REJECT         Match: PASS
+  good_msme_owner    P(default): 0.3767 Decision: MANUAL_REVIEW  Match: FAIL
+
+Profiles correct : 2 / 4

@@ -1,0 +1,376 @@
+{
+    "user_id": "USR_GOOD_SALARIED_NTC_180",
+    "account_number": "5130241979",
+    "bank": "HDFC BANK",
+    "ifsc": "HDFC0000123",
+    "currency": "INR",
+    "statement_start": "2025-09-01",
+    "statement_end": "2026-03-10",
+    "total_credits": 271483.49,
+    "total_debits": 80931.44,
+    "transaction_count": 37,
+    "transactions": [
+        {
+            "date": "2025-09-01",
+            "type": "CR",
+            "amount": 45717.2,
+            "description": "NEFT-SALARY-WIPRO LTD",
+            "category": "INCOME",
+            "balance": 220216.26,
+            "txn_id": "1fe65158-5e93-4018-94a4-08993702af9e"
+        },
+        {
+            "date": "2025-09-13",
+            "type": "DR",
+            "amount": 778.94,
+            "description": "UPI/BILLPAY/INDANE GAS",
+            "category": "UTILITY",
+            "balance": 219437.32,
+            "txn_id": "70d5b409-a528-4b90-ac65-ba5b6f91945c"
+        },
+        {
+            "date": "2025-09-27",
+            "type": "DR",
+            "amount": 785.5,
+            "description": "UPI/FLIPKART",
+            "category": "LIFESTYLE",
+            "balance": 207529.93,
+            "txn_id": "db3b13fc-35a4-4f53-a4c5-a282f48b095e"
+        },
+        {
+            "date": "2025-09-28",
+            "type": "DR",
+            "amount": 5940.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 213497.32,
+            "txn_id": "d506a7ae-748e-406d-8c6d-5765184527c0"
+        },
+        {
+            "date": "2025-09-30",
+            "type": "DR",
+            "amount": 3960.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 209537.32,
+            "txn_id": "df35c73d-4632-4495-b8f9-72110dd05913"
+        },
+        {
+            "date": "2025-10-01",
+            "type": "CR",
+            "amount": 45853.53,
+            "description": "NEFT-SALARY-WIPRO LTD",
+            "category": "INCOME",
+            "balance": 253383.46,
+            "txn_id": "ee31e37f-2267-42b1-9546-4639fe7bca6f"
+        },
+        {
+            "date": "2025-10-11",
+            "type": "DR",
+            "amount": 2163.25,
+            "description": "UPI/BILLPAY/INDANE GAS",
+            "category": "UTILITY",
+            "balance": 251220.22,
+            "txn_id": "1ade3cab-8862-4e1c-bd85-bd776176c870"
+        },
+        {
+            "date": "2025-10-20",
+            "type": "DR",
+            "amount": 1221.88,
+            "description": "UPI/FLIPKART",
+            "category": "LIFESTYLE",
+            "balance": 208315.43,
+            "txn_id": "a657ded0-1740-4415-bfb6-8a885c3abd28"
+        },
+        {
+            "date": "2025-10-25",
+            "type": "DR",
+            "amount": 1275.92,
+            "description": "UPI/ZOMATO",
+            "category": "LIFESTYLE",
+            "balance": 239123.34,
+            "txn_id": "a926865d-f729-4985-b08d-73c6db111c41"
+        },
+        {
+            "date": "2025-10-28",
+            "type": "DR",
+            "amount": 5940.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 245280.22,
+            "txn_id": "a39ec261-9d94-4a4f-8b6c-e7875b618431"
+        },
+        {
+            "date": "2025-10-30",
+            "type": "DR",
+            "amount": 3960.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 241320.22,
+            "txn_id": "6f92e49d-5e87-407f-bfbc-1a08c82f67b5"
+        },
+        {
+            "date": "2025-11-01",
+            "type": "CR",
+            "amount": 45516.18,
+            "description": "NEFT-SALARY-WIPRO LTD",
+            "category": "INCOME",
+            "balance": 284639.51,
+            "txn_id": "b0e84746-ee9f-4168-829e-6787452a56b8"
+        },
+        {
+            "date": "2025-11-04",
+            "type": "DR",
+            "amount": 920.96,
+            "description": "UPI/STARBUCKS",
+            "category": "LIFESTYLE",
+            "balance": 240399.26,
+            "txn_id": "4ab57f5d-930c-4dee-8778-b53fa53544f3"
+        },
+        {
+            "date": "2025-11-13",
+            "type": "DR",
+            "amount": 2444.33,
+            "description": "UPI/BILLPAY/JIO PREPAID",
+            "category": "UTILITY",
+            "balance": 282195.18,
+            "txn_id": "667796e1-472c-4caa-a0d3-cce187523c8b"
+        },
+        {
+            "date": "2025-11-27",
+            "type": "DR",
+            "amount": 5940.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 276255.18,
+            "txn_id": "674c12bd-d4e6-48dc-8767-6ea4af7dba59"
+        },
+        {
+            "date": "2025-11-29",
+            "type": "DR",
+            "amount": 3960.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 272295.18,
+            "txn_id": "ef6f47da-7853-4691-b904-742f4caa1695"
+        },
+        {
+            "date": "2025-12-01",
+            "type": "CR",
+            "amount": 45366.1,
+            "description": "NEFT-SALARY-WIPRO LTD",
+            "category": "INCOME",
+            "balance": 316951.31,
+            "txn_id": "4def8219-7e55-44fd-a5b0-fb08722da7c4"
+        },
+        {
+            "date": "2025-12-05",
+            "type": "DR",
+            "amount": 256.94,
+            "description": "UPI/FLIPKART",
+            "category": "LIFESTYLE",
+            "balance": 271585.21,
+            "txn_id": "dae60fb6-8bf6-4a19-bea6-787bcc72d250"
+        },
+        {
+            "date": "2025-12-10",
+            "type": "DR",
+            "amount": 2438.27,
+            "description": "UPI/BILLPAY/JIO PREPAID",
+            "category": "UTILITY",
+            "balance": 314513.04,
+            "txn_id": "3f133854-bda2-4473-9a01-98c86b7d8819"
+        },
+        {
+            "date": "2025-12-17",
+            "type": "DR",
+            "amount": 453.03,
+            "description": "UPI/AMAZON PAY",
+            "category": "LIFESTYLE",
+            "balance": 271842.15,
+            "txn_id": "e8ca2311-71df-483c-aa14-ebd6da233657"
+        },
+        {
+            "date": "2025-12-27",
+            "type": "DR",
+            "amount": 5940.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 308573.04,
+            "txn_id": "208eeb13-eacf-4fcb-b168-ddd565d3cc78"
+        },
+        {
+            "date": "2025-12-28",
+            "type": "DR",
+            "amount": 368.9,
+            "description": "UPI/NETFLIX",
+            "category": "LIFESTYLE",
+            "balance": 303433.72,
+            "txn_id": "0812ff2e-3bb3-454b-b619-f851c0d7d7cb"
+        },
+        {
+            "date": "2025-12-29",
+            "type": "DR",
+            "amount": 3960.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 304613.04,
+            "txn_id": "5d432a01-ef90-4cae-adfb-f4e562395d96"
+        },
+        {
+            "date": "2025-12-31",
+            "type": "DR",
+            "amount": 810.42,
+            "description": "UPI/NETFLIX",
+            "category": "LIFESTYLE",
+            "balance": 303802.62,
+            "txn_id": "859063d8-2143-4c28-b849-ccaf3e9329f5"
+        },
+        {
+            "date": "2026-01-01",
+            "type": "CR",
+            "amount": 44453.82,
+            "description": "NEFT-SALARY-WIPRO LTD",
+            "category": "INCOME",
+            "balance": 347887.54,
+            "txn_id": "859c0977-99fe-409c-ab1b-106c2295e6f0"
+        },
+        {
+            "date": "2026-01-12",
+            "type": "DR",
+            "amount": 1430.59,
+            "description": "UPI/BILLPAY/BESCOM ELECTRICITY",
+            "category": "UTILITY",
+            "balance": 346456.95,
+            "txn_id": "ede99dd1-5b13-4ab0-8c05-bc3f6921e590"
+        },
+        {
+            "date": "2026-01-26",
+            "type": "DR",
+            "amount": 5940.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 340516.95,
+            "txn_id": "ed3bf6a5-2769-4f8e-aa35-a002b9e31596"
+        },
+        {
+            "date": "2026-01-28",
+            "type": "DR",
+            "amount": 3960.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 336556.95,
+            "txn_id": "810d3036-ee2a-4b57-a8bd-c406e7dfc5c6"
+        },
+        {
+            "date": "2026-02-01",
+            "type": "CR",
+            "amount": 44576.66,
+            "description": "NEFT-SALARY-WIPRO LTD",
+            "category": "INCOME",
+            "balance": 379281.33,
+            "txn_id": "d18b70fc-ee38-486a-bda6-a703252301c9"
+        },
+        {
+            "date": "2026-02-11",
+            "type": "DR",
+            "amount": 865.53,
+            "description": "UPI/BILLPAY/TNEB WATER",
+            "category": "UTILITY",
+            "balance": 378415.8,
+            "txn_id": "a03be5cc-ff95-4dfb-b7e2-76e0c6d6084f"
+        },
+        {
+            "date": "2026-02-13",
+            "type": "DR",
+            "amount": 606.08,
+            "description": "UPI/NETFLIX",
+            "category": "LIFESTYLE",
+            "balance": 335950.87,
+            "txn_id": "235463fa-1fde-49a5-ad8c-7b3564cdceb9"
+        },
+        {
+            "date": "2026-02-13",
+            "type": "DR",
+            "amount": 1246.19,
+            "description": "UPI/STARBUCKS",
+            "category": "LIFESTYLE",
+            "balance": 334704.68,
+            "txn_id": "42855405-a651-45d2-a002-120d5a518c2f"
+        },
+        {
+            "date": "2026-02-25",
+            "type": "DR",
+            "amount": 5940.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 372475.8,
+            "txn_id": "cca92108-5cdb-4985-8446-e6136bdc3ab5"
+        },
+        {
+            "date": "2026-02-26",
+            "type": "DR",
+            "amount": 1223.0,
+            "description": "UPI/NETFLIX",
+            "category": "LIFESTYLE",
+            "balance": 366167.8,
+            "txn_id": "48210c23-f3d8-432f-a2b6-ffd29a63e3d8"
+        },
+        {
+            "date": "2026-02-27",
+            "type": "DR",
+            "amount": 3960.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 368515.8,
+            "txn_id": "6c1ce7d8-ba71-4621-9d41-de7bb507f3a0"
+        },
+        {
+            "date": "2026-03-04",
+            "type": "DR",
+            "amount": 1125.0,
+            "description": "ATM CASH WITHDRAWAL/SBI",
+            "category": "CASH_WITHDRAWAL",
+            "balance": 367390.8,
+            "txn_id": "38711295-7e8c-4c4b-985e-d1fc9bca4415"
+        },
+        {
+            "date": "2026-03-10",
+            "type": "DR",
+            "amount": 1116.71,
+            "description": "UPI/ZOMATO",
+            "category": "LIFESTYLE",
+            "balance": 365051.09,
+            "txn_id": "f144ae33-3eb6-4e58-9b48-d04c3e356cfe"
+        }
+    ],
+    "_test_expected_features": {
+        "utility_payment_consistency": 1.0,
+        "bounced_transaction_count": 0,
+        "emergency_buffer_months": 5.5,
+        "eod_balance_volatility": 0.12,
+        "cash_withdrawal_dependency": 0.05,
+        "rent_wallet_share": 0.22,
+        "min_balance_violation_count": 0,
+        "telecom_recharge_drop_ratio": 0.06
+    },
+    "_profile_description": "Stable salaried employee with clean utility and zero bounces.",
+    "applicant_metadata": {
+        "applicant_age_years": 42,
+        "academic_background_tier": 4,
+        "id_document_age_years": 8.0,
+        "employment_vintage_days": 3650,
+        "owns_property": 1,
+        "owns_car": 1,
+        "region_risk_tier": 1,
+        "region_city_risk_score": 1,
+        "address_stability_years": 8.0,
+        "family_burden_ratio": 0.15,
+        "family_status_stability_score": 1,
+        "contactability_score": 4,
+        "income_type_risk_score": 1,
+        "address_work_mismatch": 0,
+        "car_age_years": 3,
+        "has_email_flag": 1
+    }
+}

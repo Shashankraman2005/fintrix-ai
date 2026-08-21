@@ -1,0 +1,108 @@
+{
+  "provider": "BESCOM Electricity",
+  "consumer_number": "BESCOM-943130",
+  "connection_date": "2025-05-27",
+  "connection_type": "COMMERCIAL",
+  "data_as_of": "2026-03-23",
+  "bills": [
+    {
+      "bill_id": "BILL-BC724187",
+      "bill_date": "2025-05-05",
+      "due_date": "2025-05-20",
+      "paid_date": "2025-05-15",
+      "amount": 1757.17,
+      "units_consumed": 157.6,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-A61A693A",
+      "bill_date": "2025-06-05",
+      "due_date": "2025-06-20",
+      "paid_date": "2025-07-08",
+      "amount": 1668.7,
+      "units_consumed": 178.8,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-B54C71E8",
+      "bill_date": "2025-07-05",
+      "due_date": "2025-07-20",
+      "paid_date": "2025-07-19",
+      "amount": 2065.34,
+      "units_consumed": 169.2,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-F126D614",
+      "bill_date": "2025-08-05",
+      "due_date": "2025-08-20",
+      "paid_date": "2025-09-11",
+      "amount": 1604.19,
+      "units_consumed": 226.0,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-FFD5DE49",
+      "bill_date": "2025-09-05",
+      "due_date": "2025-09-20",
+      "paid_date": "2025-09-20",
+      "amount": 1556.21,
+      "units_consumed": 200.1,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-1DFED4C1",
+      "bill_date": "2025-10-05",
+      "due_date": "2025-10-20",
+      "paid_date": "2025-11-09",
+      "amount": 1757.71,
+      "units_consumed": 179.1,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-B24EDF5F",
+      "bill_date": "2025-11-05",
+      "due_date": "2025-11-20",
+      "paid_date": "2025-12-08",
+      "amount": 1677.15,
+      "units_consumed": 153.5,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-9873FB10",
+      "bill_date": "2025-12-05",
+      "due_date": "2025-12-20",
+      "paid_date": "2026-01-08",
+      "amount": 2226.35,
+      "units_consumed": 183.5,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-3FEBD037",
+      "bill_date": "2026-01-05",
+      "due_date": "2026-01-20",
+      "paid_date": "2026-02-12",
+      "amount": 2152.62,
+      "units_consumed": 184.7,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-8831A68A",
+      "bill_date": "2026-02-05",
+      "due_date": "2026-02-20",
+      "paid_date": "2026-02-20",
+      "amount": 1915.76,
+      "units_consumed": 213.2,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-A782EB37",
+      "bill_date": "2026-03-05",
+      "due_date": "2026-03-20",
+      "paid_date": null,
+      "amount": 1430.6,
+      "units_consumed": 215.7,
+      "status": "UNPAID"
+    }
+  ]
+}

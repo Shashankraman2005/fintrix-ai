@@ -1,0 +1,1302 @@
+{
+  "agent_id": "AGT-2772",
+  "agent_name": "Agent (FINO)",
+  "agent_network": "FINO",
+  "msme_id": "MSME_FULL_DATA_GOOD_KIRANA",
+  "first_transaction_date": "2022-10-10",
+  "data_as_of": "2026-03-23",
+  "transactions": [
+    {
+      "date": "2022-10-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 5920.03,
+      "balance_after": 5920.03
+    },
+    {
+      "date": "2022-10-24",
+      "type": "CASH_DEPOSIT",
+      "amount": 9881.13,
+      "balance_after": 15801.16
+    },
+    {
+      "date": "2022-10-24",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 3904.28,
+      "balance_after": 11896.88
+    },
+    {
+      "date": "2022-11-01",
+      "type": "CASH_DEPOSIT",
+      "amount": 7367.51,
+      "balance_after": 19264.39
+    },
+    {
+      "date": "2022-11-01",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2137.15,
+      "balance_after": 17127.24
+    },
+    {
+      "date": "2022-11-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 9758.8,
+      "balance_after": 26886.04
+    },
+    {
+      "date": "2022-11-17",
+      "type": "CASH_DEPOSIT",
+      "amount": 10254.48,
+      "balance_after": 37140.52
+    },
+    {
+      "date": "2022-11-24",
+      "type": "CASH_DEPOSIT",
+      "amount": 6281.42,
+      "balance_after": 43421.94
+    },
+    {
+      "date": "2022-12-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 9756.9,
+      "balance_after": 53178.84
+    },
+    {
+      "date": "2022-12-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 7630.28,
+      "balance_after": 60809.12
+    },
+    {
+      "date": "2022-12-14",
+      "type": "CASH_DEPOSIT",
+      "amount": 7690.94,
+      "balance_after": 68500.06
+    },
+    {
+      "date": "2022-12-22",
+      "type": "CASH_DEPOSIT",
+      "amount": 7295.73,
+      "balance_after": 75795.79
+    },
+    {
+      "date": "2022-12-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 8825.47,
+      "balance_after": 84621.26
+    },
+    {
+      "date": "2023-01-04",
+      "type": "CASH_DEPOSIT",
+      "amount": 12283.3,
+      "balance_after": 96904.56
+    },
+    {
+      "date": "2023-01-11",
+      "type": "CASH_DEPOSIT",
+      "amount": 6372.45,
+      "balance_after": 103277.01
+    },
+    {
+      "date": "2023-01-17",
+      "type": "CASH_DEPOSIT",
+      "amount": 10257.94,
+      "balance_after": 113534.95
+    },
+    {
+      "date": "2023-01-17",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 3027.54,
+      "balance_after": 110507.41
+    },
+    {
+      "date": "2023-01-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 9301.19,
+      "balance_after": 119808.6
+    },
+    {
+      "date": "2023-01-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 9086.31,
+      "balance_after": 128894.91
+    },
+    {
+      "date": "2023-02-05",
+      "type": "CASH_DEPOSIT",
+      "amount": 8233.37,
+      "balance_after": 137128.28
+    },
+    {
+      "date": "2023-02-13",
+      "type": "CASH_DEPOSIT",
+      "amount": 9742.86,
+      "balance_after": 146871.14
+    },
+    {
+      "date": "2023-02-13",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2338.11,
+      "balance_after": 144533.03
+    },
+    {
+      "date": "2023-02-21",
+      "type": "CASH_DEPOSIT",
+      "amount": 8578.24,
+      "balance_after": 153111.27
+    },
+    {
+      "date": "2023-02-27",
+      "type": "CASH_DEPOSIT",
+      "amount": 5085.69,
+      "balance_after": 158196.96
+    },
+    {
+      "date": "2023-03-06",
+      "type": "CASH_DEPOSIT",
+      "amount": 6722.24,
+      "balance_after": 164919.2
+    },
+    {
+      "date": "2023-03-06",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1498.43,
+      "balance_after": 163420.77
+    },
+    {
+      "date": "2023-03-13",
+      "type": "CASH_DEPOSIT",
+      "amount": 6268.34,
+      "balance_after": 169689.11
+    },
+    {
+      "date": "2023-03-21",
+      "type": "CASH_DEPOSIT",
+      "amount": 7330.23,
+      "balance_after": 177019.34
+    },
+    {
+      "date": "2023-03-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 9172.44,
+      "balance_after": 186191.78
+    },
+    {
+      "date": "2023-04-05",
+      "type": "CASH_DEPOSIT",
+      "amount": 7302.55,
+      "balance_after": 193494.33
+    },
+    {
+      "date": "2023-04-11",
+      "type": "CASH_DEPOSIT",
+      "amount": 9715.95,
+      "balance_after": 203210.28
+    },
+    {
+      "date": "2023-04-19",
+      "type": "CASH_DEPOSIT",
+      "amount": 5733.43,
+      "balance_after": 208943.71
+    },
+    {
+      "date": "2023-04-19",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1469.34,
+      "balance_after": 207474.37
+    },
+    {
+      "date": "2023-04-27",
+      "type": "CASH_DEPOSIT",
+      "amount": 8284.85,
+      "balance_after": 215759.22
+    },
+    {
+      "date": "2023-05-03",
+      "type": "CASH_DEPOSIT",
+      "amount": 8317.08,
+      "balance_after": 224076.3
+    },
+    {
+      "date": "2023-05-10",
+      "type": "CASH_DEPOSIT",
+      "amount": 7381.31,
+      "balance_after": 231457.61
+    },
+    {
+      "date": "2023-05-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 7273.89,
+      "balance_after": 238731.5
+    },
+    {
+      "date": "2023-05-16",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2505.65,
+      "balance_after": 236225.85
+    },
+    {
+      "date": "2023-05-22",
+      "type": "CASH_DEPOSIT",
+      "amount": 8973.94,
+      "balance_after": 245199.79
+    },
+    {
+      "date": "2023-05-30",
+      "type": "CASH_DEPOSIT",
+      "amount": 8961.49,
+      "balance_after": 254161.28
+    },
+    {
+      "date": "2023-06-06",
+      "type": "CASH_DEPOSIT",
+      "amount": 9330.77,
+      "balance_after": 263492.05
+    },
+    {
+      "date": "2023-06-12",
+      "type": "CASH_DEPOSIT",
+      "amount": 7840.56,
+      "balance_after": 271332.61
+    },
+    {
+      "date": "2023-06-18",
+      "type": "CASH_DEPOSIT",
+      "amount": 5105.78,
+      "balance_after": 276438.39
+    },
+    {
+      "date": "2023-06-18",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2003.4,
+      "balance_after": 274434.99
+    },
+    {
+      "date": "2023-06-25",
+      "type": "CASH_DEPOSIT",
+      "amount": 6189.04,
+      "balance_after": 280624.03
+    },
+    {
+      "date": "2023-07-03",
+      "type": "CASH_DEPOSIT",
+      "amount": 10598.46,
+      "balance_after": 291222.49
+    },
+    {
+      "date": "2023-07-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 6132.76,
+      "balance_after": 297355.25
+    },
+    {
+      "date": "2023-07-17",
+      "type": "CASH_DEPOSIT",
+      "amount": 6099.96,
+      "balance_after": 303455.21
+    },
+    {
+      "date": "2023-07-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 4545.36,
+      "balance_after": 308000.57
+    },
+    {
+      "date": "2023-07-30",
+      "type": "CASH_DEPOSIT",
+      "amount": 8475.47,
+      "balance_after": 316476.04
+    },
+    {
+      "date": "2023-08-06",
+      "type": "CASH_DEPOSIT",
+      "amount": 8144.26,
+      "balance_after": 324620.3
+    },
+    {
+      "date": "2023-08-14",
+      "type": "CASH_DEPOSIT",
+      "amount": 8465.35,
+      "balance_after": 333085.65
+    },
+    {
+      "date": "2023-08-20",
+      "type": "CASH_DEPOSIT",
+      "amount": 7521.29,
+      "balance_after": 340606.94
+    },
+    {
+      "date": "2023-08-20",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2129.74,
+      "balance_after": 338477.2
+    },
+    {
+      "date": "2023-08-27",
+      "type": "CASH_DEPOSIT",
+      "amount": 8439.99,
+      "balance_after": 346917.19
+    },
+    {
+      "date": "2023-09-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 8713.74,
+      "balance_after": 355630.93
+    },
+    {
+      "date": "2023-09-02",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2766.86,
+      "balance_after": 352864.07
+    },
+    {
+      "date": "2023-09-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 6720.5,
+      "balance_after": 359584.57
+    },
+    {
+      "date": "2023-09-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 5246.63,
+      "balance_after": 364831.2
+    },
+    {
+      "date": "2023-09-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 7555.55,
+      "balance_after": 372386.75
+    },
+    {
+      "date": "2023-09-30",
+      "type": "CASH_DEPOSIT",
+      "amount": 8627.03,
+      "balance_after": 381013.78
+    },
+    {
+      "date": "2023-09-30",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2565.09,
+      "balance_after": 378448.69
+    },
+    {
+      "date": "2023-10-07",
+      "type": "CASH_DEPOSIT",
+      "amount": 13827.72,
+      "balance_after": 392276.41
+    },
+    {
+      "date": "2023-10-13",
+      "type": "CASH_DEPOSIT",
+      "amount": 3735.91,
+      "balance_after": 396012.32
+    },
+    {
+      "date": "2023-10-20",
+      "type": "CASH_DEPOSIT",
+      "amount": 6374.12,
+      "balance_after": 402386.44
+    },
+    {
+      "date": "2023-10-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 7718.42,
+      "balance_after": 410104.86
+    },
+    {
+      "date": "2023-11-04",
+      "type": "CASH_DEPOSIT",
+      "amount": 8314.1,
+      "balance_after": 418418.96
+    },
+    {
+      "date": "2023-11-04",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2584.08,
+      "balance_after": 415834.88
+    },
+    {
+      "date": "2023-11-10",
+      "type": "CASH_DEPOSIT",
+      "amount": 7027.38,
+      "balance_after": 422862.26
+    },
+    {
+      "date": "2023-11-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 8561.37,
+      "balance_after": 431423.63
+    },
+    {
+      "date": "2023-11-24",
+      "type": "CASH_DEPOSIT",
+      "amount": 9965.48,
+      "balance_after": 441389.11
+    },
+    {
+      "date": "2023-12-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 5630.11,
+      "balance_after": 447019.22
+    },
+    {
+      "date": "2023-12-02",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1750.8,
+      "balance_after": 445268.42
+    },
+    {
+      "date": "2023-12-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 6357.23,
+      "balance_after": 451625.65
+    },
+    {
+      "date": "2023-12-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 6194.15,
+      "balance_after": 457819.8
+    },
+    {
+      "date": "2023-12-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 7686.72,
+      "balance_after": 465506.52
+    },
+    {
+      "date": "2023-12-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 6690.42,
+      "balance_after": 472196.94
+    },
+    {
+      "date": "2024-01-05",
+      "type": "CASH_DEPOSIT",
+      "amount": 5548.79,
+      "balance_after": 477745.73
+    },
+    {
+      "date": "2024-01-11",
+      "type": "CASH_DEPOSIT",
+      "amount": 8345.18,
+      "balance_after": 486090.91
+    },
+    {
+      "date": "2024-01-19",
+      "type": "CASH_DEPOSIT",
+      "amount": 7762.72,
+      "balance_after": 493853.63
+    },
+    {
+      "date": "2024-01-27",
+      "type": "CASH_DEPOSIT",
+      "amount": 10612.0,
+      "balance_after": 504465.63
+    },
+    {
+      "date": "2024-02-03",
+      "type": "CASH_DEPOSIT",
+      "amount": 10212.58,
+      "balance_after": 514678.21
+    },
+    {
+      "date": "2024-02-03",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 3567.85,
+      "balance_after": 511110.36
+    },
+    {
+      "date": "2024-02-10",
+      "type": "CASH_DEPOSIT",
+      "amount": 8366.47,
+      "balance_after": 519476.83
+    },
+    {
+      "date": "2024-02-18",
+      "type": "CASH_DEPOSIT",
+      "amount": 11301.86,
+      "balance_after": 530778.69
+    },
+    {
+      "date": "2024-02-24",
+      "type": "CASH_DEPOSIT",
+      "amount": 7640.96,
+      "balance_after": 538419.65
+    },
+    {
+      "date": "2024-03-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 5785.91,
+      "balance_after": 544205.56
+    },
+    {
+      "date": "2024-03-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 9286.65,
+      "balance_after": 553492.21
+    },
+    {
+      "date": "2024-03-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 7673.11,
+      "balance_after": 561165.32
+    },
+    {
+      "date": "2024-03-16",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1887.06,
+      "balance_after": 559278.26
+    },
+    {
+      "date": "2024-03-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 8181.17,
+      "balance_after": 567459.43
+    },
+    {
+      "date": "2024-03-31",
+      "type": "CASH_DEPOSIT",
+      "amount": 7902.56,
+      "balance_after": 575361.99
+    },
+    {
+      "date": "2024-04-06",
+      "type": "CASH_DEPOSIT",
+      "amount": 5562.37,
+      "balance_after": 580924.36
+    },
+    {
+      "date": "2024-04-14",
+      "type": "CASH_DEPOSIT",
+      "amount": 9831.81,
+      "balance_after": 590756.17
+    },
+    {
+      "date": "2024-04-22",
+      "type": "CASH_DEPOSIT",
+      "amount": 8061.26,
+      "balance_after": 598817.43
+    },
+    {
+      "date": "2024-04-22",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 3107.72,
+      "balance_after": 595709.71
+    },
+    {
+      "date": "2024-04-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 7344.65,
+      "balance_after": 603054.36
+    },
+    {
+      "date": "2024-05-05",
+      "type": "CASH_DEPOSIT",
+      "amount": 9076.23,
+      "balance_after": 612130.59
+    },
+    {
+      "date": "2024-05-12",
+      "type": "CASH_DEPOSIT",
+      "amount": 6608.11,
+      "balance_after": 618738.7
+    },
+    {
+      "date": "2024-05-12",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2055.38,
+      "balance_after": 616683.32
+    },
+    {
+      "date": "2024-05-18",
+      "type": "CASH_DEPOSIT",
+      "amount": 8353.15,
+      "balance_after": 625036.47
+    },
+    {
+      "date": "2024-05-18",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1905.09,
+      "balance_after": 623131.38
+    },
+    {
+      "date": "2024-05-26",
+      "type": "CASH_DEPOSIT",
+      "amount": 13034.95,
+      "balance_after": 636166.33
+    },
+    {
+      "date": "2024-06-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 6293.51,
+      "balance_after": 642459.84
+    },
+    {
+      "date": "2024-06-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 6818.59,
+      "balance_after": 649278.43
+    },
+    {
+      "date": "2024-06-09",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1512.56,
+      "balance_after": 647765.87
+    },
+    {
+      "date": "2024-06-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 6541.83,
+      "balance_after": 654307.7
+    },
+    {
+      "date": "2024-06-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 7674.67,
+      "balance_after": 661982.37
+    },
+    {
+      "date": "2024-06-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 6941.12,
+      "balance_after": 668923.49
+    },
+    {
+      "date": "2024-07-07",
+      "type": "CASH_DEPOSIT",
+      "amount": 7811.47,
+      "balance_after": 676734.96
+    },
+    {
+      "date": "2024-07-14",
+      "type": "CASH_DEPOSIT",
+      "amount": 5065.91,
+      "balance_after": 681800.87
+    },
+    {
+      "date": "2024-07-20",
+      "type": "CASH_DEPOSIT",
+      "amount": 5806.43,
+      "balance_after": 687607.3
+    },
+    {
+      "date": "2024-07-26",
+      "type": "CASH_DEPOSIT",
+      "amount": 13810.13,
+      "balance_after": 701417.43
+    },
+    {
+      "date": "2024-07-26",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 4403.87,
+      "balance_after": 697013.56
+    },
+    {
+      "date": "2024-08-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 11457.4,
+      "balance_after": 708470.96
+    },
+    {
+      "date": "2024-08-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 7509.44,
+      "balance_after": 715980.4
+    },
+    {
+      "date": "2024-08-15",
+      "type": "CASH_DEPOSIT",
+      "amount": 7247.69,
+      "balance_after": 723228.09
+    },
+    {
+      "date": "2024-08-21",
+      "type": "CASH_DEPOSIT",
+      "amount": 5250.21,
+      "balance_after": 728478.3
+    },
+    {
+      "date": "2024-08-21",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1108.21,
+      "balance_after": 727370.09
+    },
+    {
+      "date": "2024-08-27",
+      "type": "CASH_DEPOSIT",
+      "amount": 6889.35,
+      "balance_after": 734259.44
+    },
+    {
+      "date": "2024-09-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 10025.43,
+      "balance_after": 744284.87
+    },
+    {
+      "date": "2024-09-10",
+      "type": "CASH_DEPOSIT",
+      "amount": 8106.31,
+      "balance_after": 752391.18
+    },
+    {
+      "date": "2024-09-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 6556.88,
+      "balance_after": 758948.06
+    },
+    {
+      "date": "2024-09-16",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1549.39,
+      "balance_after": 757398.67
+    },
+    {
+      "date": "2024-09-24",
+      "type": "CASH_DEPOSIT",
+      "amount": 12186.34,
+      "balance_after": 769585.01
+    },
+    {
+      "date": "2024-09-30",
+      "type": "CASH_DEPOSIT",
+      "amount": 8771.69,
+      "balance_after": 778356.7
+    },
+    {
+      "date": "2024-09-30",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2409.78,
+      "balance_after": 775946.92
+    },
+    {
+      "date": "2024-10-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 5775.18,
+      "balance_after": 781722.1
+    },
+    {
+      "date": "2024-10-15",
+      "type": "CASH_DEPOSIT",
+      "amount": 8525.5,
+      "balance_after": 790247.6
+    },
+    {
+      "date": "2024-10-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 9854.88,
+      "balance_after": 800102.48
+    },
+    {
+      "date": "2024-10-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 5779.14,
+      "balance_after": 805881.62
+    },
+    {
+      "date": "2024-11-05",
+      "type": "CASH_DEPOSIT",
+      "amount": 8104.93,
+      "balance_after": 813986.55
+    },
+    {
+      "date": "2024-11-13",
+      "type": "CASH_DEPOSIT",
+      "amount": 7793.02,
+      "balance_after": 821779.57
+    },
+    {
+      "date": "2024-11-19",
+      "type": "CASH_DEPOSIT",
+      "amount": 10942.98,
+      "balance_after": 832722.55
+    },
+    {
+      "date": "2024-11-26",
+      "type": "CASH_DEPOSIT",
+      "amount": 7526.3,
+      "balance_after": 840248.85
+    },
+    {
+      "date": "2024-12-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 7256.17,
+      "balance_after": 847505.02
+    },
+    {
+      "date": "2024-12-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 8655.99,
+      "balance_after": 856161.01
+    },
+    {
+      "date": "2024-12-15",
+      "type": "CASH_DEPOSIT",
+      "amount": 9727.66,
+      "balance_after": 865888.67
+    },
+    {
+      "date": "2024-12-22",
+      "type": "CASH_DEPOSIT",
+      "amount": 7877.35,
+      "balance_after": 873766.02
+    },
+    {
+      "date": "2024-12-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 10600.09,
+      "balance_after": 884366.11
+    },
+    {
+      "date": "2025-01-03",
+      "type": "CASH_DEPOSIT",
+      "amount": 11464.62,
+      "balance_after": 895830.73
+    },
+    {
+      "date": "2025-01-10",
+      "type": "CASH_DEPOSIT",
+      "amount": 11487.87,
+      "balance_after": 907318.6
+    },
+    {
+      "date": "2025-01-17",
+      "type": "CASH_DEPOSIT",
+      "amount": 9655.98,
+      "balance_after": 916974.58
+    },
+    {
+      "date": "2025-01-25",
+      "type": "CASH_DEPOSIT",
+      "amount": 6605.15,
+      "balance_after": 923579.73
+    },
+    {
+      "date": "2025-02-01",
+      "type": "CASH_DEPOSIT",
+      "amount": 5643.39,
+      "balance_after": 929223.12
+    },
+    {
+      "date": "2025-02-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 8140.8,
+      "balance_after": 937363.92
+    },
+    {
+      "date": "2025-02-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 9501.74,
+      "balance_after": 946865.66
+    },
+    {
+      "date": "2025-02-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 4855.92,
+      "balance_after": 951721.58
+    },
+    {
+      "date": "2025-02-23",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1902.43,
+      "balance_after": 949819.15
+    },
+    {
+      "date": "2025-03-01",
+      "type": "CASH_DEPOSIT",
+      "amount": 6963.44,
+      "balance_after": 956782.59
+    },
+    {
+      "date": "2025-03-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 6602.14,
+      "balance_after": 963384.73
+    },
+    {
+      "date": "2025-03-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 8065.56,
+      "balance_after": 971450.29
+    },
+    {
+      "date": "2025-03-22",
+      "type": "CASH_DEPOSIT",
+      "amount": 8624.02,
+      "balance_after": 980074.31
+    },
+    {
+      "date": "2025-03-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 9217.52,
+      "balance_after": 989291.83
+    },
+    {
+      "date": "2025-04-05",
+      "type": "CASH_DEPOSIT",
+      "amount": 8144.07,
+      "balance_after": 997435.9
+    },
+    {
+      "date": "2025-04-12",
+      "type": "CASH_DEPOSIT",
+      "amount": 11232.42,
+      "balance_after": 1008668.32
+    },
+    {
+      "date": "2025-04-18",
+      "type": "CASH_DEPOSIT",
+      "amount": 9181.81,
+      "balance_after": 1017850.13
+    },
+    {
+      "date": "2025-04-18",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1997.43,
+      "balance_after": 1015852.7
+    },
+    {
+      "date": "2025-04-26",
+      "type": "CASH_DEPOSIT",
+      "amount": 8736.71,
+      "balance_after": 1024589.41
+    },
+    {
+      "date": "2025-05-04",
+      "type": "CASH_DEPOSIT",
+      "amount": 9627.53,
+      "balance_after": 1034216.94
+    },
+    {
+      "date": "2025-05-12",
+      "type": "CASH_DEPOSIT",
+      "amount": 8465.76,
+      "balance_after": 1042682.7
+    },
+    {
+      "date": "2025-05-19",
+      "type": "CASH_DEPOSIT",
+      "amount": 6273.31,
+      "balance_after": 1048956.01
+    },
+    {
+      "date": "2025-05-25",
+      "type": "CASH_DEPOSIT",
+      "amount": 7694.95,
+      "balance_after": 1056650.96
+    },
+    {
+      "date": "2025-05-25",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2979.68,
+      "balance_after": 1053671.28
+    },
+    {
+      "date": "2025-06-01",
+      "type": "CASH_DEPOSIT",
+      "amount": 7749.98,
+      "balance_after": 1061421.26
+    },
+    {
+      "date": "2025-06-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 6512.82,
+      "balance_after": 1067934.08
+    },
+    {
+      "date": "2025-06-15",
+      "type": "CASH_DEPOSIT",
+      "amount": 9688.77,
+      "balance_after": 1077622.85
+    },
+    {
+      "date": "2025-06-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 10657.92,
+      "balance_after": 1088280.77
+    },
+    {
+      "date": "2025-07-01",
+      "type": "CASH_DEPOSIT",
+      "amount": 9108.23,
+      "balance_after": 1097389.0
+    },
+    {
+      "date": "2025-07-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 7589.68,
+      "balance_after": 1104978.68
+    },
+    {
+      "date": "2025-07-09",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2410.87,
+      "balance_after": 1102567.81
+    },
+    {
+      "date": "2025-07-15",
+      "type": "CASH_DEPOSIT",
+      "amount": 8215.76,
+      "balance_after": 1110783.57
+    },
+    {
+      "date": "2025-07-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 4795.48,
+      "balance_after": 1115579.05
+    },
+    {
+      "date": "2025-07-31",
+      "type": "CASH_DEPOSIT",
+      "amount": 6411.73,
+      "balance_after": 1121990.78
+    },
+    {
+      "date": "2025-08-07",
+      "type": "CASH_DEPOSIT",
+      "amount": 9048.38,
+      "balance_after": 1131039.16
+    },
+    {
+      "date": "2025-08-14",
+      "type": "CASH_DEPOSIT",
+      "amount": 3379.79,
+      "balance_after": 1134418.95
+    },
+    {
+      "date": "2025-08-20",
+      "type": "CASH_DEPOSIT",
+      "amount": 7056.45,
+      "balance_after": 1141475.4
+    },
+    {
+      "date": "2025-08-26",
+      "type": "CASH_DEPOSIT",
+      "amount": 8276.48,
+      "balance_after": 1149751.88
+    },
+    {
+      "date": "2025-08-26",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 3140.15,
+      "balance_after": 1146611.73
+    },
+    {
+      "date": "2025-09-01",
+      "type": "CASH_DEPOSIT",
+      "amount": 9060.13,
+      "balance_after": 1155671.86
+    },
+    {
+      "date": "2025-09-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 8393.55,
+      "balance_after": 1164065.41
+    },
+    {
+      "date": "2025-09-14",
+      "type": "CASH_DEPOSIT",
+      "amount": 7212.52,
+      "balance_after": 1171277.93
+    },
+    {
+      "date": "2025-09-22",
+      "type": "CASH_DEPOSIT",
+      "amount": 7764.92,
+      "balance_after": 1179042.85
+    },
+    {
+      "date": "2025-09-22",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2493.98,
+      "balance_after": 1176548.87
+    },
+    {
+      "date": "2025-09-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 5407.06,
+      "balance_after": 1181955.93
+    },
+    {
+      "date": "2025-10-04",
+      "type": "CASH_DEPOSIT",
+      "amount": 6643.47,
+      "balance_after": 1188599.4
+    },
+    {
+      "date": "2025-10-12",
+      "type": "CASH_DEPOSIT",
+      "amount": 7430.23,
+      "balance_after": 1196029.63
+    },
+    {
+      "date": "2025-10-20",
+      "type": "CASH_DEPOSIT",
+      "amount": 10655.37,
+      "balance_after": 1206685.0
+    },
+    {
+      "date": "2025-10-20",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2561.09,
+      "balance_after": 1204123.91
+    },
+    {
+      "date": "2025-10-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 10707.17,
+      "balance_after": 1214831.08
+    },
+    {
+      "date": "2025-11-03",
+      "type": "CASH_DEPOSIT",
+      "amount": 6811.2,
+      "balance_after": 1221642.28
+    },
+    {
+      "date": "2025-11-11",
+      "type": "CASH_DEPOSIT",
+      "amount": 6223.73,
+      "balance_after": 1227866.01
+    },
+    {
+      "date": "2025-11-17",
+      "type": "CASH_DEPOSIT",
+      "amount": 11441.54,
+      "balance_after": 1239307.55
+    },
+    {
+      "date": "2025-11-25",
+      "type": "CASH_DEPOSIT",
+      "amount": 8785.65,
+      "balance_after": 1248093.2
+    },
+    {
+      "date": "2025-12-01",
+      "type": "CASH_DEPOSIT",
+      "amount": 7737.83,
+      "balance_after": 1255831.03
+    },
+    {
+      "date": "2025-12-07",
+      "type": "CASH_DEPOSIT",
+      "amount": 9856.59,
+      "balance_after": 1265687.62
+    },
+    {
+      "date": "2025-12-07",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2333.12,
+      "balance_after": 1263354.5
+    },
+    {
+      "date": "2025-12-14",
+      "type": "CASH_DEPOSIT",
+      "amount": 6691.43,
+      "balance_after": 1270045.93
+    },
+    {
+      "date": "2025-12-22",
+      "type": "CASH_DEPOSIT",
+      "amount": 7621.51,
+      "balance_after": 1277667.44
+    },
+    {
+      "date": "2025-12-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 10641.32,
+      "balance_after": 1288308.76
+    },
+    {
+      "date": "2026-01-04",
+      "type": "CASH_DEPOSIT",
+      "amount": 5046.28,
+      "balance_after": 1293355.04
+    },
+    {
+      "date": "2026-01-10",
+      "type": "CASH_DEPOSIT",
+      "amount": 10229.18,
+      "balance_after": 1303584.22
+    },
+    {
+      "date": "2026-01-10",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 3085.84,
+      "balance_after": 1300498.38
+    },
+    {
+      "date": "2026-01-17",
+      "type": "CASH_DEPOSIT",
+      "amount": 8697.55,
+      "balance_after": 1309195.93
+    },
+    {
+      "date": "2026-01-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 8138.76,
+      "balance_after": 1317334.69
+    },
+    {
+      "date": "2026-01-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 10152.48,
+      "balance_after": 1327487.17
+    },
+    {
+      "date": "2026-02-06",
+      "type": "CASH_DEPOSIT",
+      "amount": 7948.27,
+      "balance_after": 1335435.44
+    },
+    {
+      "date": "2026-02-13",
+      "type": "CASH_DEPOSIT",
+      "amount": 6333.26,
+      "balance_after": 1341768.7
+    },
+    {
+      "date": "2026-02-21",
+      "type": "CASH_DEPOSIT",
+      "amount": 5765.23,
+      "balance_after": 1347533.93
+    },
+    {
+      "date": "2026-02-21",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1635.48,
+      "balance_after": 1345898.45
+    },
+    {
+      "date": "2026-02-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 11874.46,
+      "balance_after": 1357772.91
+    },
+    {
+      "date": "2026-03-06",
+      "type": "CASH_DEPOSIT",
+      "amount": 8695.42,
+      "balance_after": 1366468.33
+    },
+    {
+      "date": "2026-03-13",
+      "type": "CASH_DEPOSIT",
+      "amount": 7431.27,
+      "balance_after": 1373899.6
+    },
+    {
+      "date": "2026-03-20",
+      "type": "CASH_DEPOSIT",
+      "amount": 7321.48,
+      "balance_after": 1381221.08
+    }
+  ],
+  "field_verification": {
+    "verified": true,
+    "verification_date": "2026-02-21",
+    "shop_exists": true,
+    "stock_observed": true,
+    "customers_present": true,
+    "verifier_notes": "Shop operational, good stock levels, regular customers observed."
+  }
+}

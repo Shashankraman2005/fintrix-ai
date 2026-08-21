@@ -1,0 +1,27 @@
+*.csv
+*.gz
+*.zip
+*.tar
+*.tar.gz
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.venv/
+venv/
+env/
+test_batch.json
+
+# Large datasets
+data/
+datasets/
+*.joblib
+datasets.zip
+
+# Node & Build artifacts
+node_modules/
+pdr-frontend/node_modules/
+pdr-frontend/dist/
+dist/
+build/
+.system_generated/

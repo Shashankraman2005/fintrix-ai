@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Smooth transitions for all animatable properties */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Fade-in for sequenced loading steps */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page transition animation */
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scale animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Rotate and scale animation */
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotate(10deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Blur fade animation */
+@keyframes blurFadeIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+/* Utility classes for animations */
+.page-transition {
+  animation: pageEnter 1300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.slide-in-right {
+  animation: slideInRight 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.scale-in {
+  animation: scaleIn 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.rotate-in {
+  animation: rotateIn 600ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.blur-fade-in {
+  animation: blurFadeIn 700ms ease-out forwards;
+}
+
+/* GPU acceleration for smoother animations */
+.animate-gpu {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Stagger delay utilities */
+.stagger-1 { animation-delay: 100ms; }
+.stagger-2 { animation-delay: 200ms; }
+.stagger-3 { animation-delay: 300ms; }
+.stagger-4 { animation-delay: 400ms; }
+.stagger-5 { animation-delay: 500ms; }
+
+
+/* Strong black card elevation — scoped to content areas only */
+main .bg-surface-container-lowest,
+section .bg-surface-container-lowest {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 0 6px 16px rgba(0, 0, 0, 0.2) !important;
+}
+main .bg-tertiary,
+section .bg-tertiary {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45), 0 6px 16px rgba(0, 0, 0, 0.25) !important;
+}
+/* Dark shadows on all white cards */
+main .bg-white,
+section .bg-white {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 0 6px 16px rgba(0, 0, 0, 0.2) !important;
+}

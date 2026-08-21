@@ -1,0 +1,61 @@
+# PATHS
+DATA_PATH = "datasets/ntc_credit_training_v2.csv"
+MODEL_DIR = "models/"
+CREDIT_MODEL_PATH = "models/ntc_credit_model.pkl"
+PREPROCESSOR_PATH = "models/ntc_preprocessor.pkl"
+REPORT_DIR = "reports/"
+
+# COLUMNS TO LOAD FROM CSV
+USECOLS = [
+    "SK_ID_CURR", "TARGET", "AMT_INCOME_TOTAL", "AMT_CREDIT", "AMT_ANNUITY",
+    "AMT_GOODS_PRICE", "NAME_CONTRACT_TYPE", "NAME_EDUCATION_TYPE",
+    "OCCUPATION_TYPE", "CNT_CHILDREN", "DAYS_EMPLOYED",
+    "DAYS_LAST_PHONE_CHANGE", "OBS_30_CNT_SOCIAL_CIRCLE",
+    "DEF_30_CNT_SOCIAL_CIRCLE", "OBS_60_CNT_SOCIAL_CIRCLE",
+    "DEF_60_CNT_SOCIAL_CIRCLE", "AMT_REQ_CREDIT_BUREAU_HOUR",
+    "AMT_REQ_CREDIT_BUREAU_DAY", "AMT_REQ_CREDIT_BUREAU_WEEK",
+    "AMT_REQ_CREDIT_BUREAU_MON", "AMT_REQ_CREDIT_BUREAU_QRT",
+    "AMT_REQ_CREDIT_BUREAU_YEAR",
+    "DAYS_BIRTH", "FLAG_OWN_CAR", "FLAG_OWN_REALTY", "CNT_CHILDREN",
+    "CNT_FAM_MEMBERS", "REGION_RATING_CLIENT", "DAYS_REGISTRATION",
+    "DAYS_ID_PUBLISH", "NAME_INCOME_TYPE", "NAME_FAMILY_STATUS", "FLAG_EMAIL",
+    "FLAG_WORK_PHONE", "FLAG_EMP_PHONE", "FLAG_PHONE", "OWN_CAR_AGE",
+    "REGION_RATING_CLIENT_W_CITY", "LIVE_CITY_NOT_WORK_CITY", "REG_CITY_NOT_LIVE_CITY"
+]
+
+TARGET_COL = "TARGET"
+ID_COL = "SK_ID_CURR"
+
+# SPLIT RATIOS
+TRAIN_SIZE = 0.70
+VAL_SIZE = 0.15
+TEST_SIZE = 0.15
+RANDOM_SEED = 42
+
+# XGB_PARAMS
+XGB_PARAMS = {
+    "n_estimators": 500,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 10,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "eval_metric": "auc",
+    "use_label_encoder": False,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": 0
+}
+
+EARLY_STOPPING_ROUNDS = 30
+CALIBRATION_METHOD = "sigmoid"
+
+SHAP_TOP_N = 5
+SHAP_APPROX = True
+
+THRESHOLD_APPROVE = 0.35
+THRESHOLD_REVIEW = 0.55
+
+FEATURES_TO_MASK_FROM_USER = ["academic_background_tier"]

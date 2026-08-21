@@ -1,0 +1,1521 @@
+{
+  "demo_users": [
+    {
+      "user_id": "NTC_001",
+      "persona": "Clean Salaried Professional",
+      "model": "NTC",
+      "expected_grade": "A",
+      "expected_outcome": "APPROVED",
+      "story": "Textbook clean profile. Stable income, disciplined spending, old identity. The happy path every lender wants to see.",
+      "user_profile": {
+        "name": "Priya Venkataraman",
+        "phone": "9845012345",
+        "city": "Chennai",
+        "business_type": "Individual / Salaried",
+        "business_vintage_months": 0,
+        "academic_background_tier": 1,
+        "purpose_of_loan_encoded": 2,
+        "telecom_number_vintage_days": 2800,
+        "gst_filing_consistency_score": 0,
+        "applicant_age_years": 29,
+        "owns_property": 1,
+        "owns_car": 1,
+        "income_type_risk_score": 1,
+        "family_burden_ratio": 0.25,
+        "address_stability_years": 5.0,
+        "id_document_age_years": 7.0,
+        "contactability_score": 4,
+        "has_email_flag": 1,
+        "family_status_stability_score": 1,
+        "car_age_years": 3,
+        "region_risk_tier": 1,
+        "region_city_risk_score": 1,
+        "address_work_mismatch": 0,
+        "neighbourhood_default_rate_30": 0.02,
+        "neighbourhood_default_rate_60": 0.03
+      },
+      "ntc_features": {
+        "utility_payment_consistency": 11,
+        "avg_utility_dpd": 1.2,
+        "rent_wallet_share": 0.22,
+        "subscription_commitment_ratio": 0.04,
+        "emergency_buffer_months": 4.2,
+        "min_balance_violation_count": 0,
+        "eod_balance_volatility": 0.18,
+        "essential_vs_lifestyle_ratio": 2.8,
+        "cash_withdrawal_dependency": 0.03,
+        "bounced_transaction_count": 0,
+        "telecom_number_vintage_days": 2800,
+        "telecom_recharge_drop_ratio": 1.02
+      },
+      "radar": {
+        "Payment Discipline": 92,
+        "Liquidity Health": 88,
+        "Identity Stability": 95,
+        "Spending Behavior": 85,
+        "Income Stability": 91,
+        "Compliance": 78
+      },
+      "key_flags": [],
+      "transactions": [
+        {
+          "date": "2024-01-01",
+          "amount": 85000,
+          "type": "CREDIT",
+          "narration": "SALARY CREDIT TCS LTD",
+          "balance": 125000
+        },
+        {
+          "date": "2024-01-05",
+          "amount": -18500,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT OWNER SUBRAMANIAM",
+          "balance": 106500
+        },
+        {
+          "date": "2024-01-07",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL TANGEDCO",
+          "balance": 103700
+        },
+        {
+          "date": "2024-01-08",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "BROADBAND BILL AIRTEL FIBER",
+          "balance": 102500
+        },
+        {
+          "date": "2024-01-12",
+          "amount": -4200,
+          "type": "DEBIT",
+          "narration": "GROCERY BIGBASKET",
+          "balance": 98300
+        },
+        {
+          "date": "2024-01-18",
+          "amount": -3100,
+          "type": "DEBIT",
+          "narration": "SWIGGY FOOD ORDER",
+          "balance": 95200
+        },
+        {
+          "date": "2024-01-25",
+          "amount": -999,
+          "type": "DEBIT",
+          "narration": "NETFLIX SUBSCRIPTION",
+          "balance": 94201
+        },
+        {
+          "date": "2024-02-01",
+          "amount": 85000,
+          "type": "CREDIT",
+          "narration": "SALARY CREDIT TCS LTD",
+          "balance": 179201
+        },
+        {
+          "date": "2024-02-05",
+          "amount": -18500,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT OWNER SUBRAMANIAM",
+          "balance": 160701
+        },
+        {
+          "date": "2024-02-07",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL TANGEDCO",
+          "balance": 157901
+        },
+        {
+          "date": "2024-02-08",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "BROADBAND BILL AIRTEL FIBER",
+          "balance": 156701
+        },
+        {
+          "date": "2024-02-14",
+          "amount": -5600,
+          "type": "DEBIT",
+          "narration": "GROCERY BIGBASKET",
+          "balance": 151101
+        },
+        {
+          "date": "2024-02-22",
+          "amount": -2400,
+          "type": "DEBIT",
+          "narration": "MEDICAL PHARMACY APOLLO",
+          "balance": 148701
+        },
+        {
+          "date": "2024-02-25",
+          "amount": -999,
+          "type": "DEBIT",
+          "narration": "NETFLIX SUBSCRIPTION",
+          "balance": 147702
+        },
+        {
+          "date": "2024-03-01",
+          "amount": 85000,
+          "type": "CREDIT",
+          "narration": "SALARY CREDIT TCS LTD",
+          "balance": 232702
+        },
+        {
+          "date": "2024-03-05",
+          "amount": -18500,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT OWNER SUBRAMANIAM",
+          "balance": 214202
+        },
+        {
+          "date": "2024-03-07",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL TANGEDCO",
+          "balance": 211402
+        },
+        {
+          "date": "2024-03-08",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "BROADBAND BILL AIRTEL FIBER",
+          "balance": 210202
+        },
+        {
+          "date": "2024-03-15",
+          "amount": -4800,
+          "type": "DEBIT",
+          "narration": "GROCERY BIGBASKET",
+          "balance": 205402
+        },
+        {
+          "date": "2024-03-25",
+          "amount": -999,
+          "type": "DEBIT",
+          "narration": "NETFLIX SUBSCRIPTION",
+          "balance": 204403
+        },
+        {
+          "date": "2024-04-01",
+          "amount": 85000,
+          "type": "CREDIT",
+          "narration": "SALARY CREDIT TCS LTD",
+          "balance": 289403
+        },
+        {
+          "date": "2024-04-05",
+          "amount": -18500,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT OWNER SUBRAMANIAM",
+          "balance": 270903
+        },
+        {
+          "date": "2024-04-07",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL TANGEDCO",
+          "balance": 268103
+        },
+        {
+          "date": "2024-04-08",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "BROADBAND BILL AIRTEL FIBER",
+          "balance": 266903
+        },
+        {
+          "date": "2024-04-18",
+          "amount": -5100,
+          "type": "DEBIT",
+          "narration": "GROCERY BIGBASKET",
+          "balance": 261803
+        },
+        {
+          "date": "2024-04-25",
+          "amount": -999,
+          "type": "DEBIT",
+          "narration": "NETFLIX SUBSCRIPTION",
+          "balance": 260804
+        },
+        {
+          "date": "2024-05-01",
+          "amount": 85000,
+          "type": "CREDIT",
+          "narration": "SALARY CREDIT TCS LTD",
+          "balance": 345804
+        },
+        {
+          "date": "2024-05-05",
+          "amount": -18500,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT OWNER SUBRAMANIAM",
+          "balance": 327304
+        },
+        {
+          "date": "2024-05-07",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL TANGEDCO",
+          "balance": 324504
+        },
+        {
+          "date": "2024-05-08",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "BROADBAND BILL AIRTEL FIBER",
+          "balance": 323304
+        },
+        {
+          "date": "2024-05-20",
+          "amount": -4400,
+          "type": "DEBIT",
+          "narration": "GROCERY BIGBASKET",
+          "balance": 318904
+        },
+        {
+          "date": "2024-05-25",
+          "amount": -999,
+          "type": "DEBIT",
+          "narration": "NETFLIX SUBSCRIPTION",
+          "balance": 317905
+        },
+        {
+          "date": "2024-06-01",
+          "amount": 85000,
+          "type": "CREDIT",
+          "narration": "SALARY CREDIT TCS LTD",
+          "balance": 402905
+        },
+        {
+          "date": "2024-06-05",
+          "amount": -18500,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT OWNER SUBRAMANIAM",
+          "balance": 384405
+        },
+        {
+          "date": "2024-06-07",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL TANGEDCO",
+          "balance": 381605
+        },
+        {
+          "date": "2024-06-08",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "BROADBAND BILL AIRTEL FIBER",
+          "balance": 380405
+        },
+        {
+          "date": "2024-06-22",
+          "amount": -4700,
+          "type": "DEBIT",
+          "narration": "GROCERY BIGBASKET",
+          "balance": 375705
+        },
+        {
+          "date": "2024-06-25",
+          "amount": -999,
+          "type": "DEBIT",
+          "narration": "NETFLIX SUBSCRIPTION",
+          "balance": 374706
+        }
+      ],
+      "gst_data": {
+        "available": false,
+        "declared_turnover": 0
+      },
+      "form_fields": {
+        "full_name": "Priya Venkataraman",
+        "phone_number": "9845012345",
+        "age": 29,
+        "address": "42, Thiruvalluvar Street, T. Nagar",
+        "city": "Chennai",
+        "residential_stability": "5+ years",
+        "education_level": "Graduate",
+        "employment_type": "Salaried",
+        "company_name": "Tata Consultancy Services",
+        "monthly_salary": 85000,
+        "annual_income": 1020000,
+        "purpose_of_loan": "Home Improvement",
+        "loan_amount_requested": 300000,
+        "monthly_annuity": 12500,
+        "family_members": 4,
+        "dependents": 1,
+        "family_income_stability": "Dual Earner",
+        "assets": [
+          "Owned House",
+          "Vehicle",
+          "Gold / Jewelry"
+        ],
+        "telecom_vintage": "5+ years",
+        "identity_device_mismatch": false
+      }
+    },
+    {
+      "user_id": "NTC_002",
+      "persona": "Cash-Dependent Informal Worker",
+      "model": "NTC",
+      "expected_grade": "C",
+      "expected_outcome": "MANUAL REVIEW",
+      "story": "Earns consistently but lives hand to mouth. High cash dependency flags off-book behavior. Balance drops to near zero multiple times. Loan repayment capacity is uncertain despite decent income.",
+      "user_profile": {
+        "name": "Ramesh Gowda",
+        "phone": "9740056789",
+        "city": "Mysuru",
+        "business_type": "Individual / Informal",
+        "business_vintage_months": 0,
+        "academic_background_tier": 3,
+        "purpose_of_loan_encoded": 1,
+        "telecom_number_vintage_days": 1100,
+        "gst_filing_consistency_score": 0,
+        "applicant_age_years": 38,
+        "owns_property": 0,
+        "owns_car": 0,
+        "income_type_risk_score": 3,
+        "family_burden_ratio": 0.6667,
+        "address_stability_years": 2.0,
+        "id_document_age_years": 4.0,
+        "contactability_score": 2,
+        "has_email_flag": 0,
+        "family_status_stability_score": 2,
+        "car_age_years": 99,
+        "region_risk_tier": 2,
+        "region_city_risk_score": 2,
+        "address_work_mismatch": 1,
+        "neighbourhood_default_rate_30": 0.08,
+        "neighbourhood_default_rate_60": 0.1
+      },
+      "ntc_features": {
+        "utility_payment_consistency": 4,
+        "avg_utility_dpd": 8.5,
+        "rent_wallet_share": 0.38,
+        "subscription_commitment_ratio": 0.01,
+        "emergency_buffer_months": 0.3,
+        "min_balance_violation_count": 5,
+        "eod_balance_volatility": 0.82,
+        "essential_vs_lifestyle_ratio": 1.2,
+        "cash_withdrawal_dependency": 0.48,
+        "bounced_transaction_count": 2,
+        "telecom_number_vintage_days": 1100,
+        "telecom_recharge_drop_ratio": 0.72
+      },
+      "radar": {
+        "Payment Discipline": 38,
+        "Liquidity Health": 22,
+        "Identity Stability": 55,
+        "Spending Behavior": 40,
+        "Income Stability": 58,
+        "Compliance": 30
+      },
+      "key_flags": [
+        "HIGH_CASH_DEPENDENCY",
+        "MIN_BALANCE_VIOLATIONS",
+        "LATE_UTILITY_PAYMENTS"
+      ],
+      "transactions": [
+        {
+          "date": "2024-01-03",
+          "amount": 42000,
+          "type": "CREDIT",
+          "narration": "CASH DEPOSIT COUNTER",
+          "balance": 44200
+        },
+        {
+          "date": "2024-01-05",
+          "amount": -16000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 28200
+        },
+        {
+          "date": "2024-01-12",
+          "amount": -12000,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT CASH",
+          "balance": 16200
+        },
+        {
+          "date": "2024-01-14",
+          "amount": -10000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 6200
+        },
+        {
+          "date": "2024-01-19",
+          "amount": -3200,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 3000
+        },
+        {
+          "date": "2024-01-22",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL PAYMENT",
+          "balance": 200
+        },
+        {
+          "date": "2024-01-28",
+          "amount": -500,
+          "type": "DEBIT",
+          "narration": "CHEQUE BOUNCE CHG",
+          "balance": 0
+        },
+        {
+          "date": "2024-02-02",
+          "amount": 44000,
+          "type": "CREDIT",
+          "narration": "CASH DEPOSIT COUNTER",
+          "balance": 44000
+        },
+        {
+          "date": "2024-02-05",
+          "amount": -18000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 26000
+        },
+        {
+          "date": "2024-02-10",
+          "amount": -12000,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT CASH",
+          "balance": 14000
+        },
+        {
+          "date": "2024-02-15",
+          "amount": -8000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 6000
+        },
+        {
+          "date": "2024-02-20",
+          "amount": -3500,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 2500
+        },
+        {
+          "date": "2024-02-26",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL PAYMENT LATE",
+          "balance": 0
+        },
+        {
+          "date": "2024-03-01",
+          "amount": 41000,
+          "type": "CREDIT",
+          "narration": "CASH DEPOSIT COUNTER",
+          "balance": 41000
+        },
+        {
+          "date": "2024-03-04",
+          "amount": -15000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 26000
+        },
+        {
+          "date": "2024-03-10",
+          "amount": -12000,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT CASH",
+          "balance": 14000
+        },
+        {
+          "date": "2024-03-14",
+          "amount": -500,
+          "type": "DEBIT",
+          "narration": "CHEQUE BOUNCE CHG",
+          "balance": 13500
+        },
+        {
+          "date": "2024-03-18",
+          "amount": -10000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 3500
+        },
+        {
+          "date": "2024-03-25",
+          "amount": -3000,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 500
+        },
+        {
+          "date": "2024-03-29",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL PAYMENT LATE",
+          "balance": 0
+        },
+        {
+          "date": "2024-04-02",
+          "amount": 45000,
+          "type": "CREDIT",
+          "narration": "CASH DEPOSIT COUNTER",
+          "balance": 45000
+        },
+        {
+          "date": "2024-04-05",
+          "amount": -16000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 29000
+        },
+        {
+          "date": "2024-04-10",
+          "amount": -12000,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT CASH",
+          "balance": 17000
+        },
+        {
+          "date": "2024-04-16",
+          "amount": -12000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 5000
+        },
+        {
+          "date": "2024-04-22",
+          "amount": -3200,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 1800
+        },
+        {
+          "date": "2024-04-28",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL PAYMENT",
+          "balance": 0
+        },
+        {
+          "date": "2024-05-02",
+          "amount": 43000,
+          "type": "CREDIT",
+          "narration": "CASH DEPOSIT COUNTER",
+          "balance": 43000
+        },
+        {
+          "date": "2024-05-06",
+          "amount": -17000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 26000
+        },
+        {
+          "date": "2024-05-11",
+          "amount": -12000,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT CASH",
+          "balance": 14000
+        },
+        {
+          "date": "2024-05-16",
+          "amount": -9000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 5000
+        },
+        {
+          "date": "2024-05-24",
+          "amount": -3400,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 1600
+        },
+        {
+          "date": "2024-05-29",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL PAYMENT LATE",
+          "balance": 0
+        },
+        {
+          "date": "2024-06-03",
+          "amount": 44000,
+          "type": "CREDIT",
+          "narration": "CASH DEPOSIT COUNTER",
+          "balance": 44000
+        },
+        {
+          "date": "2024-06-07",
+          "amount": -16000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 28000
+        },
+        {
+          "date": "2024-06-12",
+          "amount": -12000,
+          "type": "DEBIT",
+          "narration": "RENT PAYMENT CASH",
+          "balance": 16000
+        },
+        {
+          "date": "2024-06-18",
+          "amount": -11000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 5000
+        },
+        {
+          "date": "2024-06-25",
+          "amount": -3100,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 1900
+        },
+        {
+          "date": "2024-06-29",
+          "amount": -2800,
+          "type": "DEBIT",
+          "narration": "ELECTRICITY BILL PAYMENT LATE",
+          "balance": 0
+        }
+      ],
+      "gst_data": {
+        "available": false,
+        "declared_turnover": 0
+      },
+      "form_fields": {
+        "full_name": "Ramesh Gowda",
+        "phone_number": "9740056789",
+        "age": 38,
+        "address": "12, 3rd Cross, Jayalakshmipuram",
+        "city": "Mysuru",
+        "residential_stability": "1-3 years",
+        "education_level": "School",
+        "employment_type": "Daily Wage",
+        "company_name": "Mysuru Construction Works",
+        "monthly_salary": 42000,
+        "annual_income": 504000,
+        "purpose_of_loan": "Personal",
+        "loan_amount_requested": 100000,
+        "monthly_annuity": 5500,
+        "family_members": 6,
+        "dependents": 4,
+        "family_income_stability": "Single Earner",
+        "assets": [
+          "Agricultural Land"
+        ],
+        "telecom_vintage": "2 - 5 years",
+        "identity_device_mismatch": false
+      }
+    },
+    {
+      "user_id": "NTC_003",
+      "persona": "Synthetic Fraud — Balance Inflation",
+      "model": "NTC",
+      "expected_grade": "E",
+      "expected_outcome": "REJECTED",
+      "story": "Classic loan stacking pattern. New SIM card, round-number P2P loops, and a sudden balance spike 40 days before application. The forensic layer catches what a bureau score never would.",
+      "user_profile": {
+        "name": "Deepak Malhotra",
+        "phone": "9999012345",
+        "city": "Delhi",
+        "business_type": "Individual / NTC",
+        "business_vintage_months": 0,
+        "academic_background_tier": 2,
+        "purpose_of_loan_encoded": 1,
+        "telecom_number_vintage_days": 88,
+        "gst_filing_consistency_score": 0,
+        "applicant_age_years": 31,
+        "owns_property": 0,
+        "owns_car": 1,
+        "income_type_risk_score": 3,
+        "family_burden_ratio": 0.0,
+        "address_stability_years": 0.5,
+        "id_document_age_years": 2.5,
+        "contactability_score": 3,
+        "has_email_flag": 1,
+        "family_status_stability_score": 4,
+        "car_age_years": 2,
+        "region_risk_tier": 2,
+        "region_city_risk_score": 2,
+        "address_work_mismatch": 1,
+        "neighbourhood_default_rate_30": 0.06,
+        "neighbourhood_default_rate_60": 0.08
+      },
+      "ntc_features": {
+        "utility_payment_consistency": 1,
+        "avg_utility_dpd": 0.0,
+        "rent_wallet_share": 0.1,
+        "subscription_commitment_ratio": 0.01,
+        "emergency_buffer_months": 2.1,
+        "min_balance_violation_count": 1,
+        "eod_balance_volatility": 0.91,
+        "essential_vs_lifestyle_ratio": 0.6,
+        "cash_withdrawal_dependency": 0.12,
+        "bounced_transaction_count": 0,
+        "telecom_number_vintage_days": 88,
+        "telecom_recharge_drop_ratio": 1.1
+      },
+      "radar": {
+        "Payment Discipline": 25,
+        "Liquidity Health": 40,
+        "Identity Stability": 8,
+        "Spending Behavior": 28,
+        "Income Stability": 18,
+        "Compliance": 20
+      },
+      "key_flags": [
+        "NEW_SIM_RISK",
+        "P2P_CIRCULAR_LOOP",
+        "ROUND_NUMBER_TRANSACTIONS",
+        "BALANCE_INFLATION_SPIKE",
+        "BENFORD_ANOMALY"
+      ],
+      "transactions": [
+        {
+          "date": "2024-01-05",
+          "amount": 50000,
+          "type": "CREDIT",
+          "narration": "UPI FROM RAHUL SHARMA",
+          "balance": 52000
+        },
+        {
+          "date": "2024-01-06",
+          "amount": -50000,
+          "type": "DEBIT",
+          "narration": "UPI TO RAHUL SHARMA",
+          "balance": 2000
+        },
+        {
+          "date": "2024-02-05",
+          "amount": 50000,
+          "type": "CREDIT",
+          "narration": "UPI FROM RAHUL SHARMA",
+          "balance": 52000
+        },
+        {
+          "date": "2024-02-06",
+          "amount": -50000,
+          "type": "DEBIT",
+          "narration": "UPI TO RAHUL SHARMA",
+          "balance": 2000
+        },
+        {
+          "date": "2024-02-20",
+          "amount": -1500,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 500
+        },
+        {
+          "date": "2024-03-05",
+          "amount": 100000,
+          "type": "CREDIT",
+          "narration": "UPI FROM RAHUL SHARMA",
+          "balance": 100500
+        },
+        {
+          "date": "2024-03-06",
+          "amount": -100000,
+          "type": "DEBIT",
+          "narration": "UPI TO RAHUL SHARMA",
+          "balance": 500
+        },
+        {
+          "date": "2024-03-18",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 0
+        },
+        {
+          "date": "2024-04-05",
+          "amount": 100000,
+          "type": "CREDIT",
+          "narration": "UPI FROM RAHUL SHARMA",
+          "balance": 100000
+        },
+        {
+          "date": "2024-04-06",
+          "amount": -100000,
+          "type": "DEBIT",
+          "narration": "UPI TO RAHUL SHARMA",
+          "balance": 0
+        },
+        {
+          "date": "2024-04-22",
+          "amount": -1000,
+          "type": "DEBIT",
+          "narration": "MOBILE RECHARGE",
+          "balance": 0
+        },
+        {
+          "date": "2024-05-10",
+          "amount": 500000,
+          "type": "CREDIT",
+          "narration": "TRANSFER FROM SAVINGS ACCOUNT",
+          "balance": 500000
+        },
+        {
+          "date": "2024-05-11",
+          "amount": 500000,
+          "type": "CREDIT",
+          "narration": "UPI FROM AMIT VERMA",
+          "balance": 1000000
+        },
+        {
+          "date": "2024-05-25",
+          "amount": -1800,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 998200
+        },
+        {
+          "date": "2024-06-01",
+          "amount": -2000,
+          "type": "DEBIT",
+          "narration": "UTILITY BILL PAYMENT",
+          "balance": 996200
+        },
+        {
+          "date": "2024-06-10",
+          "amount": -1500,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE",
+          "balance": 994700
+        }
+      ],
+      "gst_data": {
+        "available": false,
+        "declared_turnover": 0
+      },
+      "form_fields": {
+        "full_name": "Deepak Malhotra",
+        "phone_number": "7001234567",
+        "age": 31,
+        "address": "B-204, Sunshine Apartments, Sector 18",
+        "city": "Noida",
+        "residential_stability": "Less than 1 year",
+        "education_level": "Postgraduate",
+        "employment_type": "Self-Employed",
+        "company_name": "DM Enterprises",
+        "monthly_salary": 150000,
+        "annual_income": 1800000,
+        "purpose_of_loan": "Personal",
+        "loan_amount_requested": 1500000,
+        "monthly_annuity": 45000,
+        "family_members": 2,
+        "dependents": 0,
+        "family_income_stability": "Single Earner",
+        "assets": [
+          "Vehicle",
+          "Other Invest."
+        ],
+        "telecom_vintage": "Less than 6 months",
+        "identity_device_mismatch": true
+      }
+    },
+    {
+      "user_id": "NTC_004",
+      "persona": "Manual Entry — Declared Income",
+      "model": "NTC",
+      "expected_grade": "B",
+      "expected_outcome": "APPROVED WITH CONDITIONS",
+      "story": "No bank account linked. Income declared directly on the form. Change the Annual Income field and resubmit — the grade updates in real time because scoring derives monthly income from generated transactions.",
+      "user_profile": {
+        "name": "Arjun Sharma",
+        "phone": "9800000004",
+        "city": "Bengaluru",
+        "business_type": "Individual / NTC",
+        "business_vintage_months": 0,
+        "academic_background_tier": 2,
+        "purpose_of_loan_encoded": 1,
+        "telecom_number_vintage_days": 1095,
+        "gst_filing_consistency_score": 0,
+        "applicant_age_years": 30,
+        "owns_property": 0,
+        "owns_car": 0,
+        "income_type_risk_score": 1,
+        "family_burden_ratio": 0.25,
+        "address_stability_years": 3.0,
+        "id_document_age_years": 5.0,
+        "contactability_score": 3,
+        "has_email_flag": 1,
+        "family_status_stability_score": 2,
+        "car_age_years": 99,
+        "region_risk_tier": 1,
+        "region_city_risk_score": 1,
+        "address_work_mismatch": 0,
+        "neighbourhood_default_rate_30": 0.03,
+        "neighbourhood_default_rate_60": 0.05,
+        "bounced_transaction_count": 0,
+        "dynamic_income": true
+      },
+      "ntc_features": {},
+      "radar": {
+        "Payment Discipline": 72,
+        "Liquidity Health": 65,
+        "Identity Stability": 78,
+        "Spending Behavior": 70,
+        "Income Stability": 60,
+        "Compliance": 68
+      },
+      "key_flags": [],
+      "form_fields": {
+        "full_name": "Arjun Sharma",
+        "phone_number": "9800000004",
+        "education_level": "Graduate",
+        "employment_type": "Salaried",
+        "annual_income": 300000,
+        "purpose_of_loan": "Personal",
+        "loan_amount_requested": 150000,
+        "monthly_annuity": 6000,
+        "family_members": 3,
+        "dependents": 1,
+        "residential_stability": "3-5 years",
+        "assets": [],
+        "telecom_vintage": "2 - 5 years",
+        "identity_device_mismatch": false,
+        "family_income_stability": "Single Earner"
+      },
+      "transactions": []
+    },
+    {
+      "user_id": "MSME_001",
+      "persona": "Seasonal Agri Business — Legitimate but Misunderstood",
+      "model": "MSME",
+      "expected_grade": "B",
+      "expected_outcome": "APPROVED WITH CONDITIONS",
+      "story": "A generic model would reject this farmer — near-zero balance for months, lumpy income, high invoice delay. But the PDR MSME model understands agricultural cycles. Two large APMC credits, consistent seed/input purchases, and 6 years of business vintage tell a different story.",
+      "user_profile": {
+        "name": "Sukhwinder Singh",
+        "phone": "9815056789",
+        "city": "Ludhiana",
+        "business_type": "Agriculture",
+        "business_vintage_months": 72,
+        "academic_background_tier": 3,
+        "purpose_of_loan_encoded": 3,
+        "telecom_number_vintage_days": 3200,
+        "gst_filing_consistency_score": 4,
+        "applicant_age_years": 45,
+        "owns_property": 1,
+        "owns_car": 1,
+        "income_type_risk_score": 3,
+        "family_burden_ratio": 0.2,
+        "address_stability_years": 10.0,
+        "id_document_age_years": 12.0,
+        "contactability_score": 3,
+        "has_email_flag": 1,
+        "family_status_stability_score": 1,
+        "car_age_years": 5,
+        "region_risk_tier": 2,
+        "region_city_risk_score": 2,
+        "address_work_mismatch": 0,
+        "neighbourhood_default_rate_30": 0.04,
+        "neighbourhood_default_rate_60": 0.05
+      },
+      "msme_features": {
+        "business_vintage_months": 72,
+        "revenue_growth_trend": 0.04,
+        "revenue_seasonality_index": 0.78,
+        "operating_cashflow_ratio": 1.12,
+        "cashflow_volatility": 0.68,
+        "avg_invoice_payment_delay": 38,
+        "customer_concentration_ratio": 0.82,
+        "repeat_customer_revenue_pct": 0.91,
+        "vendor_payment_discipline": 12,
+        "gst_filing_consistency_score": 4,
+        "gst_to_bank_variance": 0.08,
+        "turnover_inflation_spike": 0
+      },
+      "radar": {
+        "Operational Stability": 58,
+        "Network Risk": 45,
+        "Compliance": 42,
+        "Liquidity Health": 38,
+        "MSME Health": 72,
+        "Forensic / Fraud": 88
+      },
+      "key_flags": [
+        "HIGH_SEASONALITY",
+        "HIGH_CONCENTRATION"
+      ],
+      "transactions": [
+        {
+          "date": "2024-01-08",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE LOCAL STORE",
+          "balance": 48800
+        },
+        {
+          "date": "2024-01-15",
+          "amount": -800,
+          "type": "DEBIT",
+          "narration": "MEDICAL PHARMACY PURCHASE",
+          "balance": 48000
+        },
+        {
+          "date": "2024-01-22",
+          "amount": -1500,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE LOCAL STORE",
+          "balance": 46500
+        },
+        {
+          "date": "2024-02-10",
+          "amount": -1000,
+          "type": "DEBIT",
+          "narration": "FUEL PETROL PUMP",
+          "balance": 45500
+        },
+        {
+          "date": "2024-02-18",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE LOCAL STORE",
+          "balance": 44300
+        },
+        {
+          "date": "2024-03-05",
+          "amount": 280000,
+          "type": "CREDIT",
+          "narration": "APMC MANDI WHEAT SALE PAYMENT",
+          "balance": 324300
+        },
+        {
+          "date": "2024-03-07",
+          "amount": -15000,
+          "type": "DEBIT",
+          "narration": "SEEDS AND FERTILIZER PURCHASE",
+          "balance": 309300
+        },
+        {
+          "date": "2024-03-10",
+          "amount": -8000,
+          "type": "DEBIT",
+          "narration": "TRACTOR FUEL DIESEL PURCHASE",
+          "balance": 301300
+        },
+        {
+          "date": "2024-03-15",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE LOCAL STORE",
+          "balance": 300100
+        },
+        {
+          "date": "2024-04-08",
+          "amount": -1000,
+          "type": "DEBIT",
+          "narration": "MEDICAL PHARMACY PURCHASE",
+          "balance": 299100
+        },
+        {
+          "date": "2024-04-20",
+          "amount": -1500,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE LOCAL STORE",
+          "balance": 297600
+        },
+        {
+          "date": "2024-05-12",
+          "amount": -2000,
+          "type": "DEBIT",
+          "narration": "FUEL PETROL PUMP",
+          "balance": 295600
+        },
+        {
+          "date": "2024-05-25",
+          "amount": 310000,
+          "type": "CREDIT",
+          "narration": "APMC MANDI PADDY SALE PAYMENT",
+          "balance": 605600
+        },
+        {
+          "date": "2024-05-28",
+          "amount": -20000,
+          "type": "DEBIT",
+          "narration": "SEEDS AND FERTILIZER PURCHASE",
+          "balance": 585600
+        },
+        {
+          "date": "2024-06-05",
+          "amount": -1200,
+          "type": "DEBIT",
+          "narration": "GROCERY PURCHASE LOCAL STORE",
+          "balance": 584400
+        },
+        {
+          "date": "2024-06-15",
+          "amount": -800,
+          "type": "DEBIT",
+          "narration": "MEDICAL PHARMACY PURCHASE",
+          "balance": 583600
+        }
+      ],
+      "gst_data": {
+        "available": false,
+        "declared_turnover": 0
+      },
+      "form_fields": {
+        "applicant_name": "Sukhwinder Singh",
+        "business_name": "Singh Agro Traders",
+        "city": "Ludhiana",
+        "industry_type": "Agriculture",
+        "number_of_employees": 8,
+        "gstin": "03AABCS9429A1ZP",
+        "business_type": "Agri/Seasonal",
+        "business_vintage_months": 48,
+        "turnover_spike": false,
+        "loan_amount": 500000,
+        "customer_concentration_ratio": 0.45,
+        "repeat_customer_revenue_pct": 0.55,
+        "gst_filing_consistency_score": 8,
+        "gst_declared_turnover": 1800000,
+        "identity_device_mismatch": false
+      }
+    },
+    {
+      "user_id": "MSME_002",
+      "persona": "Wash Trader — Circular Transaction Fraud",
+      "model": "MSME",
+      "expected_grade": "E",
+      "expected_outcome": "REJECTED",
+      "story": "GST declares ₹50L turnover. Bank shows ₹6L. Money flows A→B→A every month like clockwork. Business is 8 months old with a brand new SIM. Turnover spiked 45 days before application. Every forensic flag fires simultaneously — this is exactly the pattern PDR was built to catch.",
+      "user_profile": {
+        "name": "Mohammed Farouk",
+        "phone": "9711098765",
+        "city": "Delhi",
+        "business_type": "Trading",
+        "business_vintage_months": 8,
+        "academic_background_tier": 3,
+        "purpose_of_loan_encoded": 1,
+        "telecom_number_vintage_days": 95,
+        "gst_filing_consistency_score": 2,
+        "applicant_age_years": 34,
+        "owns_property": 0,
+        "owns_car": 1,
+        "income_type_risk_score": 3,
+        "family_burden_ratio": 0.25,
+        "address_stability_years": 1.5,
+        "id_document_age_years": 3.0,
+        "contactability_score": 2,
+        "has_email_flag": 1,
+        "family_status_stability_score": 3,
+        "car_age_years": 4,
+        "region_risk_tier": 2,
+        "region_city_risk_score": 2,
+        "address_work_mismatch": 1,
+        "neighbourhood_default_rate_30": 0.07,
+        "neighbourhood_default_rate_60": 0.09
+      },
+      "msme_features": {
+        "business_vintage_months": 8,
+        "revenue_growth_trend": 0.02,
+        "revenue_seasonality_index": 0.12,
+        "operating_cashflow_ratio": 0.98,
+        "cashflow_volatility": 0.72,
+        "avg_invoice_payment_delay": 62,
+        "customer_concentration_ratio": 0.98,
+        "repeat_customer_revenue_pct": 0.99,
+        "vendor_payment_discipline": 45,
+        "gst_filing_consistency_score": 2,
+        "gst_to_bank_variance": 0.88,
+        "turnover_inflation_spike": 1
+      },
+      "radar": {
+        "Operational Stability": 18,
+        "Network Risk": 12,
+        "Compliance": 8,
+        "Liquidity Health": 22,
+        "MSME Health": 10,
+        "Forensic / Fraud": 5
+      },
+      "key_flags": [
+        "P2P_CIRCULAR_LOOP",
+        "GST_BANK_MISMATCH",
+        "TURNOVER_INFLATION_SPIKE",
+        "NEW_BUSINESS_RISK",
+        "ROUND_NUMBER_TRANSACTIONS",
+        "BENFORD_ANOMALY"
+      ],
+      "transactions": [
+        {
+          "date": "2024-01-03",
+          "amount": 100000,
+          "type": "CREDIT",
+          "narration": "UPI TRANSFER FROM SHYAM ENTERPRISES",
+          "balance": 105000
+        },
+        {
+          "date": "2024-01-04",
+          "amount": -99000,
+          "type": "DEBIT",
+          "narration": "UPI TRANSFER TO SHYAM ENTERPRISES",
+          "balance": 6000
+        },
+        {
+          "date": "2024-01-15",
+          "amount": -500,
+          "type": "DEBIT",
+          "narration": "CHEQUE BOUNCE CHG",
+          "balance": 5500
+        },
+        {
+          "date": "2024-02-03",
+          "amount": 100000,
+          "type": "CREDIT",
+          "narration": "UPI TRANSFER FROM SHYAM ENTERPRISES",
+          "balance": 105500
+        },
+        {
+          "date": "2024-02-04",
+          "amount": -99500,
+          "type": "DEBIT",
+          "narration": "UPI TRANSFER TO SHYAM ENTERPRISES",
+          "balance": 6000
+        },
+        {
+          "date": "2024-02-18",
+          "amount": -500,
+          "type": "DEBIT",
+          "narration": "CHEQUE BOUNCE CHG",
+          "balance": 5500
+        },
+        {
+          "date": "2024-03-03",
+          "amount": 100000,
+          "type": "CREDIT",
+          "narration": "UPI TRANSFER FROM SHYAM ENTERPRISES",
+          "balance": 105500
+        },
+        {
+          "date": "2024-03-04",
+          "amount": -99000,
+          "type": "DEBIT",
+          "narration": "UPI CIRCULAR REF SHYAM",
+          "balance": 6500
+        },
+        {
+          "date": "2024-03-10",
+          "amount": -5000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 1500
+        },
+        {
+          "date": "2024-03-20",
+          "amount": -500,
+          "type": "DEBIT",
+          "narration": "CHEQUE BOUNCE CHG",
+          "balance": 1000
+        },
+        {
+          "date": "2024-04-03",
+          "amount": 100000,
+          "type": "CREDIT",
+          "narration": "UPI TRANSFER FROM SHYAM ENTERPRISES",
+          "balance": 101000
+        },
+        {
+          "date": "2024-04-04",
+          "amount": -100000,
+          "type": "DEBIT",
+          "narration": "UPI TRANSFER TO SHYAM ENTERPRISES",
+          "balance": 1000
+        },
+        {
+          "date": "2024-05-03",
+          "amount": 500000,
+          "type": "CREDIT",
+          "narration": "NEFT BUSINESS INCOME SPIKE",
+          "balance": 501000
+        },
+        {
+          "date": "2024-05-04",
+          "amount": -499000,
+          "type": "DEBIT",
+          "narration": "UPI TRANSFER TO SHYAM ENTERPRISES",
+          "balance": 2000
+        },
+        {
+          "date": "2024-05-15",
+          "amount": -5000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 0
+        },
+        {
+          "date": "2024-06-03",
+          "amount": 500000,
+          "type": "CREDIT",
+          "narration": "NEFT BUSINESS INCOME SPIKE",
+          "balance": 500000
+        },
+        {
+          "date": "2024-06-04",
+          "amount": -499000,
+          "type": "DEBIT",
+          "narration": "UPI CIRCULAR REF SHYAM",
+          "balance": 1000
+        },
+        {
+          "date": "2024-06-10",
+          "amount": -5000,
+          "type": "DEBIT",
+          "narration": "ATM CASH WITHDRAWAL",
+          "balance": 0
+        }
+      ],
+      "gst_data": {
+        "available": true,
+        "declared_turnover": 5000000
+      },
+      "form_fields": {
+        "applicant_name": "Mohammed Farouk",
+        "business_name": "Farouk Trading Co.",
+        "city": "Surat",
+        "industry_type": "Trading",
+        "number_of_employees": 3,
+        "gstin": "24AABCF5678A1Z3",
+        "business_type": "Retailer/Kirana",
+        "business_vintage_months": 14,
+        "turnover_spike": true,
+        "loan_amount": 2500000,
+        "customer_concentration_ratio": 0.82,
+        "repeat_customer_revenue_pct": 0.91,
+        "gst_filing_consistency_score": 4,
+        "gst_declared_turnover": 8500000,
+        "identity_device_mismatch": true
+      }
+    },
+    {
+      "user_id": "MSME_003",
+      "persona": "Cash-Only Kirana — No Digital Footprint",
+      "model": "MSME_MIDDLEMAN",
+      "expected_grade": "B",
+      "expected_outcome": "APPROVED",
+      "story": "No bank statement. No GST. No bureau entry. Invisible to every traditional lender. But 11 years of consistent supplier payments, 9 years of clean utility history, and a BC agent field confirmation tell a clear story. This is exactly the borrower the system was built for.",
+      "user_profile": {
+        "name": "Selvaraj M",
+        "phone": "9442187623",
+        "city": "Villupuram",
+        "business_type": "Retail / Kirana",
+        "business_vintage_months": 132,
+        "academic_background_tier": 3,
+        "purpose_of_loan_encoded": 3,
+        "telecom_number_vintage_days": 1825,
+        "gst_filing_consistency_score": 0,
+        "applicant_age_years": 50,
+        "owns_property": 1,
+        "owns_car": 0,
+        "income_type_risk_score": 3,
+        "family_burden_ratio": 0.15,
+        "address_stability_years": 15.0,
+        "id_document_age_years": 18.0,
+        "contactability_score": 3,
+        "has_email_flag": 0,
+        "family_status_stability_score": 1,
+        "car_age_years": 99,
+        "region_risk_tier": 1,
+        "region_city_risk_score": 1,
+        "address_work_mismatch": 0,
+        "neighbourhood_default_rate_30": 0.03,
+        "neighbourhood_default_rate_60": 0.04
+      },
+      "middleman_sources": {
+        "supplierdata": {
+          "supplier_name": "Sri Murugan Agencies",
+          "relationship_vintage_days": 2190,
+          "avg_monthly_purchase_inr": 40000,
+          "payment_on_time_ratio": 0.94,
+          "avg_payment_delay_days": 7.8,
+          "rolling_dues_flag": 0,
+          "purchase_trend": "stable",
+          "months_of_data": 24
+        },
+        "utilitydata": {
+          "consumer_number": "TN-VPM-004821",
+          "bills_paid_last_24": 22,
+          "bills_missed_last_24": 2,
+          "avg_payment_delay_days": 3.1,
+          "disconnection_flag": 0,
+          "account_vintage_days": 3285,
+          "avg_monthly_bill_inr": 1800
+        },
+        "telecomdata": {
+          "operator": "Jio",
+          "sim_vintage_days": 1825,
+          "recharge_consistency_ratio": 0.96,
+          "avg_monthly_recharge_inr": 349,
+          "sudden_usage_drop_flag": 0,
+          "number_portability_count": 0
+        },
+        "bcagentdata": {
+          "agent_id": "FINO-VPM-0042",
+          "field_visit_confirmed": 1,
+          "business_existence_confirmed": 1,
+          "estimated_daily_footfall": "medium",
+          "cash_deposit_records": 8,
+          "cooperative_member": 1,
+          "field_officer_risk_rating": "low"
+        },
+        "gstdata": null
+      },
+      "transactions": [],
+      "gst_data": {
+        "available": false,
+        "declared_turnover": 0
+      },
+      "msme_features": {
+        "business_vintage_months": 132,
+        "supplier_payment_on_time_ratio": 0.94,
+        "supplier_relationship_vintage_days": 2190,
+        "utility_payment_consistency": 22,
+        "avg_utility_dpd": 3.1,
+        "telecom_vintage_days": 1825,
+        "telecom_recharge_consistency": 0.96,
+        "bc_agent_confirmed": 1,
+        "cashflow_volatility": 0.0,
+        "gst_to_bank_variance": 0.0,
+        "turnover_inflation_spike": 0,
+        "customer_concentration_ratio": 0.0,
+        "revenue_growth_trend": 0.03,
+        "revenue_seasonality_index": 0.15
+      },
+      "radar": {
+        "Operational Stability": 74,
+        "Payment Discipline": 88,
+        "Identity Stability": 71,
+        "Cross-Source Consistency": 85,
+        "Liquidity Health": 45,
+        "Forensic / Fraud": 82
+      },
+      "key_flags": [],
+      "form_fields": {
+        "applicant_name": "Selvaraj Murugan",
+        "business_name": "Murugan Kirana Store",
+        "city": "Coimbatore",
+        "industry_type": "Retail",
+        "number_of_employees": 2,
+        "gstin": "",
+        "business_type": "Retailer/Kirana",
+        "business_vintage_months": 84,
+        "turnover_spike": false,
+        "loan_amount": 200000,
+        "customer_concentration_ratio": 0.15,
+        "repeat_customer_revenue_pct": 0.72,
+        "gst_filing_consistency_score": 0,
+        "gst_declared_turnover": 0,
+        "identity_device_mismatch": false
+      }
+    }
+  ]
+}

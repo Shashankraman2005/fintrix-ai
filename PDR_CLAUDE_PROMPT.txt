@@ -1,0 +1,966 @@
+# PDR Alternative Credit Scoring System — Complete Context Prompt for Claude
+
+> **Last updated:** 2026-03-28 (Phase 13 — Chatbot fully integrated: backend API + React frontend)
+> **Repo:** `github.com/lubdhak123/pdr_2`
+> **Branch:** `main`
+> **Local path:** `C:\Users\kanis\OneDrive\Documents\alternative_credit_scoring\`
+> **Hackathon:** 2 days remaining
+
+---
+
+## 17.9 CHATBOT HANDOFF — FULLY COMPLETE (Phase 13)
+
+All chatbot files are now built and integrated. This section is the authoritative truth.
+
+### Complete file inventory
+
+| File | Status | Role |
+|------|--------|------|
+| `context_layer.py` | ✅ Built | SQLite schema + save/fetch/search API |
+| `chatbot_router.py` | ✅ Built | Query classifier (8 types) |
+| `chatbot_context.py` | ✅ Built | Context fetcher + prompt builder (multi-style) |
+| `llm_client.py` | ✅ Built | Ollama client with per-type token limits |
+| `credit_analyst_chatbot.py` | ✅ Built | Main input loop + format_response integration |
+| `response_formatter.py` | ✅ Built | Rich structured display blocks per query type |
+| `build_applicant_cards.py` | ✅ Built | Seeds all 7 demo users into SQLite DB |
+| `chatbot_demo.ipynb` | ✅ Built | Jupyter notebook demo (setup → seed → 6 query types → interactive loop) |
+
+### Backend API endpoints (added to `main.py`)
+
+Three new FastAPI endpoints added:
+
+| Method | Endpoint | Purpose |
+|--------|----------|---------|
+| `POST /chatbot/ask` | `{"query": "..."}` → `{"message": "..."}` | Main chatbot entry point |
+| `GET /chatbot/search` | `?limit=20` → list of applicant cards | Used by Compare dropdown in frontend |
+| `GET /chatbot/stats` | Grade distribution + portfolio stats | Portfolio overview |
+
+`POST /score` also auto-saves every scored applicant to `applicant_cards.db` via `save_applicant_card()`.
+
+### Full pipeline (current)
+
+```text
+Loan Officer query (React frontend OR terminal)
+  ->
+POST /chatbot/ask  (main.py)
+  ->
+chatbot_router.py
+  classify into QueryType + extract applicant_ids
+  ->
+chatbot_context.py
+  fetch applicant card from SQLite
+  build (system_prompt, user_prompt) — different prompt style per type:
+    _SYSTEM_BASE  : one-line answers (LOOKUP, AGGREGATE, SCENARIO, RISK)
+    _SYSTEM_EXPLAIN: paragraph style (EXPLANATION)
+    _SYSTEM_COMPARE: side-by-side (COMPARISON)
+    _SYSTEM_LETTER : formal letter (DECISION_LETTER)
+  ->
+llm_client.py
+  call Ollama /api/generate  (native system + prompt fields)
+  per-type token budget: LOOKUP=80, EXPLANATION=380, COMPARISON=420,
+                         SCENARIO=120, DECISION_LETTER=500, RISK=100, AGGREGATE=120
+  retry once if model hallucinates "I need database access"
+  ->
+credit_analyst_chatbot.py  OR  /chatbot/ask handler
+  call format_response(query_type, llm_out, ctx, ctx_b)
+  ->
+response_formatter.py
+  LOOKUP:       decision header + applicant block + one-liner
+  EXPLANATION:  [REJECTED]/[APPROVED] header + WHY section + KEY FACTORS (SHAP) + RED FLAGS + LOAN OFFER
+  COMPARISON:   side-by-side table + analyst recommendation
+  DECISION_LETTER: clean formal letter layout
+  SCENARIO/RISK: structured blocks with context
+  ->
+React frontend (ChatPanel or GlobalChatButton)  OR  terminal print
+```
+
+### IMPROVEMENT_PATH (new SCENARIO subtype)
+
+When user asks "What would [applicant] need to change to qualify?" the router detects no
+`target_feature` in the SCENARIO params and sets the `focus` to `improvement_path`.
+`chatbot_context.py` then calls `_build_improvement_path_prompt()` which injects the
+applicant's red flags and the grade thresholds so the LLM can produce concrete guidance.
+
+### Frontend integration (React)
+
+Two chat UI components created:
+
+#### `ChatPanel.jsx` (contextual — shown on Results page)
+- Props: `applicantId`, `applicantName`, `decision`
+- 4 dynamic quick-action buttons (Why rejected/approved? Biggest risk, What to change?, Decision letter)
+- Smart ID injection: only prepends `"ntc_001 — "` if user's query contains no applicant ID
+  - Detection: `/\b(ntc|msme|app|user)[_-]?\d/i.test(text)`
+- Compare dropdown: fetches all applicants from `GET /chatbot/search`, shows side-by-side comparison instantly
+- Added to `Results.jsx` at the bottom of the results container
+
+#### `GlobalChatButton.jsx` (portfolio mode — shown on ALL pages)
+- Fixed-position floating 🤖 button (bottom-right, z-index 1000)
+- Opens a modal overlay with a full chat window (480px wide, 75vh tall)
+- No auto-inject — free-text for cross-applicant portfolio queries
+- Example queries shown when message history is empty
+- Backdrop click + Escape key close the modal
+- Added to `App.jsx` outside the Routes block so it persists on every page
+
+### DB note — pre-seeded vs live-scored applicants
+
+`build_applicant_cards.py` calls `GET /demo/{userId}` for all 7 demo user IDs and saves them
+to `applicant_cards.db` on startup. This means Compare dropdown works even for applicants
+that have never been scored in the current browser session.
+
+`POST /score` also auto-saves, so manually-entered applicants (NTC_004 Arjun Sharma) appear
+in the Compare dropdown after their first score.
+
+**IMPORTANT:** Changes to `demo_users.json` (e.g. editing Arjun Sharma's transactions or
+expected grade) do NOT automatically propagate to `applicant_cards.db`. Re-run
+`build_applicant_cards.py` (or delete the DB and restart the backend) to refresh the chatbot
+context store after editing demo profiles.
+
+### What Claude should preserve going forward
+
+1. `response_formatter.py` — do not collapse EXPLANATION/COMPARISON back to single lines.
+2. Per-type token limits in `llm_client.py` — `_TOKENS_BY_TYPE` dict controls budget.
+3. Smart ID injection regex in `ChatPanel.jsx` — prevents double-inject on compare queries.
+4. `build_applicant_cards.py` must be re-run whenever demo_users.json changes.
+5. `GlobalChatButton` is mounted outside Routes in App.jsx — keep it there so it survives page navigation.
+
+---
+
+## 1. PROJECT OVERVIEW
+
+PDR (Proxy Data Rating) is an **alternative credit scoring system** for **Indian MSMEs and NTC (New-To-Credit) borrowers** who lack traditional credit bureau history. Instead of CIBIL scores, PDR uses:
+
+- **Bank statement analysis** (via Account Aggregator framework)
+- **GST filing records**
+- **Telecom data** (SIM vintage, recharges)
+- **Utility payment history**
+- **Middleman data** (supplier invoices, BC agent cash deposits)
+
+**Key innovation:** Cash-only MSMEs with NO bank account can be scored using the **Middleman Data Path** — where 5 trusted middlemen (supplier, GST portal, telecom, utility, BC agent) provide data independently.
+
+**Target users:**
+- 30 million cash-only MSMEs in India
+- NTC individuals with no credit history
+- Gig workers, seasonal businesses, micro-retailers
+
+---
+
+## 2. REPOSITORY STRUCTURE
+
+```
+alternative_credit_scoring/
+│
+├── main.py                          # FastAPI app (POST /score, /aa/*, /setu/*, /score/declined, /chatbot/*)
+├── scorer.py                        # Scoring orchestrator (loads models, runs pipeline)
+├── feature_engine.py                # Root-level feature extractor (legacy, 32 features)
+├── pre_layer.py                     # Rule engine (3 tiers: hard reject, edge case, review)
+├── demo_users.json                  # 7 demo personas for API/frontend testing
+├── setu_handler.py                  # Real Setu AA integration (sandbox)
+├── verify.py                        # Pipeline verification script
+├── audit_model_features.py          # Feature audit tool
+│
+├── ── CHATBOT FILES ──
+├── context_layer.py                 # SQLite schema + CRUD for applicant_cards.db
+├── chatbot_router.py                # Query classifier (LOOKUP/EXPLANATION/COMPARISON/etc.)
+├── chatbot_context.py               # Context fetcher + multi-style prompt builder
+├── llm_client.py                    # Ollama HTTP client with per-type token limits
+├── credit_analyst_chatbot.py        # Terminal chat loop + format_response integration
+├── response_formatter.py            # Rich structured display blocks per query type
+├── build_applicant_cards.py         # Seeds all 7 demo users into applicant_cards.db
+├── chatbot_demo.ipynb               # Jupyter demo notebook (6 query types + interactive loop)
+├── applicant_cards.db               # SQLite chatbot context store (auto-created)
+├── .gitignore
+│
+├── ntc_model/                       # ★ MAIN NTC PIPELINE
+│   ├── config.py
+│   ├── feature_engine.py            #   44-feature extractor
+│   ├── build_ntc_training_v2.py
+│   ├── trainer.py
+│   ├── evaluator.py
+│   ├── models/
+│   │   └── ntc_credit_model.pkl     #   ★ THE NTC XGBoost model (CalibratedClassifierCV)
+│   ├── datasets/
+│   │   └── ntc_credit_training_v2.csv
+│   └── middleman/                   # Middleman Data Path
+│       ├── middleman_feature_engine.py
+│       ├── simulators/              #   5 simulators
+│       └── extractors/              #   5 extractors
+│
+├── msme_model/
+│   └── models/
+│       └── xgb_msme_raw.pkl         # Raw XGBoost (NOT CalibratedClassifierCV — avoids pickle error)
+│
+├── pdr-frontend/                    # React + Vite frontend
+│   ├── index.html                   # Loads Chart.js from CDN (window.Chart)
+│   └── src/
+│       ├── App.jsx                  # DemoFlow: UserSelect → Results (GET /demo/{userId})
+│       ├── pages/
+│       │   ├── AssessmentForm.jsx   # Full multi-step NTC + MSME form (POST /score)
+│       │   ├── LandingPage.jsx
+│       │   └── DemoProfiles.jsx
+│       └── components/
+│           ├── Results.jsx          # ★ Main results dashboard (includes ChatPanel at bottom)
+│           ├── Results.css
+│           ├── TransactionForensics.jsx  # ★ Per-transaction fraud annotation
+│           ├── ChatPanel.jsx        # ★ NEW — contextual chatbot on Results page
+│           ├── GlobalChatButton.jsx # ★ NEW — floating 🤖 button on ALL pages
+│           ├── XaiTransparencySection.jsx
+│           ├── PdfReportGenerator.jsx
+│           ├── UserSelect.jsx
+│           └── ThemeContext.jsx     # Dark mode context
+│
+└── pdr_manual_bridge/               # Manual scoring bridge (legacy)
+```
+
+---
+
+## 3. NTC MODEL — ARCHITECTURE & METRICS
+
+### 3.1 Training Data
+- **Source:** Home Credit dataset → 15K rows, 44 features
+- **TARGET formula:** `0.70 × behavioral_score + 0.30 × demographic_risk + noise`
+
+### 3.2 Feature Set (44 features)
+
+```
+BEHAVIORAL (from bank statements):
+ 1. utility_payment_consistency     [0,1]
+ 2. avg_utility_dpd                 [0,90]
+ 3. rent_wallet_share               [0,1]
+ 4. subscription_commitment_ratio   [0,1]
+ 5. emergency_buffer_months         [0,24]
+ 6. eod_balance_volatility          [0,1]
+ 7. essential_vs_lifestyle_ratio    [0,1]
+ 8. cash_withdrawal_dependency      [0,1]
+ 9. bounced_transaction_count       [0,10]
+10. telecom_recharge_drop_ratio     [0,1]
+11. min_balance_violation_count     [0,8]
+12. income_stability_score          [0,1]
+13. income_seasonality_flag         {0,1}
+
+ALTERNATIVE DATA:
+14. telecom_number_vintage_days     [0,3650]
+15. academic_background_tier        {1..4}
+16. purpose_of_loan_encoded         {1..5}
+
+DEMOGRAPHIC:
+17. employment_vintage_days         [0,∞]
+18. applicant_age_years             [18,70]
+19. owns_property                   {0,1}
+20. owns_car                        {0,1}
+21. region_risk_tier                {1..3}
+22. address_stability_years         [0,30]
+23. id_document_age_years           [0,30]
+24. family_burden_ratio             [0,1]
+25. has_email_flag                  {0,1}
+26. income_type_risk_score          {1..5}
+27. family_status_stability_score   {1..3}
+28. contactability_score            {1..3}
+29. car_age_years                   [0,99]
+30. region_city_risk_score          {1..3}
+31. address_work_mismatch           {0,1}
+32. employment_to_age_ratio         [0,1]
+33. neighbourhood_default_rate_30   [0,1]
+34. neighbourhood_default_rate_60   [0,1]
+
+FORENSIC / MSME:
+35. p2p_circular_loop_flag          {0,1}
+36. gst_to_bank_variance            [0,3]
+37. customer_concentration_ratio    [0,1]
+38. turnover_inflation_spike        {0,1}
+39. identity_device_mismatch        {0,1}
+40. business_vintage_months         [0,300]
+41. gst_filing_consistency_score    [0,12]
+42. revenue_seasonality_index       [0,1]
+43. revenue_growth_trend            [-1,2]
+44. cashflow_volatility             [0,1]
+```
+
+### 3.3 Model Performance
+
+```
+Algorithm     : XGBoost (binary:logistic) wrapped in CalibratedClassifierCV
+AUC-ROC       : 0.9378
+Gini          : 0.8756
+KS Statistic  : 0.7262
+Calibration   : max error 0.072
+```
+
+### 3.4 CRITICAL: monthly_income is transaction-derived
+
+`monthly_income` = `sum(transaction credits) / months_span` — computed entirely from bank statement transactions, NOT from the "Annual Income" form field. Changing the form field changes DTI display only. To change the income used in scoring, the transactions in `demo_users.json` must change.
+
+---
+
+## 4. SCORER PIPELINE (`scorer.py`)
+
+### 4.1 Grade / Outcome Thresholds
+
+```python
+GRADE_THRESHOLDS = [
+    (0.05, 'A', 'APPROVED'),
+    (0.15, 'B', 'APPROVED WITH CONDITIONS'),
+    (0.30, 'C', 'MANUAL REVIEW'),
+    (0.50, 'D', 'REJECTED'),
+    (1.01, 'E', 'REJECTED'),
+]
+```
+
+### 4.2 Loan Policy (added Phase 10)
+
+```python
+LOAN_POLICY = {
+    'A': {'rate_min': 11.0, 'rate_max': 14.0, 'income_multiplier': 20,
+          'tenures': [12, 24, 36, 48, 60], 'product': 'Prime Personal / Business Loan'},
+    'B': {'rate_min': 14.0, 'rate_max': 20.0, 'income_multiplier': 12,
+          'tenures': [12, 24, 36, 48], 'product': 'Conditional Loan — Standard NBFC'},
+    'C': {'rate_min': 20.0, 'rate_max': 28.0, 'income_multiplier': 6,
+          'tenures': [12, 24, 36], 'product': 'High-Risk Loan — Manual Review Required'},
+}
+```
+
+`max_loan_amount = monthly_income × income_multiplier` (None for MSME without direct income)
+
+### 4.3 Alternative Products for Rejected Applicants
+
+```python
+ALTERNATIVE_PRODUCTS = [
+    {'name': 'Microfinance Loan (NBFC-MFI)', 'max_amount': 50000,  'rate': '24–36% p.a.'},
+    {'name': 'Gold / Asset-Backed Loan',     'max_amount': 200000, 'rate': '12–18% p.a.'},
+    {'name': 'BNPL Credit Line',             'max_amount': 25000,  'rate': '0–24% p.a.'},
+    {'name': 'Self-Help Group (SHG) Loan',   'max_amount': 20000,  'rate': '18–24% p.a.'},
+]
+```
+
+### 4.4 Fraud Hard-Override (in scorer.py)
+
+After model scoring, two hard overrides fire regardless:
+```python
+if features.get('p2p_circular_loop_flag', 0) == 1:
+    pd_score = max(pd_score, 0.85)   # forces Grade E
+if features.get('identity_device_mismatch', 0) == 1:
+    pd_score = max(pd_score, 0.75)   # forces Grade D/E
+```
+
+### 4.5 Model Routing (NTC vs MSME)
+
+```python
+is_ntc = (
+    profile.get('business_vintage_months', 0) == 0
+    or profile.get('business_type') == 'Individual / NTC'
+)
+```
+
+NTC model = `ntc_credit_model.pkl` (CalibratedClassifierCV wrapping XGBoost)
+MSME model = `xgb_msme_raw.pkl` (raw XGBoost — avoids PlattCalibratedModel pickle error)
+
+SHAP for NTC: uses `ntc_model.calibrated_classifiers_[0].estimator` to get the raw booster.
+
+---
+
+## 5. PRE-LAYER RULE ENGINE (`pre_layer.py`)
+
+3-tier rule engine. Returns `(grade, outcome, reason)` tuple OR `None` (→ model runs).
+
+### Type 1 — Hard Rejection
+- P2P circular flow + bounced transactions
+- GST variance > 150%
+- 5+ bounces
+- 3+ minimum balance violations
+- >80% cash dependency + bounces
+
+### Type 2 — Edge Case Protection (fast-track B)
+- NRI/platform worker with low cash dependency
+- Seasonal business with legitimate GST filings
+- New business with strong telecom vintage + clean GST
+- High-value stable borrower with minor utility delays
+
+### Type 3 — Manual Review Triggers
+- High customer concentration (>85% from 1-2 clients)
+- Region risk + cashflow volatility
+- Income drop > 30% with low buffer
+
+---
+
+## 6. FASTAPI ENDPOINTS (`main.py`)
+
+| Method | Endpoint | Purpose |
+|--------|----------|---------|
+| `POST /score` | Direct scoring (transactions + profile + GST) — also auto-saves to chatbot DB |
+| `GET /health` | Health check |
+| `GET /demo/{user_id}` | Score a demo user by ID |
+| `GET /aa/users` | List all demo users |
+| `POST /aa/score` | Full AA-style scoring |
+| `POST /setu/consent` | Real Setu AA consent (sandbox) |
+| `POST /setu/score` | Real Setu FI data fetch + score |
+| `POST /score/declined` | B2B endpoint — runs PDR on bank-rejected applicants |
+| `POST /chatbot/ask` | **NEW** Main chatbot entry: `{"query":"..."}` → `{"message":"..."}` |
+| `GET /chatbot/search` | **NEW** `?limit=20` → list of all scored applicants (for Compare dropdown) |
+| `GET /chatbot/stats` | **NEW** Portfolio grade distribution and aggregate stats |
+
+### POST /score/declined (B2B Bank Referral Endpoint)
+
+```python
+class DeclinedRequest(BaseModel):
+    applicant_name: str
+    bank_rejection_reason: str = 'Insufficient credit history'
+    monthly_income: Optional[float] = None
+    loan_amount_requested: Optional[float] = None
+    user_profile: Optional[Dict[str, Any]] = None
+    transactions: Optional[list] = None
+    gst_data: Optional[Dict[str, Any]] = None
+```
+
+Logic:
+- If transactions provided → run full PDR scoring
+- If PDR grades A/B/C → return loan offer (PDR overrules bank decline)
+- If PDR grades D/E → return ALTERNATIVE_PRODUCTS
+- If no data → return generic alternative products
+
+---
+
+## 7. DEMO PROFILES (`demo_users.json`)
+
+Seven personas — six pre-loaded, one dynamically generated:
+
+| ID | Name | Type | Grade | Key Flags | Txns |
+|----|------|------|-------|-----------|------|
+| NTC_001 | Priya Venkataraman | NTC | A | None | 38 |
+| NTC_002 | Ramesh Gowda | NTC | D | HIGH_CASH_DEPENDENCY, MIN_BALANCE_VIOLATIONS, LATE_UTILITY_PAYMENTS | 38 |
+| NTC_003 | Deepak Malhotra | NTC | E | NEW_SIM_RISK, P2P_CIRCULAR_LOOP, ROUND_NUMBER_TRANSACTIONS, BALANCE_INFLATION_SPIKE, BENFORD_ANOMALY | 16 |
+| NTC_004 | Arjun Sharma | NTC | varies | None (dynamic) | 0 — generated at submit |
+| MSME_001 | Sukhwinder Singh | MSME | B/C | HIGH_SEASONALITY, HIGH_CONCENTRATION | 16 |
+| MSME_002 | Mohammed Farouk | MSME | E | P2P_CIRCULAR_LOOP, GST_BANK_MISMATCH, TURNOVER_INFLATION_SPIKE, ROUND_NUMBER_TRANSACTIONS, BENFORD_ANOMALY | 18 |
+| MSME_003 | (Third MSME) | MSME | — | None | 0 |
+
+**NTC_004 — Manual Entry Profile (Arjun Sharma):**
+- `"dynamic_income": true` in `user_profile` — the detection flag
+- `"transactions": []` in demo_users.json — no pre-loaded bank data
+- In `handleNtcSubmit`, when `dynamic_income === true`, calls `generateTransactions(annualIncome, bouncedCount)` instead of using stored transactions
+- `generateTransactions` builds 12 monthly salary credits (annualIncome ÷ 12) + fixed ₹8,000 rent + ₹1,500 utility debits per month
+- Expenses are **fixed absolute amounts** (not proportional) so `rent_wallet_share` changes with income: `8000/25000 = 0.32` at ₹3L/year vs `8000/75000 = 0.11` at ₹9L/year
+- Default form value: ₹3,00,000 annual income → expect Grade C/D; raise to ₹9,00,000 → expect Grade A/B
+- STEP 6 shows blue "Transactions generated from declared income" box instead of green AA Gateway box
+- active_flags come from live scoring result, not from hardcoded key_flags array
+
+**IMPORTANT — Mohammed Farouk (MSME_002):**
+- Always scores Grade E — this is **intentional and correct**
+- His 18 transactions are all circular loops: +₹1,00,000 from "SHYAM ENTERPRISES" → -₹99,000 back to "SHYAM ENTERPRISES" within 1 day, repeated monthly
+- `p2p_circular_loop_flag=1` fires in feature_engine.py → hard override sets `pd_score = max(pd_score, 0.85)` → Grade E
+- Form field changes affect only `user_profile`, NOT transaction-derived features — so editing the form cannot change his grade
+- Farouk is the **wash trader fraud demo** — do NOT change his transactions
+
+---
+
+## 8. FRONTEND (`pdr-frontend/`)
+
+### 8.1 Two Entry Flows
+
+**Flow A — DemoFlow (App.jsx):**
+- UserSelect screen → choose profile by card click
+- Calls `GET /demo/{userId}` on backend
+- `selectedUser` = full user object from `demo_users.json` (includes transactions)
+- `transactions={selectedUser?.transactions || []}` passed to Results
+
+**Flow B — AssessmentForm (pages/AssessmentForm.jsx):**
+- Multi-step form: Personal Background → Financial → Family → Assets → Telecom/GST
+- Separate tabs for NTC and MSME
+- On submit: calls `POST /score` with `user_profile` (from form) + `transactions` (from demo_users.json)
+- `setResultTransactions(user.transactions || [])` ensures transactions pass through
+
+### 8.2 Results Dashboard (`Results.jsx`)
+
+Sections displayed (in order):
+1. Credit Decision header (grade, outcome, source)
+2. Verdict card (headline, active flag chips, top SHAP mini bars)
+3. Decision Intelligence (cashflow chart + PDR Risk Radar)
+4. Behavioral Signal Breakdown (SHAP waterfall bars)
+5. Key Feature Values (NTC or MSME feature grid)
+6. **Transaction Forensics button** → toggles forensics panel (see §8.3)
+7. XAI Transparency Section
+8. **Loan Offer / Alternative Path section** (see §8.4)
+9. **ChatPanel** — AI Credit Analyst chatbot (see §8.5)
+
+### 8.5 Chatbot Integration
+
+**`ChatPanel.jsx`** — rendered at the bottom of every Results page.
+- Props: `applicantId` (lowercase e.g. `ntc_001`), `applicantName`, `decision`
+- 4 quick-action buttons:
+  - "Why rejected?" / "Why approved?" (dynamic based on decision)
+  - "Biggest risk"
+  - "What to change?"
+  - "Decision letter"
+- Smart ID injection: `applicantId` only prepended if user query contains no ID pattern
+  - Regex: `/\b(ntc|msme|app|user)[_-]?\d/i.test(text)`
+- Compare dropdown: pulls all applicants from `GET /chatbot/search?limit=20`
+  - Shows name + grade badge for each; click fires `"Compare ntc_001 and msme_002"` query
+- Messages thread: user bubbles (dark, right-aligned) + analyst bubbles (mono font, left-aligned)
+
+**`GlobalChatButton.jsx`** — always visible floating button, mounted in `App.jsx`.
+- Fixed position bottom-right, z-index 1000, rotates 15° when open
+- Modal overlay: 480px wide, 75vh, example queries shown when empty
+- No auto-inject — suitable for cross-applicant/portfolio queries
+- Backdrop click + Escape closes the modal
+- Calls same `POST /chatbot/ask` endpoint as ChatPanel
+
+### 8.3 Transaction Forensics (`TransactionForensics.jsx`)
+
+NEW component (Phase 11). Renders for ALL profiles with transactions.
+
+**Toggle button in Results.jsx:**
+- Button: "View Transaction Forensics" / "Hide Transaction Forensics"
+- Shows a red "Signals detected" badge if active_flags contains any fraud/risk flags
+- State: `const [showForensics, setShowForensics] = useState(false)`
+
+**Component logic:**
+- Accepts: `{ transactions, activeFlags }`
+- All React hooks (useRef, useEffect) declared BEFORE any early return (Rules of Hooks fix — this was the bug that caused silent crash in StrictMode)
+- `annotated = annotate(transactions)` — runs client-side detection:
+  - **Circular loop:** credit from entity X → debit to same X within 3 days, ≥78% amount match. Uses `extractEntity()` to strip UPI prefixes ("UPI TRANSFER FROM/TO", "NEFT", etc.)
+  - **Bounce:** narration matches `/bounce|chg/i`
+  - **Round number:** `|amount| ≥ ₹10,000 AND divisible by ₹1,000`
+  - **Income spike:** credit > 3.5× average monthly credit
+
+**Rendered elements:**
+1. Summary cards (circular count, bounce count, round count, spike count) — only cards with count > 0 shown
+2. Chart.js stacked bar chart (Transaction Timeline — Flagged vs Normal): green=normal credit, grey=normal debit, red=circular, purple=spike, orange=bounce. Uses `window.Chart` (loaded via CDN in index.html)
+3. Annotated transaction table: color-coded rows, flag badges per transaction
+4. Header shows "X flagged transactions" (red badge) OR "All clean" (green badge)
+
+**FRAUD_FLAGS checked for "Signals detected" badge:**
+```
+P2P_CIRCULAR_LOOP, ROUND_NUMBER_TRANSACTIONS, TURNOVER_INFLATION_SPIKE,
+BENFORD_ANOMALY, GST_BANK_MISMATCH, BALANCE_INFLATION_SPIKE,
+HIGH_CASH_DEPENDENCY, MIN_BALANCE_VIOLATIONS, LATE_UTILITY_PAYMENTS, NEW_SIM_RISK
+```
+
+### 8.4 Loan Offer / Alternative Path Section
+
+**For Grades A/B/C (eligible=true):**
+- Green gradient card showing: interest rate range, max loan amount (monthly_income × multiplier), tenure chips, recommended product name
+
+**For Grades D/E (eligible=false):**
+- "Declined → Alternative Path" header with "REFERRAL OPTIONS" badge
+- 4 product tiles: Microfinance (₹50K, 24–36%), Gold Loan (₹2L, 12–18%), BNPL (₹25K, 0–24%), SHG Loan (₹20K, 18–24%)
+
+---
+
+## 9. INFERENCE PIPELINE (FULL FLOW)
+
+```
+POST /score (or GET /demo/{id})
+  → feature_engine.py: compute_features(transactions, profile, gst_data)
+       ★ monthly_income = sum(CREDIT amounts) / months_span  ← from TRANSACTIONS, not form
+       → returns ~50 feature dict
+  → pre_layer.py: apply_pre_layer(features)
+       → if rule fires: return (grade, outcome, reason) — model skipped
+       → else: return None
+  → routing: is_ntc? → ntc_model else msme_model
+  → scorer._to_row(): fill missing features with 0, add MSME engineered cols
+  → model.predict_proba() → pd_score
+  → shap.TreeExplainer().shap_values() → top 5 reasons
+  → fraud hard-override (p2p_circular_loop → ≥0.85, identity_mismatch → ≥0.75)
+  → _grade(pd_score) → grade, outcome
+  → _loan_offer(grade, features) → loan offer or alternative products
+  → return full result dict
+```
+
+---
+
+## 10. MIDDLEMAN DATA PATH
+
+For cash-only MSMEs with no bank account. Same model, different feature sourcing.
+
+| Middleman | Features Provided |
+|-----------|------------------|
+| Supplier/Wholesaler | vendor_payment_discipline, avg_invoice_payment_delay, cashflow_volatility, benford_score |
+| GST Portal | gst_filing_consistency_score, gst_to_bank_variance, revenue_seasonality_index, business_vintage_months |
+| Telecom | telecom_number_vintage_days, telecom_recharge_drop_ratio, identity_device_mismatch |
+| Utility | utility_payment_consistency, avg_utility_dpd, min_balance_violation_count |
+| BC Agent | emergency_buffer_months, cash_withdrawal_dependency, bounced_transaction_count |
+
+Confidence-adjusted thresholds:
+- HIGH (5/5): APPROVE < 0.35
+- MEDIUM (3-4): APPROVE < 0.20
+- LOW (2): APPROVE < 0.15
+
+---
+
+## 11. KNOWN ISSUES & TECH DEBT
+
+| Priority | Issue | Details |
+|----------|-------|---------|
+| 🟡 MED | Form income ≠ model income | Annual Income field on form only affects DTI display — scoring always uses transaction-derived monthly_income |
+| 🟡 MED | MSME_003 has 0 transactions | TransactionForensics correctly returns null for this profile |
+| 🟡 MED | Middleman endpoints not yet in `main.py` | `POST /score/middleman` defined but not added to FastAPI app |
+| 🟢 LOW | NTC model is CalibratedClassifierCV | SHAP must use `.calibrated_classifiers_[0].estimator` to get raw booster — already handled in scorer.py |
+
+---
+
+## 12. HOW TO RUN
+
+### Backend
+```bash
+cd alternative_credit_scoring
+py -3 -m uvicorn main:app --port 8000 --reload
+```
+
+### Frontend
+```bash
+cd pdr-frontend
+npm run dev
+# Opens at http://localhost:5173
+# Kill old instances first: npx kill-port 5173 5174 5175
+```
+
+---
+
+## 13. WHAT WE'VE DONE (CHRONOLOGICAL)
+
+### Phase 1: Core Pipeline (Mar 19)
+- Built 5-file inference pipeline: `feature_engine.py` → `pre_layer.py` → `scorer.py` → `main.py` → `verify.py`
+- Implemented 44-feature extractor for bank statement analysis
+- Created 3-tier pre-layer rule engine
+- Built FastAPI backend
+
+### Phase 2: Frontend (Mar 19)
+- React + Vite SPA: Landing → User selection → Results dashboard
+
+### Phase 3: Account Aggregator Integration (Mar 20)
+- Added 6 AA simulation routes + real Setu AA sandbox integration
+
+### Phase 4: Model Training Fixes (Mar 20-21)
+- Fixed data leakage, deterministic TARGET formula (70/30 behavioral-demographic)
+- Archetype-based train/test split to prevent memorization
+- Final NTC metrics: AUC=0.9378, Gini=0.8756, KS=0.7262
+
+### Phase 5: Middleman Data Path (Mar 23)
+- 5 simulators + 5 extractors + orchestrator
+- 4 demo profiles all passing (APPROVE/MANUAL_REVIEW/REJECT/MANUAL_REVIEW)
+
+### Phase 6: Git & Collaboration (Mar 19-21)
+- Pushed all code to `lubdhak123/pdr_2`, added collaborator Rayirth556
+
+### Phase 7: MSME Model Integration (Mar 24-25)
+- Loaded `xgb_msme_raw.pkl` (raw XGBoost) instead of CalibratedClassifierCV to avoid pickle error
+- Fixed SHAP extraction for NTC CalibratedClassifierCV
+- Added MSME-specific features to `_to_row()`: stress_composite, gst_risk_score, wc_pressure, liquidity_fragility, one-hot business_type columns
+- Added MSME feature grid to Results.jsx (separate from NTC feature grid)
+- Both models routing correctly based on `business_vintage_months` and `business_type`
+
+### Phase 8: Pre-Layer Hardening & Circularity Fix (Mar 25-26)
+- 20 new pre-layer rules added for MSME (vendor DPD, GST variance combos, cash dependency escalation)
+- Circularity detection v3 in feature_engine.py: uses narration-based entity extraction (strips UPI/NEFT/IMPS prefixes)
+- Fraud dataset analysis (250K UPI dataset)
+- New `PDR_UNIVERSAL_PROMPT.md` audit document
+
+### Phase 9: Full System Audit (Mar 26)
+- 22 flaws documented in `PDR_CLAUDE_PROMPT.md` (now superseded by this file)
+- AssessmentForm.jsx built — full multi-step NTC + MSME form with live DTI calculation
+- DemoProfiles page, ThemeContext (dark mode), XaiTransparencySection, PdfReportGenerator added to frontend
+- Results.jsx: radar chart (PDR Risk Radar), monthly cashflow chart, SHAP waterfall bars, NTC/MSME feature grids
+
+### Phase 10: Loan Offer + Declined Alternative Path (Mar 27)
+- `scorer.py`: Added `LOAN_POLICY`, `ALTERNATIVE_PRODUCTS`, `_loan_offer()` function
+- All `score_user()` return paths now include `loan_offer` dict
+- `main.py`: Added `POST /score/declined` B2B endpoint with `DeclinedRequest` model
+- `Results.jsx`: Green loan offer card (A/B/C grades) and 4-tile alternative path section (D/E grades)
+
+### Phase 12: Manual Entry Profile — NTC_004 (Mar 28) ← CURRENT
+- Added `NTC_004 (Arjun Sharma)` to `demo_users.json` with `dynamic_income: true` and empty transactions
+- Added `generateTransactions(annualIncome, bouncedCount)` helper in `AssessmentForm.jsx` — generates 12 months of salary credits + fixed rent/utility debits
+- `handleNtcSubmit` detects `dynamic_income` flag and routes to generated transactions instead of stored ones
+- STEP 6 bank upload section shows a blue informational box for dynamic profiles
+- `DemoProfiles.jsx`: NTC profile count is now computed dynamically from the data (no more hardcoded "3")
+- **Design decision:** Fixed absolute expenses (₹8K rent, ₹1.5K utility) so income ratios genuinely change when Annual Income changes — judge can break it and it still works
+
+### Phase 11: Transaction Forensics (Mar 28)
+- Created `TransactionForensics.jsx` — new React component
+- **Bug fixed:** useEffect was after conditional return (React hooks violation in StrictMode) — moved all hooks before early return
+- Client-side fraud annotation: circular loop, bounce, round-number, income spike
+- Chart.js stacked bar chart (window.Chart from CDN) showing flagged vs normal transactions over time
+- Toggle button in Results.jsx ("View Transaction Forensics") with "Signals detected" badge for fraud profiles
+- Works for all 6 profiles (clean profiles show "All clean" green badge)
+
+### Phase 13: Full Chatbot Integration — Backend API + React Frontend (Mar 28) ← CURRENT
+- **`response_formatter.py`** created: wraps raw LLM output in structured multi-section display blocks per query type (EXPLANATION gets [REJECTED]/[OK] header + WHY + KEY FACTORS + RED FLAGS + LOAN OFFER; COMPARISON gets side-by-side table)
+- **`chatbot_context.py`** updated: added `_SYSTEM_EXPLAIN` (paragraph style) and `_SYSTEM_COMPARE` (side-by-side) alongside `_SYSTEM_BASE` (one-line); added `_build_improvement_path_prompt` for "what to change to qualify" queries
+- **`llm_client.py`** updated: added `_TOKENS_BY_TYPE` dict per query type (LOOKUP=80, EXPLANATION=380, COMPARISON=420, SCENARIO=120, DECISION_LETTER=500, RISK=100, AGGREGATE=120); `call_ollama` now accepts `query_type` param
+- **`chatbot_router.py`** updated: SCENARIO branch now detects "what to change / improve / qualify" and sets `focus=improvement_path` when no `target_feature` found
+- **`credit_analyst_chatbot.py`** updated: fetches `ctx`/`ctx_b` after LLM call, passes to `format_response()`
+- **`build_applicant_cards.py`** created: hits `GET /demo/{userId}` for all 7 demo IDs, saves all to `applicant_cards.db`; fixes Windows UnicodeEncodeError (replaced ₹/→ with ASCII)
+- **`chatbot_demo.ipynb`** created: full Jupyter notebook (setup, seed DB, verify, check Ollama, 6 demo query types, interactive loop, architecture diagram)
+- **`main.py`** updated: added `CHATBOT_DB` path, `ChatbotRequest` Pydantic model; `POST /score` auto-saves to chatbot DB; added `POST /chatbot/ask`, `GET /chatbot/search`, `GET /chatbot/stats`
+- **`ChatPanel.jsx`** created: contextual chatbot panel at bottom of Results page; smart ID injection; compare dropdown; quick-action buttons
+- **`GlobalChatButton.jsx`** created: floating 🤖 button with modal overlay for portfolio-mode queries
+- **`Results.jsx`** updated: imports and renders `<ChatPanel>` at bottom
+- **`App.jsx`** updated: imports and renders `<GlobalChatButton>` outside Routes (persists on every page)
+
+---
+
+## 14. KEY DESIGN DECISIONS
+
+1. **70/30 behavioral-demographic split:** TARGET = 0.70 × behavioral_score + 0.30 × demographic_risk.
+2. **Single model for both paths:** AA and Middleman paths use the SAME XGBoost model.
+3. **Confidence-adjusted thresholds:** Fewer middleman sources → tighter APPROVE bars.
+4. **Pre-layer overrides ML:** Hard fraud signals bypass the model entirely.
+5. **monthly_income from transactions:** Income is always derived from bank credits, never self-reported form fields — prevents gaming.
+6. **Farouk is a permanent fraud demo:** MSME_002 always scores E. His transaction pattern (₹1L circular loops with Shyam Enterprises) is hardcoded in demo_users.json to demonstrate the fraud detection pipeline.
+7. **TransactionForensics is universal:** The component uses client-side detection (no extra API call) and auto-detects fraud signals in any profile's transactions. Shown via toggle button so it doesn't clutter clean profiles.
+
+---
+
+## 15. HACKATHON CONTEXT
+
+- **Event:** Hackathon (deadline ~Mar 30, 2026)
+- **Team:** lubdhak123 + Rayirth556
+- **Pitch:** "30 million cash-only MSMEs can now access credit. No bank account needed. Same model. Same pipeline. Scored using middleman data only."
+- **Demo flow:**
+  1. Show NTC_001 (Priya) → Grade A, loan offer ₹X at 11–14%
+  2. Show MSME_002 (Farouk) → Grade E, Transaction Forensics showing circular loops visually
+  3. Show Declined Alternative Path — 4 microfinance products
+  4. Mention B2B `/score/declined` endpoint for partner banks
+
+---
+
+## 16. WHAT TO ASK CLAUDE IN NEW SESSIONS
+
+Paste this file at the start of any new session. Suggested asks:
+
+1. "Help me prepare the hackathon presentation/demo flow"
+2. "Write a comprehensive README for the GitHub repo"
+3. "Add Benford's Law visualization to Transaction Forensics"
+4. "Add the middleman endpoints to main.py"
+5. "Fix MSME_003 — add transactions to demo_users.json"
+6. "Add PDF export for the Transaction Forensics panel"
+7. "Test the full chatbot pipeline — run build_applicant_cards.py then try all 6 query types"
+8. "Style ChatPanel.jsx / GlobalChatButton.jsx to match the app's Tailwind theme"
+9. "Add markdown rendering to analyst responses in ChatPanel (bold headers, bullet lists)"
+
+**DB refresh reminder:** After editing `demo_users.json`, re-run `build_applicant_cards.py` or
+delete `applicant_cards.db` and restart the backend to refresh chatbot context.
+
+---
+
+## 17. SURPRISE ELEMENT — AI CREDIT ANALYST CHATBOT (Phase 7)
+
+> **Status as of 2026-03-28:** Steps 1–4 complete. Step 5 (Ollama wire-up + input loop) remaining.
+
+### 17.1 What It Is
+
+A chatbot that lets a **loan officer** query, interrogate, compare, and generate decision letters
+for applicants in plain English. Powered by a **local LLM via Ollama** (Mistral 7B or Llama3 8B).
+No web framework — runs in a notebook `input()` loop.
+
+Barclays requirement: Use locally hosted LLMs. Claude API is optional via `USE_CLAUDE=true` env var.
+
+### 17.2 Architecture
+
+```
+Loan Officer (plain English)
+        ↓
+chatbot_router.py      → classify query type + extract applicant IDs
+        ↓
+context_layer.py       → fetch pre-computed applicant card from SQLite
+        ↓
+chatbot_context.py     → enrich card + build grounded LLM prompt pair
+        ↓
+Ollama API             → local LLM generates response
+        ↓
+credit_analyst_chatbot.py → input() loop + display
+```
+
+### 17.3 Files Built (all in project root)
+
+#### `context_layer.py` — SQLite Database Layer
+- **4 tables:**
+  - `applicant_cards` — core card (grade, PD, decision, primary reason, soft-delete)
+  - `applicant_features` — normalized 44 features (one row per feature, upsertable)
+  - `applicant_shap_explanations` — top-5 SHAP factors with rank/direction/impact
+  - `applicant_loan_offers` — rate range, max loan, tenures, recommended product
+- **Indexes on:** grade, outcome, score_date, is_deleted
+- **Public API:**
+  ```python
+  init_database(db_path)
+  save_applicant_card(db, result, applicant_id, name, city, business_type) → int
+  fetch_applicant_card(db, applicant_id) → dict
+  search_applicants(db, filters) → list[dict]
+  delete_applicant_card(db, applicant_id) → bool  # soft delete
+  bulk_save_applicant_cards(db, records) → list[int]
+  get_grade_distribution(db) → dict
+  ```
+- **Input:** full `score_user()` result dict
+- **Output of fetch:** `{applicant_id, name, grade, decision, default_probability, primary_reason, top_shap_factors, all_features, loan_offer, alternative_products}`
+
+#### `chatbot_router.py` — Query Classifier
+- **7 query types** (enum: `QueryType`):
+  - `LOOKUP` — "Pull up applicant ntc_001"
+  - `EXPLANATION` — "Why was msme_003 rejected?"
+  - `COMPARISON` — "Compare ntc_001 and ntc_002"
+  - `SCENARIO` — "What if ntc_001 had 20% more income?"
+  - `DECISION_LETTER` — "Generate a rejection letter for msme_003"
+  - `RISK_ASSESSMENT` — "What's the biggest risk for ntc_001?"
+  - `AGGREGATE` — "How many applicants were rejected?"
+- **Returns `RoutedQuery(query_type, applicant_ids, parameters, raw_message, confidence)`**
+- Applicant ID patterns: `ntc_001`, `msme_003`, `app_12345`, `#4532`
+- Parameter extraction per type:
+  - SCENARIO → `magnitude_pct`, `change_direction`, `target_feature`
+  - DECISION_LETTER → `letter_type` (rejection/approval/review/auto)
+  - AGGREGATE → `decision`, `grade`, `risk_band`, `limit`, `order`
+  - EXPLANATION → `focus` (rejection_reason/approval_reason/risk_factors/general)
+
+#### `chatbot_context.py` — Context Fetcher + Prompt Builder (Steps 3 & 4)
+
+**Step 3: `fetch_applicant_context(db_path, applicant_id)` → enriched dict**
+- Adds to raw DB card:
+  - `enriched_shap` — each factor gets human label (e.g. "Reliance on cash withdrawals"), raw feature value, threshold note ("below 50% is preferred"), and `⚠ RISK`/`✓ STRENGTH` tag
+  - `red_flags` — auto-detects: 3+ bounces, P2P circular loop, GST variance >150%, cash >80%, turnover spike, device mismatch
+  - `key_features_plain` — priority features formatted as "82%", "1.3 years", "3/12 months"
+  - `loan_offer_text` — "Eligible — up to ₹500,000 at 11–14% p.a. over [12,24,36] months"
+  - `risk_band` — derived: LOW <20%, MEDIUM 20–45%, HIGH >45%
+
+**Step 4: `build_prompt(routed, db_path)` → `(system_prompt, user_prompt)`**
+- 7 templates, one per query type:
+
+| Template | LLM task instruction |
+|---|---|
+| LOOKUP | 3–4 sentence profile summary |
+| EXPLANATION | Cite top 2–3 SHAP drivers with actual values |
+| COMPARISON | Side-by-side of two full card blocks |
+| SCENARIO | Directional reasoning from SHAP + threshold math |
+| DECISION_LETTER | Formal letter (forbidden words: SHAP, XGBoost, model, algorithm, feature) |
+| RISK_ASSESSMENT | Primary risk + 2 others + 1 protective factor |
+| AGGREGATE | Portfolio SQL results with grade distribution injected |
+
+- Shared system prompt enforces: only use provided data, cite actual values, max 250 words, no model internals revealed
+
+**Feature label dictionary** — all 44 features mapped to plain English (e.g. `bounced_transaction_count` → "Number of bounced/failed transactions")
+
+**Decision threshold reminder** injected in SCENARIO prompts:
+```
+APPROVE if P(default) < 35% | MANUAL_REVIEW if 35–55% | REJECT if > 55%
+```
+
+### 17.4 Example Interactions
+
+```
+Loan Officer > Pull up applicant ntc_001
+Analyst > Ravi Kumar (NTC, Bengaluru) — APPROVED Grade A, PD=8.2%.
+          Top strengths: 95% on-time utility bills, stable salary income, 4yr SIM age.
+          Eligible for up to ₹500,000 at 11–14% p.a.
+
+Loan Officer > Why was msme_003 rejected?
+Analyst > Priya Singh (Kirana, Mumbai) was REJECTED (Grade E, PD=72%).
+          1. ⚠ Cash withdrawal dependency: 82% (threshold: below 50%)
+          2. ⚠ 3 bounced transactions (threshold: 0–1 acceptable)
+          3. ⚠ Income regularity: only 41% (threshold: above 70%)
+
+Loan Officer > Compare ntc_001 and ntc_002
+Analyst > Both salaried NTC borrowers, but profiles diverge...
+
+Loan Officer > Generate a rejection letter for msme_003
+Analyst > [Formal letter with date, ref PDR-MSME_003-20260328,
+           CREDIT APPLICATION — DECLINED heading, 3 paragraphs,
+           signed PDR Credit Assessment Team]
+
+Loan Officer > How many applicants were rejected?
+Analyst > 7 of 20 rejected (35%). Grade breakdown: A+(2) A(4) B(3) C(4) D(3) E(2) F(2).
+```
+
+### 17.5 Files Status — ALL COMPLETE
+
+| File | Status | What it does |
+|------|--------|--------------|
+| `build_applicant_cards.py` | ✅ Built | Hits GET /demo/{id} for all 7 IDs, saves all to SQLite |
+| `credit_analyst_chatbot.py` | ✅ Built | Input loop + call_ollama + format_response |
+| `chatbot_demo.ipynb` | ✅ Built | Jupyter notebook demo (6 query types + interactive loop) |
+| `response_formatter.py` | ✅ Built | Structured display blocks per query type |
+| `ChatPanel.jsx` | ✅ Built | Contextual chat on Results page |
+| `GlobalChatButton.jsx` | ✅ Built | Floating portfolio chat on all pages |
+
+### 17.6 Ollama Setup (for the person picking this up)
+
+```bash
+# Install Ollama from https://ollama.com
+ollama pull mistral        # 7B, ~4GB, works on 8GB RAM
+# OR
+ollama pull llama3         # 8B, ~5GB
+
+# Start backend first
+python main.py             # port 8000
+
+# Build DB
+python build_applicant_cards.py
+
+# Run chatbot
+python credit_analyst_chatbot.py
+
+# Optional: use Claude instead of Ollama
+set USE_CLAUDE=true
+set ANTHROPIC_API_KEY=sk-ant-...
+python credit_analyst_chatbot.py
+```
+
+### 17.7 Ollama API Call (for Step 5)
+
+```python
+import requests, os
+
+OLLAMA_URL   = "http://localhost:11434/api/generate"
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral")
+
+def call_ollama(system_prompt: str, user_prompt: str) -> str:
+    full_prompt = f"[SYSTEM]\n{system_prompt}\n\n[USER]\n{user_prompt}"
+    resp = requests.post(OLLAMA_URL, json={
+        "model": OLLAMA_MODEL, "prompt": full_prompt, "stream": False
+    }, timeout=120)
+    resp.raise_for_status()
+    return resp.json()["response"]
+
+def call_llm(system_prompt: str, user_prompt: str) -> str:
+    if os.environ.get("USE_CLAUDE","").lower() == "true":
+        import anthropic
+        client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+        msg = client.messages.create(
+            model="claude-sonnet-4-5", max_tokens=1024,
+            system=system_prompt,
+            messages=[{"role": "user", "content": user_prompt}]
+        )
+        return msg.content[0].text
+    return call_ollama(system_prompt, user_prompt)
+```
+
+### 17.8 Main Chat Loop Template (Step 5)
+
+```python
+from chatbot_router import route_query
+from chatbot_context import build_prompt
+
+DB = "applicant_cards.db"
+
+def main():
+    print("=" * 60)
+    print("  PDR Credit Analyst Chatbot — Ollama (Mistral)")
+    print("  Type 'exit' to quit")
+    print("=" * 60)
+    while True:
+        query = input("\nLoan Officer > ").strip()
+        if not query: continue
+        if query.lower() in ("exit", "quit"): break
+        try:
+            routed = route_query(query)
+            sys_p, usr_p = build_prompt(routed, DB)
+            response = call_llm(sys_p, usr_p)
+            print(f"\nAnalyst > {response}")
+            print("-" * 60)
+        except FileNotFoundError:
+            print("ERROR: applicant_cards.db not found. Run build_applicant_cards.py first.")
+        except requests.exceptions.ConnectionError:
+            print("ERROR: Ollama not running. Start with: ollama serve")
+        except Exception as e:
+            print(f"ERROR: {e}")
+
+if __name__ == "__main__":
+    main()
+```
+
+---

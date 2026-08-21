@@ -1,0 +1,133 @@
+﻿py : C:\Users\kanis\AppData\Local\Programs\Python\Pyt
+hon313\Lib\site-packages\xgboost\training.py:200: 
+UserWarning: [23:26:56] WARNING: C:\actions-runner\_w
+ork\xgboost\xgboost\src\learner.cc:782: 
+At line:1 char:32
++ $env:PYTHONIOENCODING="utf-8"; py 
+memorization_test.py 2>&1 | Out-Fil ...
++                                
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\User 
+   s\kanis\...earner.cc:782: :String) [], RemoteExc  
+  eption
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+C:\Users\kanis\AppData\Local\Programs\Python\Python31
+3\Lib\site-packages\xgboost\training.py:200: 
+UserWarning: [23:26:56] WARNING: C:\actions-runner\_w
+ork\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+C:\Users\kanis\AppData\Local\Programs\Python\Python31
+3\Lib\site-packages\xgboost\training.py:200: 
+UserWarning: [23:26:56] WARNING: C:\actions-runner\_w
+ork\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+C:\Users\kanis\AppData\Local\Programs\Python\Python31
+3\Lib\site-packages\xgboost\training.py:200: 
+UserWarning: [23:26:56] WARNING: C:\actions-runner\_w
+ork\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+C:\Users\kanis\AppData\Local\Programs\Python\Python31
+3\Lib\site-packages\xgboost\training.py:200: 
+UserWarning: [23:26:57] WARNING: C:\actions-runner\_w
+ork\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+============================================================
+MEMORIZATION / OVERFITTING TEST
+============================================================
+
+Dataset: 25000 rows, 32 features
+Default rate: 0.2500 (6250/25000)
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TEST 1: Train AUC vs Cross-Validated AUC
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Training AUC     : 0.9536
+  Cross-Val AUC    : 0.9427 ┬▒ 0.0031
+  Gap              : 0.0109
+  Γ£à HEALTHY: Gap < 0.05 ΓÇö model generalizes well
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TEST 2: Random Noise Input
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Feeding pure random noise as features.
+  A good model should predict near base rate (~0.08).
+  A memorizing model gives confidently wrong predictions.
+  Noise predictions: mean=0.3087, std=0.3596
+  Range: [0.0151, 0.8986]
+  Confident high (>0.7): 145/500
+  Confident low (<0.05): 195/500
+  ΓÜá∩╕Å  SUSPICIOUS: Model gives confident predictions on random noise
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TEST 3: Feature Permutation Importance (top 10)
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Shuffling each feature and measuring AUC drop.
+  If no feature matters much, model may be memorizing row patterns.
+  Feature                                    AUC Drop
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Γÿà utility_payment_consistency            +0.1063
+  Γÿà eod_balance_volatility                 +0.0516
+  Γÿà bounced_transaction_count              +0.0239
+    rent_wallet_share                      +0.0076
+    cash_withdrawal_dependency             +0.0073
+    min_balance_violation_count            +0.0023
+    subscription_commitment_ratio          +0.0017
+    emergency_buffer_months                +0.0008
+    essential_vs_lifestyle_ratio           +0.0005
+    avg_utility_dpd                        +0.0004
+
+  Features with AUC drop > 0.005: 5/32
+  Γ£à HEALTHY: Multiple features contribute to predictions
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TEST 4: Prediction Distribution
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  A healthy model spreads predictions across the probability range.
+  A memorizing model clusters predictions at extreme values.
+  Bucket          Count      Pct
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  0-5%            13706    54.8% ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê
+  5-10%            2049     8.2% ΓûêΓûêΓûêΓûê
+  10-20%           1354     5.4% ΓûêΓûê
+  20-35%            971     3.9% Γûê
+  35-55%            894     3.6% Γûê
+  55-70%            771     3.1% Γûê
+  70-85%           1637     6.5% ΓûêΓûêΓûê
+  85-100%          3618    14.5% ΓûêΓûêΓûêΓûêΓûêΓûêΓûê
+
+  Γ£à HEALTHY: 69.3% at extremes ΓÇö predictions spread out
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TEST 5: Calibration ΓÇö Do probabilities match reality?
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Brier Score: 0.0712 (lower = better calibrated, <0.10 = good)
+
+  Predicted         N  Actual Rate   Expected      Gap
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  0-10%         15755      0.0297     0.0293  0.0004 Γ£à
+  10-20%         1354      0.1832     0.1417  0.0415 Γ£à
+  20-40%         1222      0.2594     0.2888  0.0294 Γ£à
+  40-60%          885      0.4056     0.5007  0.0951 Γ£à
+  60-80%         1329      0.5892     0.7143  0.1252 Γ£à
+  80-100%        4455      0.9147     0.8735  0.0412 Γ£à
+
+  Γ£à WELL CALIBRATED: All bins within 15% of expected
+
+============================================================
+OVERALL VERDICT
+============================================================
+  ΓÜá∩╕Å  MILD CONCERNS:
+    - Confident predictions on random noise
+============================================================

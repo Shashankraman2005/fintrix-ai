@@ -1,0 +1,198 @@
+{
+  "agent_id": "AGT-1065",
+  "agent_name": "Agent (EKO)",
+  "agent_network": "EKO",
+  "msme_id": "MSME_MINIMAL_DATA_STRESSED",
+  "first_transaction_date": "2025-05-27",
+  "data_as_of": "2026-03-23",
+  "transactions": [
+    {
+      "date": "2025-06-04",
+      "type": "CASH_DEPOSIT",
+      "amount": 4948.26,
+      "balance_after": 4948.26
+    },
+    {
+      "date": "2025-06-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 3435.58,
+      "balance_after": 8383.84
+    },
+    {
+      "date": "2025-06-27",
+      "type": "CASH_DEPOSIT",
+      "amount": 2415.39,
+      "balance_after": 10799.23
+    },
+    {
+      "date": "2025-06-27",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2865.06,
+      "balance_after": 7934.17
+    },
+    {
+      "date": "2025-08-07",
+      "type": "CASH_DEPOSIT",
+      "amount": 3340.47,
+      "balance_after": 11274.64
+    },
+    {
+      "date": "2025-08-07",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2738.27,
+      "balance_after": 8536.37
+    },
+    {
+      "date": "2025-08-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 1878.7,
+      "balance_after": 10415.07
+    },
+    {
+      "date": "2025-08-23",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 1329.23,
+      "balance_after": 9085.84
+    },
+    {
+      "date": "2025-09-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 2592.38,
+      "balance_after": 11678.22
+    },
+    {
+      "date": "2025-09-18",
+      "type": "CASH_DEPOSIT",
+      "amount": 3348.81,
+      "balance_after": 15027.03
+    },
+    {
+      "date": "2025-09-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 3074.61,
+      "balance_after": 18101.64
+    },
+    {
+      "date": "2025-09-29",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2294.71,
+      "balance_after": 15806.93
+    },
+    {
+      "date": "2025-10-27",
+      "type": "CASH_DEPOSIT",
+      "amount": 2272.39,
+      "balance_after": 18079.32
+    },
+    {
+      "date": "2025-11-08",
+      "type": "CASH_DEPOSIT",
+      "amount": 2856.49,
+      "balance_after": 20935.81
+    },
+    {
+      "date": "2025-11-28",
+      "type": "CASH_DEPOSIT",
+      "amount": 3193.67,
+      "balance_after": 24129.48
+    },
+    {
+      "date": "2025-12-17",
+      "type": "CASH_DEPOSIT",
+      "amount": 3339.25,
+      "balance_after": 27468.73
+    },
+    {
+      "date": "2025-12-17",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2686.23,
+      "balance_after": 24782.5
+    },
+    {
+      "date": "2025-12-23",
+      "type": "CASH_DEPOSIT",
+      "amount": 1204.3,
+      "balance_after": 25986.8
+    },
+    {
+      "date": "2025-12-23",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 927.99,
+      "balance_after": 25058.81
+    },
+    {
+      "date": "2026-01-01",
+      "type": "CASH_DEPOSIT",
+      "amount": 3185.75,
+      "balance_after": 28244.56
+    },
+    {
+      "date": "2026-01-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 3152.54,
+      "balance_after": 31397.1
+    },
+    {
+      "date": "2026-01-09",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 3082.14,
+      "balance_after": 28314.96
+    },
+    {
+      "date": "2026-01-20",
+      "type": "CASH_DEPOSIT",
+      "amount": 3288.78,
+      "balance_after": 31603.74
+    },
+    {
+      "date": "2026-01-29",
+      "type": "CASH_DEPOSIT",
+      "amount": 2934.68,
+      "balance_after": 34538.42
+    },
+    {
+      "date": "2026-02-09",
+      "type": "CASH_DEPOSIT",
+      "amount": 2225.8,
+      "balance_after": 36764.22
+    },
+    {
+      "date": "2026-02-09",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 2112.67,
+      "balance_after": 34651.55
+    },
+    {
+      "date": "2026-03-02",
+      "type": "CASH_DEPOSIT",
+      "amount": 3250.72,
+      "balance_after": 37902.27
+    },
+    {
+      "date": "2026-03-10",
+      "type": "CASH_DEPOSIT",
+      "amount": 3554.56,
+      "balance_after": 41456.83
+    },
+    {
+      "date": "2026-03-10",
+      "type": "CASH_WITHDRAWAL",
+      "amount": 4440.44,
+      "balance_after": 37016.39
+    },
+    {
+      "date": "2026-03-16",
+      "type": "CASH_DEPOSIT",
+      "amount": 3140.98,
+      "balance_after": 40157.37
+    }
+  ],
+  "field_verification": {
+    "verified": false,
+    "verification_date": null,
+    "shop_exists": true,
+    "stock_observed": false,
+    "customers_present": false,
+    "verifier_notes": "Shop exists but low activity. Could not verify stock."
+  }
+}

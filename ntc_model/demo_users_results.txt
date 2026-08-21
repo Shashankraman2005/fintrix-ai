@@ -1,0 +1,103 @@
+﻿Found 5 demo users
+
+======================================================================
+User        : DEMO_001 - Clean IT Contractor
+Source      : ML MODEL
+Grade       : A
+P(default)  : 0.0167
+Decision    : APPROVED
+Expected    : APPROVED
+Match       : Γ£ô
+Key features:
+  utility_payment_consistency              0.8571
+  eod_balance_volatility                   0.3274
+  emergency_buffer_months                  1.3409
+  bounced_transaction_count                0
+  rent_wallet_share                        0.2564
+  cash_withdrawal_dependency               0.0
+  income_stability_score                   0.9427
+  income_seasonality_flag                  0
+  p2p_circular_loop_flag                   0
+  customer_concentration_ratio             0.8333
+======================================================================
+User        : DEMO_002 - Wash Trader
+Source      : PRE-LAYER
+Grade       : E
+P(default)  : 0.9900
+Decision    : REJECTED
+Expected    : REJECTED
+Match       : Γ£ô
+Rule reason : Circular fund flow detected with repeated bounce charges - funds cycling between same counterparties with payment failures
+Key features:
+  utility_payment_consistency              0.75
+  eod_balance_volatility                   1.0
+  emergency_buffer_months                  0.0
+  bounced_transaction_count                3
+  rent_wallet_share                        0.0
+  cash_withdrawal_dependency               0.0245
+  income_stability_score                   1.0
+  income_seasonality_flag                  0
+  p2p_circular_loop_flag                   1
+  customer_concentration_ratio             0.6667
+======================================================================
+User        : DEMO_003 - Seasonal Farmer
+Source      : ML MODEL
+Grade       : A
+P(default)  : 0.0450
+Decision    : APPROVED
+Expected    : APPROVED WITH CONDITIONS
+Match       : Γ£ô
+Key features:
+  utility_payment_consistency              0.75
+  eod_balance_volatility                   0.6873
+  emergency_buffer_months                  9.461
+  bounced_transaction_count                0
+  rent_wallet_share                        0.0
+  cash_withdrawal_dependency               0.0
+  income_stability_score                   0.2902
+  income_seasonality_flag                  1
+  p2p_circular_loop_flag                   0
+  customer_concentration_ratio             1.0
+======================================================================
+User        : DEMO_004 - Auto Parts Manufacturer
+Source      : PRE-LAYER
+Grade       : C
+P(default)  : 0.4500
+Decision    : MANUAL REVIEW
+Expected    : MANUAL REVIEW
+Match       : Γ£ô
+Rule reason : Multiple payment bounces combined with cash dependency or balance volatility - moderate stress signals require manual assessment
+Key features:
+  utility_payment_consistency              1.0
+  eod_balance_volatility                   0.4776
+  emergency_buffer_months                  0.53
+  bounced_transaction_count                4
+  rent_wallet_share                        0.0
+  cash_withdrawal_dependency               0.1626
+  income_stability_score                   0.9648
+  income_seasonality_flag                  0
+  p2p_circular_loop_flag                   0
+  customer_concentration_ratio             0.5
+======================================================================
+User        : DEMO_005 - NRI Remittance Receiver
+Source      : PRE-LAYER
+Grade       : B
+P(default)  : 0.1000
+Decision    : APPROVED WITH CONDITIONS
+Expected    : APPROVED
+Match       : Γ£ô
+Rule reason : Alternative income source verified - remittance or platform income with zero payment failures and fully digital spending confirms financial stability
+Key features:
+  utility_payment_consistency              0.75
+  eod_balance_volatility                   0.4226
+  emergency_buffer_months                  1.691
+  bounced_transaction_count                0
+  rent_wallet_share                        0.0
+  cash_withdrawal_dependency               0.0
+  income_stability_score                   0.9424
+  income_seasonality_flag                  0
+  p2p_circular_loop_flag                   0
+  customer_concentration_ratio             1.0
+======================================================================
+
+Profiles correct: 5 / 5

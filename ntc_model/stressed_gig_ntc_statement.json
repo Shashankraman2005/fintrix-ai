@@ -1,0 +1,458 @@
+{
+    "user_id": "USR_STRESSED_GIG_NTC_801",
+    "account_number": "6229550256",
+    "bank": "SBI",
+    "ifsc": "SBIN0000123",
+    "currency": "INR",
+    "statement_start": "2025-09-13",
+    "statement_end": "2026-03-15",
+    "total_credits": 73494.78,
+    "total_debits": 72627.4,
+    "transaction_count": 46,
+    "transactions": [
+        {
+            "date": "2025-09-13",
+            "type": "DR",
+            "amount": 1869.97,
+            "description": "UPI/BILLPAY/JIO PREPAID",
+            "category": "UTILITY",
+            "balance": 15542.48,
+            "txn_id": "2505c672-a60f-4c65-9397-4fb69b34ab9e"
+        },
+        {
+            "date": "2025-09-27",
+            "type": "DR",
+            "amount": 919.65,
+            "description": "UPI/FLIPKART",
+            "category": "LIFESTYLE",
+            "balance": 5828.33,
+            "txn_id": "0e7960b5-c96a-4191-94a0-519861cd8456"
+        },
+        {
+            "date": "2025-09-28",
+            "type": "DR",
+            "amount": 590.0,
+            "description": "CHQ RETURN/INSUFFICIENT FUNDS/NSF",
+            "category": "BOUNCE",
+            "balance": 18869.83,
+            "txn_id": "165aecbc-0626-439a-9ee5-8b7f169af63f"
+        },
+        {
+            "date": "2025-09-29",
+            "type": "DR",
+            "amount": 4560.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 10982.48,
+            "txn_id": "0170e9be-4c1a-4513-9f2d-3e45e3989dc7"
+        },
+        {
+            "date": "2025-10-01",
+            "type": "DR",
+            "amount": 3040.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 7942.48,
+            "txn_id": "afab6b11-b57e-4959-9b29-3cb66c9c1bc6"
+        },
+        {
+            "date": "2025-10-10",
+            "type": "DR",
+            "amount": 1194.5,
+            "description": "UPI/FLIPKART",
+            "category": "LIFESTYLE",
+            "balance": 6747.98,
+            "txn_id": "ea47e048-8ead-4c0e-89e9-1a9a81f2d4c8"
+        },
+        {
+            "date": "2025-10-14",
+            "type": "DR",
+            "amount": 710.78,
+            "description": "UPI/BILLPAY/TNEB WATER",
+            "category": "UTILITY",
+            "balance": 21733.28,
+            "txn_id": "7b178435-5d58-4bcd-a07c-0f78db3ce065"
+        },
+        {
+            "date": "2025-10-29",
+            "type": "DR",
+            "amount": 4560.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 17173.28,
+            "txn_id": "5f2aaa64-adf7-4312-9fe3-327a21d51e4a"
+        },
+        {
+            "date": "2025-10-31",
+            "type": "DR",
+            "amount": 3040.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 14133.28,
+            "txn_id": "8d35d9ce-232a-4756-9434-f3c1821cb3a2"
+        },
+        {
+            "date": "2025-11-01",
+            "type": "DR",
+            "amount": 1060.49,
+            "description": "UPI/SWIGGY",
+            "category": "LIFESTYLE",
+            "balance": 10072.79,
+            "txn_id": "4132eacb-b32e-4db3-8127-ba312b2b9af6"
+        },
+        {
+            "date": "2025-11-03",
+            "type": "CR",
+            "amount": 4789.94,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 10618.27,
+            "txn_id": "2d4666d0-1ffc-4030-898b-e2a6b01f9e4f"
+        },
+        {
+            "date": "2025-11-05",
+            "type": "CR",
+            "amount": 5525.01,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 16143.27,
+            "txn_id": "3153bf75-f659-4adc-b251-e4338b1e642b"
+        },
+        {
+            "date": "2025-11-05",
+            "type": "DR",
+            "amount": 3000.0,
+            "description": "ATM CASH WITHDRAWAL/SBI",
+            "category": "CASH_WITHDRAWAL",
+            "balance": 11133.28,
+            "txn_id": "1602e5fb-9e61-4e69-b25d-b18ada9a1bc8"
+        },
+        {
+            "date": "2025-11-09",
+            "type": "DR",
+            "amount": 1219.07,
+            "description": "UPI/STARBUCKS",
+            "category": "LIFESTYLE",
+            "balance": 8853.72,
+            "txn_id": "94064b94-7e80-4727-8188-85b980bc6fe0"
+        },
+        {
+            "date": "2025-11-16",
+            "type": "DR",
+            "amount": 1477.57,
+            "description": "UPI/BILLPAY/TNEB WATER",
+            "category": "UTILITY",
+            "balance": 25660.32,
+            "txn_id": "22d854d9-4f61-4f30-a658-0d42c43011dc"
+        },
+        {
+            "date": "2025-11-20",
+            "type": "CR",
+            "amount": 6300.78,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 22444.05,
+            "txn_id": "e752d18f-1d65-4556-80de-f42709a8657d"
+        },
+        {
+            "date": "2025-11-24",
+            "type": "CR",
+            "amount": 5026.86,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 27137.88,
+            "txn_id": "ff34729c-e1e4-4ac9-b05d-c47518d205bd"
+        },
+        {
+            "date": "2025-11-28",
+            "type": "DR",
+            "amount": 4560.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 21100.32,
+            "txn_id": "033937b7-742e-4689-9ee0-65ea021001c7"
+        },
+        {
+            "date": "2025-11-30",
+            "type": "DR",
+            "amount": 3040.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 18060.32,
+            "txn_id": "dbd38f31-8f66-42ca-a75b-f161b7070837"
+        },
+        {
+            "date": "2025-12-03",
+            "type": "CR",
+            "amount": 5334.56,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 22111.03,
+            "txn_id": "c148a22e-7009-4132-ad99-bca08f0a7e2e"
+        },
+        {
+            "date": "2025-12-05",
+            "type": "DR",
+            "amount": 3000.0,
+            "description": "ATM CASH WITHDRAWAL/SBI",
+            "category": "CASH_WITHDRAWAL",
+            "balance": 15060.32,
+            "txn_id": "cd8f13de-bae3-460e-97f2-5141d91726dd"
+        },
+        {
+            "date": "2025-12-06",
+            "type": "DR",
+            "amount": 695.33,
+            "description": "UPI/ZOMATO",
+            "category": "LIFESTYLE",
+            "balance": 13259.77,
+            "txn_id": "7670624d-7cd0-44f3-b39c-75514abfb146"
+        },
+        {
+            "date": "2025-12-07",
+            "type": "DR",
+            "amount": 1105.22,
+            "description": "UPI/AMAZON PAY",
+            "category": "LIFESTYLE",
+            "balance": 13955.1,
+            "txn_id": "b16fcd5c-042a-4119-8386-197236654d29"
+        },
+        {
+            "date": "2025-12-11",
+            "type": "CR",
+            "amount": 7922.75,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 16776.47,
+            "txn_id": "a3612de4-4ce4-4dcb-8200-37491f0491f4"
+        },
+        {
+            "date": "2025-12-17",
+            "type": "DR",
+            "amount": 1929.44,
+            "description": "UPI/BILLPAY/TNEB WATER",
+            "category": "UTILITY",
+            "balance": 30975.77,
+            "txn_id": "1fb59034-8337-45e2-be3e-c03c1d17fcee"
+        },
+        {
+            "date": "2025-12-27",
+            "type": "CR",
+            "amount": 8514.26,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 32905.21,
+            "txn_id": "a4d8b58c-ed03-400e-91e7-fbb80bfbe6f7"
+        },
+        {
+            "date": "2025-12-28",
+            "type": "DR",
+            "amount": 4560.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 26415.77,
+            "txn_id": "d1504ef6-f4e4-419b-8419-49086ac281f2"
+        },
+        {
+            "date": "2025-12-30",
+            "type": "DR",
+            "amount": 3040.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 23375.77,
+            "txn_id": "dfa6fa61-9afa-44ca-9e52-b75d35b55139"
+        },
+        {
+            "date": "2026-01-01",
+            "type": "CR",
+            "amount": 6113.92,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 19373.69,
+            "txn_id": "e297f2c4-7379-4963-91d6-716b229da9ea"
+        },
+        {
+            "date": "2026-01-02",
+            "type": "CR",
+            "amount": 5017.27,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 24390.96,
+            "txn_id": "7bcbe69a-febb-4ea9-b95d-abd99154c7d1"
+        },
+        {
+            "date": "2026-01-05",
+            "type": "DR",
+            "amount": 553.91,
+            "description": "UPI/SWIGGY",
+            "category": "LIFESTYLE",
+            "balance": 21689.9,
+            "txn_id": "94fdec06-3d89-48da-9dd8-01559950cd11"
+        },
+        {
+            "date": "2026-01-05",
+            "type": "DR",
+            "amount": 590.0,
+            "description": "CHQ RETURN/INSUFFICIENT FUNDS/NSF",
+            "category": "BOUNCE",
+            "balance": 18279.83,
+            "txn_id": "4cc30416-e9c5-44c4-9b80-058c9bc91a1c"
+        },
+        {
+            "date": "2026-01-10",
+            "type": "DR",
+            "amount": 2227.57,
+            "description": "UPI/BILLPAY/TNEB WATER",
+            "category": "UTILITY",
+            "balance": 38411.77,
+            "txn_id": "691b1e5d-65bb-4c24-9874-95052b83ac5d"
+        },
+        {
+            "date": "2026-01-19",
+            "type": "DR",
+            "amount": 1131.96,
+            "description": "UPI/NETFLIX",
+            "category": "LIFESTYLE",
+            "balance": 22243.81,
+            "txn_id": "61babb7d-c2cc-4b4f-893a-43f171769f31"
+        },
+        {
+            "date": "2026-01-25",
+            "type": "CR",
+            "amount": 6489.77,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 28179.67,
+            "txn_id": "e090534d-ceee-4b55-99c6-1ff35cc716e3"
+        },
+        {
+            "date": "2026-01-25",
+            "type": "DR",
+            "amount": 959.33,
+            "description": "UPI/FLIPKART",
+            "category": "LIFESTYLE",
+            "balance": 29090.72,
+            "txn_id": "48eff97b-21c6-4e54-b90d-b0ad6359731e"
+        },
+        {
+            "date": "2026-01-27",
+            "type": "DR",
+            "amount": 4560.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 33851.77,
+            "txn_id": "1e5b509c-0093-4fcc-b39b-06910fefcb8e"
+        },
+        {
+            "date": "2026-01-29",
+            "type": "DR",
+            "amount": 3040.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 30811.77,
+            "txn_id": "de153367-47a0-4da4-83af-69edd2ae64f1"
+        },
+        {
+            "date": "2026-01-31",
+            "type": "CR",
+            "amount": 6983.54,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 40639.34,
+            "txn_id": "1e4ef063-bdc9-41f7-a529-8ac8b632853b"
+        },
+        {
+            "date": "2026-01-31",
+            "type": "DR",
+            "amount": 761.72,
+            "description": "UPI/FLIPKART",
+            "category": "LIFESTYLE",
+            "balance": 30050.05,
+            "txn_id": "8f31374f-93a3-43a3-a443-8a52541ce38d"
+        },
+        {
+            "date": "2026-02-10",
+            "type": "DR",
+            "amount": 679.07,
+            "description": "UPI/BILLPAY/JIO PREPAID",
+            "category": "UTILITY",
+            "balance": 28411.65,
+            "txn_id": "462e2c67-0ceb-4652-bb32-a6cdd8e7d7e1"
+        },
+        {
+            "date": "2026-02-11",
+            "type": "CR",
+            "amount": 5476.12,
+            "description": "UPI/ZOMATO/PAYOUT",
+            "category": "INCOME",
+            "balance": 33655.79,
+            "txn_id": "97cd6047-4fda-4c82-878e-37ba3e5f6150"
+        },
+        {
+            "date": "2026-02-26",
+            "type": "DR",
+            "amount": 4560.0,
+            "description": "UPI/RENT/LANDLORD",
+            "category": "RENT",
+            "balance": 23851.65,
+            "txn_id": "395d3ecd-91b4-48b0-8c36-2529d1f193f9"
+        },
+        {
+            "date": "2026-02-28",
+            "type": "DR",
+            "amount": 3040.0,
+            "description": "ACH/EMI/MUTHOOT FINANCE",
+            "category": "EMI",
+            "balance": 20811.65,
+            "txn_id": "e1485ceb-0d54-4fc9-a5be-83e602376516"
+        },
+        {
+            "date": "2026-03-12",
+            "type": "DR",
+            "amount": 387.88,
+            "description": "UPI/SWIGGY",
+            "category": "LIFESTYLE",
+            "balance": 20423.77,
+            "txn_id": "6cbf11de-ee34-440d-8c0f-a634f84af940"
+        },
+        {
+            "date": "2026-03-15",
+            "type": "DR",
+            "amount": 963.94,
+            "description": "UPI/ZOMATO",
+            "category": "LIFESTYLE",
+            "balance": 19459.83,
+            "txn_id": "235faef8-d9ba-4564-a140-dc129b88b6f3"
+        }
+    ],
+    "_test_expected_features": {
+        "utility_payment_consistency": 0.62,
+        "avg_utility_dpd": 8.0,
+        "bounced_transaction_count": 2,
+        "rent_wallet_share": 0.38,
+        "emergency_buffer_months": 1.8,
+        "eod_balance_volatility": 0.38,
+        "cash_withdrawal_dependency": 0.3,
+        "min_balance_violation_count": 2,
+        "telecom_recharge_drop_ratio": 0.32
+    },
+    "_profile_description": "Gig worker with erratic income, occasional missed utility, low buffer.",
+    "applicant_metadata": {
+        "applicant_age_years": 28,
+        "academic_background_tier": 2,
+        "id_document_age_years": 1.5,
+        "employment_vintage_days": 365,
+        "owns_property": 0,
+        "owns_car": 0,
+        "region_risk_tier": 3,
+        "region_city_risk_score": 3,
+        "address_stability_years": 2.0,
+        "family_burden_ratio": 0.4,
+        "family_status_stability_score": 4,
+        "contactability_score": 2,
+        "income_type_risk_score": 3,
+        "address_work_mismatch": 2,
+        "car_age_years": 99,
+        "has_email_flag": 0
+    }
+}

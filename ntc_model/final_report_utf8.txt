@@ -1,0 +1,17 @@
+﻿DEBUG output from generator:
+  stressed_gig_ntc consistency value printed: 0.58
+
+Key features for stressed_gig_ntc:
+  utility_payment_consistency : 1.0
+  bounced_transaction_count   : 2
+  eod_balance_volatility      : 0.7409
+  emergency_buffer_months     : 0.2878
+  rent_wallet_share           : 0.5330
+
+Profile decisions:
+  good_salaried_ntc  P(default): 0.0123 Decision: APPROVE        Match: PASS
+  stressed_gig_ntc   P(default): 0.3327 Decision: APPROVE        Match: FAIL
+  high_risk_ntc      P(default): 0.8625 Decision: REJECT         Match: PASS
+  good_msme_owner    P(default): 0.0131 Decision: APPROVE        Match: PASS
+
+Profiles correct : 3 / 4

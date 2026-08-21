@@ -1,0 +1,88 @@
+{
+  "gstin": "29AABCT5862F1Z1",
+  "business_name": "Demo MSME (new_business_clean)",
+  "registration_date": "2025-10-24",
+  "data_as_of": "2026-03-23",
+  "filings": [
+    {
+      "period": "2025-10",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-11-20",
+      "filed_date": "2025-11-20",
+      "status": "FILED",
+      "declared_turnover": 66282.05,
+      "tax_paid": 11930.77
+    },
+    {
+      "period": "2025-11",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-12-20",
+      "filed_date": "2025-12-21",
+      "status": "FILED_LATE",
+      "declared_turnover": 53016.53,
+      "tax_paid": 9542.98
+    },
+    {
+      "period": "2025-12",
+      "return_type": "GSTR-3B",
+      "due_date": "2026-01-20",
+      "filed_date": "2026-01-20",
+      "status": "FILED",
+      "declared_turnover": 60154.72,
+      "tax_paid": 10827.85
+    },
+    {
+      "period": "2026-01",
+      "return_type": "GSTR-3B",
+      "due_date": "2026-02-20",
+      "filed_date": "2026-02-20",
+      "status": "FILED",
+      "declared_turnover": 68022.91,
+      "tax_paid": 12244.12
+    },
+    {
+      "period": "2026-02",
+      "return_type": "GSTR-3B",
+      "due_date": "2026-03-20",
+      "filed_date": "2026-03-20",
+      "status": "FILED",
+      "declared_turnover": 69351.0,
+      "tax_paid": 12483.18
+    },
+    {
+      "period": "2026-03",
+      "return_type": "GSTR-3B",
+      "due_date": "2026-04-20",
+      "filed_date": "2026-04-20",
+      "status": "FILED",
+      "declared_turnover": 70554.71,
+      "tax_paid": 12699.85
+    }
+  ],
+  "bank_credits_monthly": [
+    {
+      "month": "2025-10",
+      "total_credits": 65020.33
+    },
+    {
+      "month": "2025-11",
+      "total_credits": 53486.46
+    },
+    {
+      "month": "2025-12",
+      "total_credits": 68323.67
+    },
+    {
+      "month": "2026-01",
+      "total_credits": 61299.57
+    },
+    {
+      "month": "2026-02",
+      "total_credits": 81302.93
+    },
+    {
+      "month": "2026-03",
+      "total_credits": 62823.43
+    }
+  ]
+}

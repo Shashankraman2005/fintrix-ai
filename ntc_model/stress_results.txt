@@ -1,0 +1,40 @@
+﻿========================================================================
+  REAL-WORLD STRESS TEST ΓÇö 10 Realistic Indian MSME Profiles
+========================================================================
+
+  Profile                                                 Expected               P(def)  Grade
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  ΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Rajesh - Kirana Store Owner, Pune (8 yrs)               VERY LOW RISK           1.5%  A
+  Lakshmi - Tailoring Business, Chennai (steady, 5 yrs)   VERY LOW RISK           1.5%  A
+  Anita - Home Baker, Hyderabad (instagram business)      LOW RISK                1.7%  A
+  Priya - Beautician, Bengaluru (3 yrs, growing)          LOW RISK                1.7%  A
+  Meena - Dairy Farm, Gujarat (seasonal but stable)       LOW-MODERATE RISK       4.3%  A
+  Raju - Plumber, Lucknow (irregular income, honest)      MODERATE RISK          68.9%  E
+  Suresh - Auto Mechanic, Jaipur (marginal, cash heavy)   MODERATE RISK          89.0%  E
+  Vikram - Food Cart, Delhi (new, unstable)               HIGH RISK              89.9%  E
+  Mohammed - Textile Trader, Surat (high volume, risky)   HIGH RISK              90.1%  E
+  Deepak - Cycle Repair, Village UP (very marginal)       VERY HIGH RISK         90.1%  E
+
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  RANKING SANITY CHECK
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  Γ£à Stable kirana < cash-heavy mechanic
+     Rajesh (1.5%)  vs  Suresh (89.0%)
+  Γ£à Stable kirana < risky textile trader
+     Rajesh (1.5%)  vs  Mohammed (90.1%)
+  Γ£à Growing beautician < risky trader
+     Priya (1.7%)  vs  Mohammed (90.1%)
+  Γ£à Steady tailor < unstable food cart
+     Lakshmi (1.5%)  vs  Vikram (89.9%)
+  Γ£à Digital baker < marginal cycle repair
+     Anita (1.7%)  vs  Deepak (90.1%)
+  Γ£à Clean beautician < cash-heavy mechanic
+     Priya (1.7%)  vs  Suresh (89.0%)
+  Γ£à Stable dairy farm < marginal cycle repair
+     Meena (4.3%)  vs  Deepak (90.1%)
+  Γ£à Honest plumber < marginal cycle repair
+     Raju (68.9%)  vs  Deepak (90.1%)
+
+  Ranking checks: 8/8 correct
+  Γ£à MODEL RANKS ALL PROFILES IN CORRECT ORDER
+========================================================================

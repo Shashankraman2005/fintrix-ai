@@ -1,0 +1,21 @@
+Test set: 450 rows | Default rate: 18.4%
+
+==================================================
+  FINAL TEST METRICS
+==================================================
+  AUC-ROC  : 0.5865
+  Gini     : 0.1730
+  KS Stat  : 0.2240
+  Avg Prec : 0.2267
+
+              precision    recall  f1-score   support
+
+ Non-Default       0.83      0.82      0.83       367
+     Default       0.24      0.25      0.25        83
+
+    accuracy                           0.72       450
+   macro avg       0.54      0.54      0.54       450
+weighted avg       0.72      0.72      0.72       450
+
+
+✅ Report saved → /home/godkiller/pdr_2/msme_model/reports/model_evaluation.png

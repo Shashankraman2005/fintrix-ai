@@ -1,0 +1,752 @@
+{
+  "supplier_name": "M/s Wholesale Traders (partial_data_growing_msme)",
+  "msme_id": "MSME_PARTIAL_DATA_GROWING_MSME",
+  "registration_date": "2024-09-29",
+  "data_as_of": "2026-03-23",
+  "invoices": [
+    {
+      "invoice_id": "INV-1BC036CC",
+      "invoice_date": "2024-10-04",
+      "due_date": "2024-10-28",
+      "paid_date": "2024-10-26",
+      "amount": 106244.31,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-A3C7E0E5",
+      "invoice_date": "2024-10-12",
+      "due_date": "2024-10-28",
+      "paid_date": "2024-10-27",
+      "amount": 90793.45,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-FB2CD6EB",
+      "invoice_date": "2024-10-19",
+      "due_date": "2024-11-05",
+      "paid_date": "2024-11-04",
+      "amount": 63242.7,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-C609E134",
+      "invoice_date": "2024-10-27",
+      "due_date": "2024-11-16",
+      "paid_date": "2024-11-16",
+      "amount": 89338.63,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-2FBD9014",
+      "invoice_date": "2024-11-04",
+      "due_date": "2024-11-21",
+      "paid_date": "2024-11-18",
+      "amount": 66410.99,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-AAA7E703",
+      "invoice_date": "2024-11-09",
+      "due_date": "2024-12-09",
+      "paid_date": "2024-12-07",
+      "amount": 84129.65,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-4CD9BC8C",
+      "invoice_date": "2024-11-16",
+      "due_date": "2024-12-10",
+      "paid_date": "2024-12-18",
+      "amount": 85194.57,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-C9C6E49A",
+      "invoice_date": "2024-11-23",
+      "due_date": "2024-12-10",
+      "paid_date": "2024-12-09",
+      "amount": 66598.74,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-EEA9F60C",
+      "invoice_date": "2024-11-30",
+      "due_date": "2024-12-20",
+      "paid_date": "2024-12-27",
+      "amount": 93690.77,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-BEFF5776",
+      "invoice_date": "2024-12-05",
+      "due_date": "2024-12-29",
+      "paid_date": "2025-01-06",
+      "amount": 103006.8,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-030D106D",
+      "invoice_date": "2024-12-12",
+      "due_date": "2025-01-04",
+      "paid_date": "2025-01-03",
+      "amount": 66577.12,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-BC57F9D7",
+      "invoice_date": "2024-12-19",
+      "due_date": "2025-01-07",
+      "paid_date": "2025-01-14",
+      "amount": 103699.65,
+      "status": "PAID_LATE",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-2190D33B",
+      "invoice_date": "2024-12-27",
+      "due_date": "2025-01-19",
+      "paid_date": "2025-01-27",
+      "amount": 81564.58,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-7B8E21EA",
+      "invoice_date": "2025-01-02",
+      "due_date": "2025-01-29",
+      "paid_date": "2025-01-26",
+      "amount": 74322.88,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-8C0FA19B",
+      "invoice_date": "2025-01-09",
+      "due_date": "2025-01-29",
+      "paid_date": "2025-01-26",
+      "amount": 89644.47,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-32E78DD4",
+      "invoice_date": "2025-01-14",
+      "due_date": "2025-02-03",
+      "paid_date": "2025-02-11",
+      "amount": 65244.65,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-15D5370C",
+      "invoice_date": "2025-01-21",
+      "due_date": "2025-02-11",
+      "paid_date": "2025-02-12",
+      "amount": 83000.62,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-F95B4119",
+      "invoice_date": "2025-01-29",
+      "due_date": "2025-02-20",
+      "paid_date": "2025-02-26",
+      "amount": 111544.45,
+      "status": "PAID_LATE",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-F184E62E",
+      "invoice_date": "2025-02-06",
+      "due_date": "2025-03-05",
+      "paid_date": "2025-03-04",
+      "amount": 79453.55,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-C0053B3A",
+      "invoice_date": "2025-02-12",
+      "due_date": "2025-02-27",
+      "paid_date": "2025-02-24",
+      "amount": 117386.02,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-56DB8392",
+      "invoice_date": "2025-02-20",
+      "due_date": "2025-03-21",
+      "paid_date": "2025-03-20",
+      "amount": 87227.98,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-4C253C9C",
+      "invoice_date": "2025-02-27",
+      "due_date": "2025-03-23",
+      "paid_date": "2025-03-21",
+      "amount": 72976.5,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-53E15758",
+      "invoice_date": "2025-03-06",
+      "due_date": "2025-03-28",
+      "paid_date": "2025-03-27",
+      "amount": 100446.22,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-FD57C7D1",
+      "invoice_date": "2025-03-14",
+      "due_date": "2025-03-31",
+      "paid_date": "2025-03-31",
+      "amount": 90721.91,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-BF03D3A2",
+      "invoice_date": "2025-03-19",
+      "due_date": "2025-04-18",
+      "paid_date": "2025-04-17",
+      "amount": 68305.67,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-5E2B7804",
+      "invoice_date": "2025-03-26",
+      "due_date": "2025-04-24",
+      "paid_date": "2025-04-21",
+      "amount": 73210.4,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-A94FC47F",
+      "invoice_date": "2025-04-01",
+      "due_date": "2025-04-24",
+      "paid_date": "2025-04-24",
+      "amount": 75057.14,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-12DC8F9B",
+      "invoice_date": "2025-04-06",
+      "due_date": "2025-04-28",
+      "paid_date": "2025-04-26",
+      "amount": 97312.81,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-76650B23",
+      "invoice_date": "2025-04-14",
+      "due_date": "2025-04-30",
+      "paid_date": "2025-04-29",
+      "amount": 84790.57,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-EF5361F3",
+      "invoice_date": "2025-04-20",
+      "due_date": "2025-05-19",
+      "paid_date": "2025-05-24",
+      "amount": 88834.52,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-6FD02DA2",
+      "invoice_date": "2025-04-28",
+      "due_date": "2025-05-19",
+      "paid_date": "2025-05-19",
+      "amount": 66413.49,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-8F1F7DA8",
+      "invoice_date": "2025-05-05",
+      "due_date": "2025-06-02",
+      "paid_date": "2025-05-30",
+      "amount": 42471.1,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-194EED0C",
+      "invoice_date": "2025-05-12",
+      "due_date": "2025-05-28",
+      "paid_date": "2025-05-27",
+      "amount": 78057.39,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-9AEE79E6",
+      "invoice_date": "2025-05-20",
+      "due_date": "2025-06-12",
+      "paid_date": "2025-06-10",
+      "amount": 73507.71,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-F3296D41",
+      "invoice_date": "2025-05-26",
+      "due_date": "2025-06-11",
+      "paid_date": "2025-06-22",
+      "amount": 91624.76,
+      "status": "PAID_LATE",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-F5BC5129",
+      "invoice_date": "2025-06-02",
+      "due_date": "2025-07-02",
+      "paid_date": "2025-07-06",
+      "amount": 120025.07,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-C6D50D9A",
+      "invoice_date": "2025-06-08",
+      "due_date": "2025-07-02",
+      "paid_date": "2025-07-02",
+      "amount": 66703.83,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-5E09FE6A",
+      "invoice_date": "2025-06-14",
+      "due_date": "2025-07-13",
+      "paid_date": "2025-07-24",
+      "amount": 74423.15,
+      "status": "PAID_LATE",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-B68F54C0",
+      "invoice_date": "2025-06-21",
+      "due_date": "2025-07-14",
+      "paid_date": "2025-07-13",
+      "amount": 108178.29,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-839642E7",
+      "invoice_date": "2025-06-26",
+      "due_date": "2025-07-26",
+      "paid_date": "2025-08-02",
+      "amount": 87026.84,
+      "status": "PAID_LATE",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-D5DE1A31",
+      "invoice_date": "2025-07-02",
+      "due_date": "2025-07-23",
+      "paid_date": "2025-07-21",
+      "amount": 82114.76,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-B7A08066",
+      "invoice_date": "2025-07-07",
+      "due_date": "2025-07-24",
+      "paid_date": "2025-07-21",
+      "amount": 85102.28,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-94FC4450",
+      "invoice_date": "2025-07-15",
+      "due_date": "2025-08-04",
+      "paid_date": "2025-08-02",
+      "amount": 90263.54,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-9DD824AF",
+      "invoice_date": "2025-07-21",
+      "due_date": "2025-08-11",
+      "paid_date": "2025-08-21",
+      "amount": 100984.92,
+      "status": "PAID_LATE",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-622F5E2C",
+      "invoice_date": "2025-07-29",
+      "due_date": "2025-08-22",
+      "paid_date": "2025-08-20",
+      "amount": 105405.21,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-280E514A",
+      "invoice_date": "2025-08-05",
+      "due_date": "2025-08-22",
+      "paid_date": "2025-08-23",
+      "amount": 35179.9,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-D4943EA6",
+      "invoice_date": "2025-08-11",
+      "due_date": "2025-09-08",
+      "paid_date": "2025-09-05",
+      "amount": 92680.07,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-943B03FE",
+      "invoice_date": "2025-08-16",
+      "due_date": "2025-08-31",
+      "paid_date": "2025-08-28",
+      "amount": 108299.2,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-346ADACF",
+      "invoice_date": "2025-08-24",
+      "due_date": "2025-09-21",
+      "paid_date": "2025-09-26",
+      "amount": 91936.62,
+      "status": "PAID_LATE",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-0FF349C4",
+      "invoice_date": "2025-08-30",
+      "due_date": "2025-09-24",
+      "paid_date": "2025-10-01",
+      "amount": 84394.62,
+      "status": "PAID_LATE",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-CFC86C6D",
+      "invoice_date": "2025-09-04",
+      "due_date": "2025-10-01",
+      "paid_date": "2025-10-01",
+      "amount": 100714.08,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-7303093E",
+      "invoice_date": "2025-09-11",
+      "due_date": "2025-09-28",
+      "paid_date": "2025-09-25",
+      "amount": 88793.07,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-08579092",
+      "invoice_date": "2025-09-18",
+      "due_date": "2025-10-07",
+      "paid_date": "2025-10-05",
+      "amount": 103779.55,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-7CA4FB24",
+      "invoice_date": "2025-09-24",
+      "due_date": "2025-10-17",
+      "paid_date": "2025-10-16",
+      "amount": 92877.29,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-7C92E932",
+      "invoice_date": "2025-10-01",
+      "due_date": "2025-10-25",
+      "paid_date": "2025-10-25",
+      "amount": 91364.57,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-98BF76EE",
+      "invoice_date": "2025-10-09",
+      "due_date": "2025-11-05",
+      "paid_date": "2025-11-03",
+      "amount": 79855.46,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-50F052BF",
+      "invoice_date": "2025-10-17",
+      "due_date": "2025-11-12",
+      "paid_date": "2025-11-10",
+      "amount": 115504.29,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-7851E3E6",
+      "invoice_date": "2025-10-24",
+      "due_date": "2025-11-17",
+      "paid_date": "2025-11-26",
+      "amount": 98035.99,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-78D3A5DC",
+      "invoice_date": "2025-10-29",
+      "due_date": "2025-11-23",
+      "paid_date": "2025-11-22",
+      "amount": 72602.12,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-B316B515",
+      "invoice_date": "2025-11-04",
+      "due_date": "2025-11-21",
+      "paid_date": "2025-11-21",
+      "amount": 90783.57,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-2D29D2BC",
+      "invoice_date": "2025-11-11",
+      "due_date": "2025-12-06",
+      "paid_date": "2025-12-03",
+      "amount": 91440.32,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-94CC0803",
+      "invoice_date": "2025-11-16",
+      "due_date": "2025-12-13",
+      "paid_date": "2025-12-10",
+      "amount": 56863.38,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-AF28F95B",
+      "invoice_date": "2025-11-21",
+      "due_date": "2025-12-08",
+      "paid_date": "2025-12-07",
+      "amount": 80344.54,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-2ABE56F9",
+      "invoice_date": "2025-11-27",
+      "due_date": "2025-12-22",
+      "paid_date": "2025-12-19",
+      "amount": 90372.81,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-A53D3D17",
+      "invoice_date": "2025-12-04",
+      "due_date": "2025-12-30",
+      "paid_date": "2025-12-28",
+      "amount": 78804.55,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-013825D3",
+      "invoice_date": "2025-12-10",
+      "due_date": "2026-01-04",
+      "paid_date": "2026-01-12",
+      "amount": 102774.05,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-0265C8C6",
+      "invoice_date": "2025-12-17",
+      "due_date": "2026-01-09",
+      "paid_date": "2026-01-19",
+      "amount": 93247.74,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-CC30C46B",
+      "invoice_date": "2025-12-23",
+      "due_date": "2026-01-14",
+      "paid_date": "2026-01-19",
+      "amount": 98696.54,
+      "status": "PAID_LATE",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-2CF9A8EF",
+      "invoice_date": "2025-12-30",
+      "due_date": "2026-01-21",
+      "paid_date": "2026-01-19",
+      "amount": 96875.63,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-741E24D3",
+      "invoice_date": "2026-01-04",
+      "due_date": "2026-02-03",
+      "paid_date": "2026-02-12",
+      "amount": 75859.74,
+      "status": "PAID_LATE",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-9EF092CB",
+      "invoice_date": "2026-01-09",
+      "due_date": "2026-02-04",
+      "paid_date": "2026-02-17",
+      "amount": 81530.83,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-824980E0",
+      "invoice_date": "2026-01-15",
+      "due_date": "2026-02-08",
+      "paid_date": "2026-02-06",
+      "amount": 110024.25,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-A9523BAB",
+      "invoice_date": "2026-01-21",
+      "due_date": "2026-02-10",
+      "paid_date": "2026-02-09",
+      "amount": 92560.36,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-49DD3AC6",
+      "invoice_date": "2026-01-29",
+      "due_date": "2026-02-22",
+      "paid_date": "2026-02-22",
+      "amount": 104247.99,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-39A26691",
+      "invoice_date": "2026-02-04",
+      "due_date": "2026-02-21",
+      "paid_date": "2026-02-18",
+      "amount": 92735.4,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-A4AA7943",
+      "invoice_date": "2026-02-12",
+      "due_date": "2026-02-28",
+      "paid_date": "2026-03-05",
+      "amount": 66051.51,
+      "status": "PAID_LATE",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-32177447",
+      "invoice_date": "2026-02-20",
+      "due_date": "2026-03-09",
+      "paid_date": "2026-03-06",
+      "amount": 107423.22,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-22A9C7BA",
+      "invoice_date": "2026-02-26",
+      "due_date": "2026-03-28",
+      "paid_date": "2026-03-26",
+      "amount": 89143.79,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-BB1B3277",
+      "invoice_date": "2026-03-03",
+      "due_date": "2026-03-22",
+      "paid_date": "2026-03-21",
+      "amount": 86876.73,
+      "status": "PAID",
+      "payment_mode": "CASH"
+    },
+    {
+      "invoice_id": "INV-3C38656C",
+      "invoice_date": "2026-03-10",
+      "due_date": "2026-04-07",
+      "paid_date": "2026-04-05",
+      "amount": 96105.16,
+      "status": "PAID",
+      "payment_mode": "UPI"
+    },
+    {
+      "invoice_id": "INV-29491407",
+      "invoice_date": "2026-03-15",
+      "due_date": "2026-04-07",
+      "paid_date": "2026-04-07",
+      "amount": 98513.85,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    },
+    {
+      "invoice_id": "INV-38E42DE9",
+      "invoice_date": "2026-03-20",
+      "due_date": "2026-04-19",
+      "paid_date": "2026-04-17",
+      "amount": 83859.67,
+      "status": "PAID",
+      "payment_mode": "NEFT"
+    }
+  ],
+  "supplier_reference": {
+    "years_known": 1.5,
+    "credit_limit_extended": 153000.0,
+    "disputes_raised": 1,
+    "reference_rating": "GOOD"
+  }
+}

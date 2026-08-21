@@ -1,0 +1,80 @@
+﻿
+Key features for good_salaried_ntc:
+  utility_payment_consistency              0.8333333333333334
+  bounced_transaction_count                0
+  eod_balance_volatility                   0.4175021222954583
+  emergency_buffer_months                  2.22288453399779
+  rent_wallet_share                        0.25024644640777716
+  employment_vintage_days                  3650.0
+  applicant_age_years                      42.0
+  income_type_risk_score                   1
+
+Key features for stressed_gig_ntc:
+  utility_payment_consistency              0.75
+  bounced_transaction_count                0
+  eod_balance_volatility                   0.48437539606246577
+  emergency_buffer_months                  1.20761081151375
+  rent_wallet_share                        0.24851397845107684
+  employment_vintage_days                  240.0
+  applicant_age_years                      26.0
+  income_type_risk_score                   4
+
+Key features for high_risk_ntc:
+  utility_payment_consistency              0.0
+  bounced_transaction_count                0
+  eod_balance_volatility                   0.4292081711725843
+  emergency_buffer_months                  0.5602481852818054
+  rent_wallet_share                        0.22053275076748463
+  employment_vintage_days                  60.0
+  applicant_age_years                      22.0
+  income_type_risk_score                   5
+
+Key features for good_msme_owner:
+  utility_payment_consistency              0.8333333333333334
+  bounced_transaction_count                0
+  eod_balance_volatility                   0.4925536823197172
+  emergency_buffer_months                  3.018676045658922
+  rent_wallet_share                        0.22631732240958294
+  employment_vintage_days                  2920.0
+  applicant_age_years                      38.0
+  income_type_risk_score                   3
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+Profile     : good_salaried_ntc
+P(default)  : 0.0121
+Decision    : APPROVE
+Expected    : APPROVE
+Match       : Γ£ô PASS
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+Profile     : stressed_gig_ntc
+P(default)  : 0.0624
+Decision    : APPROVE
+Expected    : MANUAL_REVIEW
+Match       : Γ£ù FAIL
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+Profile     : high_risk_ntc
+P(default)  : 0.6922
+Decision    : REJECT
+Expected    : REJECT
+Match       : Γ£ô PASS
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+Profile     : good_msme_owner
+P(default)  : 0.0131
+Decision    : APPROVE
+Expected    : APPROVE
+Match       : Γ£ô PASS
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+Profiles correct    : 3 / 4
+Misaligned features : 6
+Demo pipeline status: Demo pipeline READY
+
+Top 3 misaligned features:
+1. utility_payment_consistency (z=4.3051)
+2. eod_balance_volatility (z=4.2731)
+3. cash_withdrawal_dependency (z=3.5875)

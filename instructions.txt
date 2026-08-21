@@ -1,0 +1,828 @@
+<!-- PDR - High-Conversion Landing Page -->
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FintrixAi | Architectural Credit Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-error": "#fff7f6",
+                "on-primary": "#f7f7ff",
+                "on-tertiary-container": "#006127",
+                "surface": "#f7f9fb",
+                "secondary-container": "#d3e4fe",
+                "outline": "#717c82",
+                "secondary-dim": "#44546a",
+                "inverse-surface": "#0b0f10",
+                "on-background": "#2a3439",
+                "surface-container-highest": "#d9e4ea",
+                "primary": "#565e74",
+                "on-secondary-container": "#435368",
+                "surface-container-high": "#e1e9ee",
+                "on-secondary": "#f7f9ff",
+                "surface-variant": "#d9e4ea",
+                "surface-container-low": "#f0f4f7",
+                "on-surface": "#2a3439",
+                "tertiary-container": "#82ff99",
+                "tertiary": "#006e2e",
+                "surface-dim": "#cfdce3",
+                "on-surface-variant": "#566166",
+                "on-primary-fixed": "#373f54",
+                "primary-container": "#dae2fd",
+                "on-secondary-fixed-variant": "#4d5d73",
+                "secondary-fixed": "#d3e4fe",
+                "on-tertiary-fixed": "#004c1d",
+                "secondary-fixed-dim": "#c5d6f0",
+                "primary-fixed": "#dae2fd",
+                "on-tertiary": "#e9ffe6",
+                "error": "#9f403d",
+                "secondary": "#506076",
+                "surface-bright": "#f7f9fb",
+                "on-secondary-fixed": "#314055",
+                "surface-container-lowest": "#ffffff",
+                "error-container": "#fe8983",
+                "background": "#f7f9fb",
+                "on-primary-container": "#4a5167",
+                "tertiary-dim": "#006127",
+                "tertiary-fixed-dim": "#73f08c",
+                "on-primary-fixed-variant": "#535b71",
+                "surface-tint": "#565e74",
+                "on-tertiary-fixed-variant": "#006c2d",
+                "primary-fixed-dim": "#ccd4ee",
+                "surface-container": "#e8eff3",
+                "inverse-primary": "#dae2fd",
+                "outline-variant": "#a9b4b9",
+                "on-error-container": "#752121",
+                "tertiary-fixed": "#82ff99",
+                "inverse-on-surface": "#9a9d9f",
+                "primary-dim": "#4a5268",
+                "error-dim": "#4e0309"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .gradient-primary { background: linear-gradient(135deg, #006e2e 0%, #006127 100%); }
+        .ghost-border { border: 1px solid rgba(169, 180, 185, 0.3); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Shell -->
+<nav class="bg-[#f7f9fb]/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-sm shadow-slate-200/50 dark:shadow-none font-['Manrope'] antialiased tracking-tight">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center w-full">
+<div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50">FintrixAi</div>
+<div class="hidden md:flex items-center space-gap-8 gap-x-8">
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#problem-statement">About Us</a>
+<a class="text-slate-900 dark:text-white font-semibold border-b-2 border-slate-900 dark:border-slate-50 pb-1 hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#">Solutions</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#">Trust Pipeline</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#">Compliance</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#">Documentation</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#565e74] dark:text-slate-300 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300 active:scale-95">Login</button>
+<button class="gradient-primary text-white px-6 py-2.5 rounded-lg font-semibold active:scale-95 transition-transform duration-200">Request Demo</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- SECTION 1: HERO -->
+<section class="relative pt-24 pb-32 overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-bold uppercase tracking-widest mb-8">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                        Architectural Credit Intelligence
+                    </div>
+<h1 class="text-5xl lg:text-7xl font-headline font-extrabold text-[#0F172A] tracking-tighter leading-[1.1] mb-8">
+                        Credit decisions that <span class="text-tertiary italic">explain</span> themselves.
+                    </h1>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed mb-12 max-w-2xl">
+                        PDR scores NTCs and MSMEs using behavioral signals from bank statements — no credit history required.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="gradient-primary text-white px-8 py-4 rounded-lg text-lg font-bold flex items-center gap-2 shadow-lg shadow-tertiary/20 active:scale-95 transition-transform">
+                            Score a Business Free →
+                        </button>
+<button class="bg-transparent text-on-surface px-8 py-4 rounded-lg text-lg font-bold ghost-border active:scale-95 transition-transform">
+                            Documentation
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative z-10 p-8 rounded-3xl bg-[#0F172A] shadow-2xl">
+<!-- Clean White Card Mockup -->
+<div class="bg-white rounded-2xl p-8 shadow-inner">
+<div class="flex justify-between items-start mb-10">
+<div>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-100 mb-3">
+                                        Grade A — Strong
+                                    </span>
+<h4 class="text-3xl font-black text-slate-900">PD: 4.2%</h4>
+</div>
+<div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-emerald-600">verified</span>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">SHAP Explainability Tags</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-full bg-slate-50 text-slate-700 text-xs font-medium border border-slate-100 flex items-center gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span> Cashflow Stable
+                                    </span>
+<span class="px-3 py-1.5 rounded-full bg-slate-50 text-slate-700 text-xs font-medium border border-slate-100 flex items-center gap-1.5">
+<span class="text-emerald-500 font-bold">✓</span> GST Consistent
+                                    </span>
+<span class="px-3 py-1.5 rounded-full bg-slate-50 text-slate-700 text-xs font-medium border border-slate-100 flex items-center gap-1.5">
+<span class="text-amber-500 font-bold">⚠</span> High Concentration Risk
+                                    </span>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-slate-100">
+<div class="h-2 w-full bg-slate-100 rounded-full overflow-hidden">
+<div class="h-full bg-emerald-500 w-[92%]"></div>
+</div>
+<div class="flex justify-between mt-2 text-[10px] font-bold text-slate-400">
+<span>CONFIDENCE SCORE</span>
+<span>92%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-tertiary-fixed opacity-20 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-primary-container opacity-30 blur-[100px] rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ₹28 TRILLION BLIND SPOT -->
+<section class="py-24 bg-surface border-t border-outline-variant/10" id="problem-statement">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-tertiary-container text-on-tertiary-container text-xs font-bold tracking-widest uppercase font-label">
+                    The Systemic Crisis
+                </div>
+<h2 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tighter mb-8 leading-[0.9] font-headline">
+                    The ₹28 Trillion <br/><span class="text-tertiary">Blind Spot.</span>
+</h2>
+<div class="max-w-2xl mx-auto mb-16">
+<p class="text-lg md:text-xl text-on-surface-variant leading-relaxed font-body">
+                        India's financial engine is firing on half its cylinders. A ₹28T gap separates capital from the businesses that need it.
+                    </p>
+</div>
+<!-- Impact Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+<!-- Card 1 -->
+<div class="group p-8 rounded-lg bg-surface-container-lowest border border-outline-variant/15 hover:border-tertiary/40 transition-all duration-500 shadow-sm">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6">groups</span>
+<h3 class="text-4xl font-black text-slate-900 tracking-tight mb-2 font-headline">450 Million</h3>
+<p class="text-on-surface-variant font-medium">Credit-Invisible Individuals</p>
+<div class="mt-auto pt-8 border-t border-outline-variant/10">
+<p class="text-sm text-on-surface-variant/80 italic">A population larger than the United States, ignored by legacy scoring.</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group p-8 rounded-lg bg-surface-container-lowest border border-outline-variant/15 hover:border-tertiary/40 transition-all duration-500 shadow-sm">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6">storefront</span>
+<h3 class="text-4xl font-black text-slate-900 tracking-tight mb-2 font-headline">63 Million</h3>
+<p class="text-on-surface-variant font-medium">Excluded MSMEs</p>
+<div class="mt-auto pt-8 border-t border-outline-variant/10">
+<p class="text-sm text-on-surface-variant/80 italic">Small businesses fueling 30% of GDP, yet starved of working capital.</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group p-8 rounded-lg bg-tertiary text-on-tertiary transition-all duration-500 shadow-xl shadow-tertiary/10">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-white text-4xl mb-6">payments</span>
+<h3 class="text-4xl font-black text-white tracking-tight mb-2 font-headline">₹28 Trillion</h3>
+<p class="text-tertiary-container font-medium">Systemic Financing Gap</p>
+<div class="mt-auto pt-8 border-t border-tertiary-fixed-dim/20">
+<p class="text-sm text-tertiary-container/90 italic">The annual capital deficit choking the growth of Emerging India.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: THE SAFE-BORROWER DEFAULT LOOP -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-24 items-start">
+<!-- Narrative Column -->
+<div class="lg:col-span-4 space-y-10">
+<h2 class="text-4xl font-bold tracking-tight text-slate-900 leading-tight font-headline">
+                            The Safe-Borrower <br/>Default Loop
+                        </h2>
+<div class="space-y-8 text-on-surface-variant leading-relaxed text-lg font-body">
+<p>
+                                Traditional banking institutions are locked in a structural paradox. Bound by rigid credit-score mandates, they prioritize <span class="text-slate-900 font-semibold underline decoration-tertiary/30 decoration-2">"Safe Borrowers"</span>—those who already have capital.
+                            </p>
+<p>
+                                This "Trust Deficit" isn't a lack of reliability; it's a lack of data visibility. Banks are saying no to growth they cannot measure.
+                            </p>
+<p>
+                                PDR breaks this cycle by surfacing behavioral reliability through deep forensic analysis of cashflows.
+                            </p>
+</div>
+</div>
+<!-- Visual Column (Bento-style Charts) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Gap Paradox -->
+<div class="w-full">
+<h4 class="text-xl font-bold text-slate-900 mb-4 font-headline uppercase tracking-tight">Gap Paradox Analysis</h4>
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-outline-variant/10">
+<div class="space-y-10">
+<div class="space-y-3">
+<div class="flex justify-between text-sm font-bold">
+<span>FORMAL SUPPLY</span>
+<span>₹35T</span>
+</div>
+<div class="h-6 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-slate-400 w-full rounded-full"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-sm font-bold text-tertiary">
+<span>UNMET GAP</span>
+<span>₹28T</span>
+</div>
+<div class="h-6 bg-tertiary-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-[80%] rounded-full"></div>
+</div>
+</div>
+</div>
+<p class="mt-8 text-sm text-on-surface-variant font-body">The unmet gap now rivals 80% of the total formal supply volume.</p>
+</div>
+</div>
+<!-- Shrinking Gateway -->
+<div class="w-full">
+<h4 class="text-xl font-bold text-slate-900 mb-4 font-headline uppercase tracking-tight">Shrinking Gateway</h4>
+<div class="bg-[#0F172A] p-10 rounded-2xl shadow-xl">
+<div class="relative h-48 flex items-end justify-between px-4 mb-8">
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0 20 L25 25 L50 40 L75 55 L100 65" fill="none" stroke="#82ff99" stroke-linecap="round" stroke-width="4"></path>
+<path d="M0 20 L25 25 L50 40 L75 55 L100 65 L100 100 L0 100 Z" fill="url(#grad2)" opacity="0.1"></path>
+<defs>
+<lineargradient id="grad2" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#82ff99;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#82ff99;stop-opacity:0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="z-10 text-center">
+<span class="block text-4xl font-black text-white">21%</span>
+<span class="block text-xs text-slate-500 font-bold mt-2">DEC 23</span>
+</div>
+<div class="z-10 text-center">
+<span class="block text-4xl font-black text-tertiary-fixed">17%</span>
+<span class="block text-xs text-slate-500 font-bold mt-2">DEC 24</span>
+</div>
+</div>
+<div class="pt-6 border-t border-slate-800">
+<p class="text-sm text-slate-400 mb-1 font-body">NTC Inclusion Trend</p>
+<h4 class="text-xl font-bold text-white tracking-tight font-headline">Access is tightening, not expanding.</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: TRUST PIPELINE -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-20">
+<h2 class="text-4xl font-headline font-bold text-[#0F172A] mb-6">The Trust Pipeline</h2>
+<p class="text-lg text-on-surface-variant font-body max-w-2xl">A proprietary four-stage architectural framework designed to transform raw financial noise into high-fidelity credit signals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl border-l-[4px] border-[#3B82F6] hover:shadow-2xl transition-all duration-500 flex flex-col min-h-[320px]">
+<div class="w-14 h-14 rounded-full bg-[#3B82F6]/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-[#3B82F6]">database</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4">Ingest</h3>
+<p class="text-base text-on-surface-variant leading-relaxed">Multi-source bank statement aggregation via OCR and API connectors with 99.8% field accuracy.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl border-l-[4px] border-[#EF4444] hover:shadow-2xl transition-all duration-500 flex flex-col min-h-[320px]">
+<div class="w-14 h-14 rounded-full bg-[#EF4444]/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-[#EF4444]">shield</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4">Forensics</h3>
+<p class="text-base text-on-surface-variant leading-relaxed">Deep-level behavioral analysis detecting circulation, round-tripping, and synthetic balance inflation.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl border-l-[4px] border-[#8B5CF6] hover:shadow-2xl transition-all duration-500 flex flex-col min-h-[320px]">
+<div class="w-14 h-14 rounded-full bg-[#8B5CF6]/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-[#8B5CF6]">psychology</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4">XGBoost</h3>
+<p class="text-base text-on-surface-variant leading-relaxed">Gradient boosting decision trees predicting probability of default based on 450+ non-traditional features.</p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl border-l-[4px] border-[#22C55E] hover:shadow-2xl transition-all duration-500 flex flex-col min-h-[320px]">
+<div class="w-14 h-14 rounded-full bg-[#22C55E]/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-[#22C55E]">bar_chart</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4">SHAP</h3>
+<p class="text-base text-on-surface-variant leading-relaxed">The "Explainability Engine" - decomposing every score into local feature contributions for regulatory transparency.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: INTELLIGENCE BEYOND THE LEDGER -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-20">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-headline font-extrabold text-[#0F172A] mb-6 tracking-tight">Intelligence Beyond the Ledger</h2>
+<p class="text-lg text-on-surface-variant">Standard bureau reports miss 60% of the small business economy. Our features capture the "invisible" indicators of intent and resilience.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="group p-10 bg-surface-container-lowest rounded-lg border border-outline-variant/15 hover:bg-surface-bright transition-colors">
+<h4 class="text-xs font-bold uppercase tracking-[0.2em] text-tertiary mb-6">Grade A Strong</h4>
+<h3 class="text-2xl font-headline font-bold text-[#0F172A] mb-4">Psychometric Risk Analysis</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Proprietary logic that maps repayment behavior against seasonal volatility to determine borrower "character" under stress.</p>
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-4/5"></div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="group p-10 bg-surface-container-lowest rounded-lg border border-outline-variant/15 hover:bg-surface-bright transition-colors">
+<h4 class="text-xs font-bold uppercase tracking-[0.2em] text-amber-600 mb-6">Grade C Watch</h4>
+<h3 class="text-2xl font-headline font-bold text-[#0F172A] mb-4">Cashflow Integrity</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Isolation of true revenue from loan churn, intra-day reversals, and suspicious inward remittances.</p>
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-amber-500 w-1/2"></div>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="group p-10 bg-surface-container-lowest rounded-lg border border-outline-variant/15 hover:bg-surface-bright transition-colors">
+<h4 class="text-xs font-bold uppercase tracking-[0.2em] text-error mb-6">Grade E Risk</h4>
+<h3 class="text-2xl font-headline font-bold text-[#0F172A] mb-4">Fraud Loop Detection</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">AI-driven mapping of connected party transactions to detect hidden leverage across multiple legal entities.</p>
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error w-1/4"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER / BOTTOM CTA -->
+<section class="bg-[#0F172A] py-24">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white mb-6 tracking-tight">Ready to score your first application?</h2>
+<button class="bg-tertiary text-white px-12 py-5 rounded-xl text-xl font-bold font-headline tracking-tight hover:bg-tertiary-dim transition-all duration-300 shadow-2xl shadow-tertiary/20 flex items-center gap-4 mx-auto mb-8 active:scale-95">
+                    Get Started →
+                </button>
+<p class="text-slate-400 text-lg font-medium font-body max-w-xl mx-auto">
+                    No credit history required. Upload a bank statement and get a risk grade in seconds.
+                </p>
+</div>
+</section>
+</main>
+</body></html>
+
+<!-- Refined MSME Credit Assessment Form -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Paisa Do Re | Credit Assessment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed": "#dae2fd",
+                        "on-surface-variant": "#566166",
+                        "on-tertiary-container": "#006127",
+                        "surface-variant": "#d9e4ea",
+                        "secondary-fixed-dim": "#c5d6f0",
+                        "on-tertiary-fixed-variant": "#006c2d",
+                        "on-primary": "#f7f7ff",
+                        "on-error-container": "#752121",
+                        "outline": "#717c82",
+                        "on-surface": "#2a3439",
+                        "on-primary-fixed": "#373f54",
+                        "surface-tint": "#565e74",
+                        "secondary-fixed": "#d3e4fe",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#9a9d9f",
+                        "error-container": "#fe8983",
+                        "primary-fixed-dim": "#ccd4ee",
+                        "surface": "#f7f9fb",
+                        "secondary-dim": "#44546a",
+                        "secondary": "#506076",
+                        "primary": "#565e74",
+                        "surface-dim": "#cfdce3",
+                        "tertiary-fixed": "#82ff99",
+                        "surface-container-highest": "#d9e4ea",
+                        "primary-dim": "#4a5268",
+                        "surface-container-low": "#f0f4f7",
+                        "inverse-primary": "#dae2fd",
+                        "on-background": "#2a3439",
+                        "on-secondary": "#f7f9ff",
+                        "on-secondary-fixed-variant": "#4d5d73",
+                        "error-dim": "#4e0309",
+                        "outline-variant": "#a9b4b9",
+                        "tertiary": "#006e2e",
+                        "error": "#9f403d",
+                        "secondary-container": "#d3e4fe",
+                        "on-secondary-fixed": "#314055",
+                        "primary-container": "#dae2fd",
+                        "on-error": "#fff7f6",
+                        "on-secondary-container": "#435368",
+                        "surface-container": "#e8eff3",
+                        "tertiary-dim": "#006127",
+                        "tertiary-container": "#82ff99",
+                        "on-tertiary": "#e9ffe6",
+                        "tertiary-fixed-dim": "#73f08c",
+                        "on-primary-fixed-variant": "#535b71",
+                        "surface-container-high": "#e1e9ee",
+                        "surface-bright": "#f7f9fb",
+                        "on-primary-container": "#4a5167",
+                        "inverse-surface": "#0b0f10",
+                        "background": "#f7f9fb",
+                        "on-tertiary-fixed": "#004c1d"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-dot {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .gradient-primary { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        
+        /* Interactive Toggle Styles */
+        #ntc-content { display: none; }
+        #view-toggle-msme:checked ~ div label[for="view-toggle-msme"] { background-color: #0f172a; color: white; }
+        #view-toggle-ntc:checked ~ div label[for="view-toggle-ntc"] { background-color: #0f172a; color: white; }
+        
+        #view-toggle-msme:checked ~ main #msme-content { display: block; }
+        #view-toggle-msme:checked ~ main #ntc-content { display: none; }
+        #view-toggle-ntc:checked ~ main #msme-content { display: none; }
+        #view-toggle-ntc:checked ~ main #ntc-content { display: block; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- View Switcher Logic Inputs -->
+<input checked="" class="hidden" id="view-toggle-msme" name="view-type" type="radio"/>
+<input class="hidden" id="view-toggle-ntc" name="view-type" type="radio"/>
+<!-- TopAppBar Shell Component -->
+<nav class="bg-[#f7f9fb]/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-sm shadow-slate-200/50 font-headline antialiased tracking-tight">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center w-full">
+<div class="text-xl font-bold tracking-tighter text-slate-900">FintrixAi</div>
+<div class="hidden md:flex items-center space-gap-8 gap-x-8">
+<a class="text-slate-900 font-semibold border-b-2 border-slate-900 pb-1 hover:text-slate-900 transition-all duration-300" href="#">Solutions</a>
+<a class="text-slate-500 font-medium hover:text-slate-900 transition-all duration-300" href="#">Trust Pipeline</a>
+<a class="text-slate-500 font-medium hover:text-slate-900 transition-all duration-300" href="#">Compliance</a>
+<a class="text-slate-500 font-medium hover:text-slate-900 transition-all duration-300" href="#">Documentation</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-600 font-medium hover:text-slate-900 transition-all duration-300 active:scale-95">Login</button>
+<button class="gradient-primary text-white px-6 py-2.5 rounded-full font-semibold active:scale-95 transition-transform duration-200 text-sm">Request Demo</button>
+</div>
+</div>
+</nav>
+<!-- Top Toggle/Selector -->
+<div class="max-w-3xl mx-auto mt-8 px-4 md:px-6">
+<div class="flex p-1 bg-surface-container-high rounded-full w-fit mx-auto shadow-inner border border-outline-variant/20">
+<label class="px-8 py-2 rounded-full text-xs font-bold uppercase tracking-widest cursor-pointer transition-all duration-200 text-on-surface-variant hover:text-on-surface" for="view-toggle-msme">MSME</label>
+<label class="px-8 py-2 rounded-full text-xs font-bold uppercase tracking-widest cursor-pointer transition-all duration-200 text-on-surface-variant hover:text-on-surface" for="view-toggle-ntc">NTC</label>
+</div>
+</div>
+<main class="pt-8 pb-20 px-4 md:px-6">
+<div class="max-w-3xl mx-auto space-y-8">
+<!-- MSME View Content -->
+<div class="space-y-8" id="msme-content">
+<!-- Header Section -->
+<div class="text-center space-y-2">
+<h1 class="text-3xl font-headline font-extrabold text-on-surface tracking-tight">MSME Credit Assessment</h1>
+<p class="text-on-surface-variant max-w-lg mx-auto leading-relaxed text-sm">Precision underwriting for modern businesses. Complete the four-stage evaluation to generate your risk grade.</p>
+</div>
+<!-- Stepper Component -->
+<form class="bg-surface-container-lowest rounded-xl border border-outline-variant/10 shadow-sm overflow-hidden">
+<div class="p-8 space-y-8">
+<!-- Step 1 -->
+<div class="flex items-center gap-4">
+<div class="w-1 h-8 bg-slate-900 rounded-full"></div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Step 1: Business Basics</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Business Name</label>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none transition-all placeholder:text-outline-variant/60" placeholder="ABC Manufacturing Ltd" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Business Type</label>
+<select class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none transition-all appearance-none cursor-pointer">
+<option>Agri/Seasonal</option>
+<option>Manufacturer</option>
+<option>Service Provider</option>
+<option>Retailer/Kirana</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Business Vintage (Months)</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none transition-all" max="240" min="0" type="number" value="36"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-on-surface-variant font-medium">months</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-4 rounded-lg">
+<div class="space-y-1">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Turnover Spike</label>
+<p class="text-xs text-on-surface-variant">Did revenue spike &gt;25% in last quarter?</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-outline-variant/30 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-900"></div>
+</label>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="pt-8 border-t border-outline-variant/10 space-y-8">
+<div class="flex items-center gap-4">
+<div class="w-1 h-8 bg-slate-900 rounded-full"></div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Step 2: Network &amp; Customers</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Customer Concentration Ratio</label>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none" max="1" min="0" placeholder="0.35" step="0.01" type="number" value="0.35"/>
+<p class="text-[11px] text-on-surface-variant/80 italic font-medium leading-tight">Example: 0.35 = Top customer is 35% of revenue</p>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Repeat Customer Revenue (%)</label>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none" max="1" min="0" placeholder="0.65" step="0.01" type="number" value="0.65"/>
+<p class="text-[11px] text-on-surface-variant/80 italic font-medium leading-tight">Example: 0.65 = 65% from repeat customers</p>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="pt-8 border-t border-outline-variant/10 space-y-8">
+<div class="flex items-center gap-4">
+<div class="w-1 h-8 bg-slate-900 rounded-full"></div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Step 3: Compliance</h2>
+</div>
+<div class="space-y-2 max-w-md">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">GST Filing Consistency Score</label>
+<p class="text-xs text-on-surface-variant mb-2">Out of last 12 months, how many filed on time?</p>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none" max="12" min="0" type="number" value="11"/>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="pt-8 border-t border-outline-variant/10 space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-1 h-8 bg-slate-900 rounded-full"></div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Step 4: Bank Data Upload</h2>
+</div>
+<div class="bg-surface-container-low border-2 border-dashed border-outline-variant/50 rounded-xl p-8 flex flex-col items-center text-center space-y-4">
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-900 text-3xl">cloud_upload</span>
+</div>
+<div>
+<h3 class="text-sm font-bold uppercase tracking-widest text-slate-900">UPLOAD BANK STATEMENT CSV</h3>
+<p class="text-xs text-on-surface-variant mt-2 max-w-sm">6-12 months of bank statements. Expected columns: date, amount, type (debit/credit), description</p>
+</div>
+<input accept=".csv" class="hidden" id="bank-upload-msme" type="file"/>
+<label class="bg-slate-900 text-white px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest cursor-pointer hover:bg-slate-800 transition-colors" for="bank-upload-msme">
+                                    Select .csv File
+                                </label>
+</div>
+<div class="bg-primary-container/30 border border-primary-fixed p-4 rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">info</span>
+<div class="space-y-1">
+<p class="text-[11px] font-bold uppercase tracking-widest text-primary">Engine Auto-Calculation</p>
+<p class="text-[11px] text-on-primary-container leading-relaxed">Uploading will <span class="font-bold">AUTO-CALCULATE</span>: Revenue Growth, Seasonality, Cashflow Ratios, Volatility, Invoice Delays, Vendor Discipline, and GST Variance.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 flex flex-col items-center gap-6 border-t border-outline-variant/10">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">security</span>
+<p class="text-xs font-medium">Your data is encrypted and processed according to MSME compliance standards.</p>
+</div>
+<button class="w-full max-w-md bg-slate-900 text-white font-bold py-5 rounded-full flex items-center justify-center gap-3 hover:bg-slate-800 transition-all active:scale-[0.98] shadow-xl shadow-slate-900/10 uppercase tracking-[0.15em] text-sm" type="submit">
+                            Assess Credit Risk
+                            <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+</form>
+</div>
+<!-- NTC View Content -->
+<div class="space-y-8" id="ntc-content">
+<!-- Header Section -->
+<div class="text-center space-y-2">
+<h1 class="text-3xl font-headline font-extrabold text-on-surface tracking-tight">New To Credit Assessment</h1>
+<p class="text-on-surface-variant max-w-lg mx-auto leading-relaxed text-sm">Credit scoring for individuals with limited financial history. Predictive analysis based on behavioral data.</p>
+</div>
+<!-- Stepper Component (NTC) -->
+<form class="bg-surface-container-lowest rounded-xl border border-outline-variant/10 shadow-sm overflow-hidden">
+<div class="p-8 space-y-8">
+<!-- Step 1: Personal Background -->
+<div class="flex items-center gap-4">
+<div class="w-1 h-8 bg-slate-900 rounded-full"></div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Step 1: Personal Background</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none transition-all placeholder:text-outline-variant/60" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Education Level</label>
+<select class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none transition-all appearance-none cursor-pointer">
+<option>No Schooling</option>
+<option>School</option>
+<option>Diploma</option>
+<option>Graduate</option>
+<option>Postgraduate</option>
+</select>
+</div>
+</div>
+<!-- Step 2: Loan Details -->
+<div class="pt-8 border-t border-outline-variant/10 space-y-8">
+<div class="flex items-center gap-4">
+<div class="w-1 h-8 bg-slate-900 rounded-full"></div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Step 2: Loan Details</h2>
+</div>
+<div class="space-y-6">
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Loan Type</label>
+<div class="flex p-1 bg-surface-container-low rounded-lg w-fit border border-outline-variant/20">
+<button class="px-6 py-2 rounded-md text-[10px] font-bold uppercase tracking-widest bg-slate-900 text-white" type="button">Cash Loan</button>
+<button class="px-6 py-2 rounded-md text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">Revolving Credit</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Monthly Annuity ₹</label>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none" placeholder="5000" type="number"/>
+<p class="text-[11px] text-on-surface-variant/80 italic font-medium leading-tight">Your monthly loan repayment amount</p>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Annual Income ₹</label>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none" placeholder="600000" type="number"/>
+<p class="text-[11px] text-on-surface-variant/80 italic font-medium leading-tight">Used to calculate repayment burden</p>
+</div>
+</div>
+<div class="bg-surface-container-high/40 p-6 rounded-xl border border-outline-variant/10 flex items-center justify-between">
+<div class="space-y-1">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Repayment Burden</label>
+<p class="text-xs text-on-surface-variant">Auto-calculated based on annuity and income</p>
+</div>
+<div class="text-2xl font-headline font-extrabold text-slate-900">10%</div>
+</div>
+</div>
+</div>
+<!-- Step 3: Telecom & Identity -->
+<div class="pt-8 border-t border-outline-variant/10 space-y-8">
+<div class="flex items-center gap-4">
+<div class="w-1 h-8 bg-slate-900 rounded-full"></div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Step 3: Telecom &amp; Identity</h2>
+</div>
+<div class="space-y-2 max-w-md">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Phone Number Age</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-slate-900 outline-none" placeholder="365" type="number" value="365"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-on-surface-variant font-medium">days</span>
+</div>
+<p class="text-[11px] text-on-surface-variant/80 italic font-medium mt-2">Days since last phone number change</p>
+</div>
+</div>
+<!-- Step 4: Bank Data Upload -->
+<div class="pt-8 border-t border-outline-variant/10 space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-1 h-8 bg-slate-900 rounded-full"></div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Step 4: Bank Data Upload</h2>
+</div>
+<div class="bg-surface-container-low border-2 border-dashed border-outline-variant/50 rounded-xl p-8 flex flex-col items-center text-center space-y-4">
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-900 text-3xl">cloud_upload</span>
+</div>
+<div>
+<h3 class="text-sm font-bold uppercase tracking-widest text-slate-900">UPLOAD BANK STATEMENT CSV</h3>
+<p class="text-xs text-on-surface-variant mt-2 max-w-sm">We derive 26 behavioral signals from your bank statement — no manual entry needed</p>
+</div>
+<input accept=".csv" class="hidden" id="bank-upload-ntc" type="file"/>
+<label class="bg-slate-900 text-white px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest cursor-pointer hover:bg-slate-800 transition-colors" for="bank-upload-ntc">
+                                    Select .csv File
+                                </label>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 flex flex-col items-center gap-6 border-t border-outline-variant/10">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">security</span>
+<p class="text-xs font-medium">Your data is processed according to global privacy and credit standards.</p>
+</div>
+<button class="w-full max-w-md bg-slate-900 text-white font-bold py-5 rounded-full flex items-center justify-center gap-3 hover:bg-slate-800 transition-all active:scale-[0.98] shadow-xl shadow-slate-900/10 uppercase tracking-[0.15em] text-sm" type="submit">
+                            Assess Credit Risk
+                            <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Bottom Context Cards (Shared) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center text-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-900">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div>
+<h4 class="text-sm font-bold">Real-time Analysis</h4>
+<p class="text-[11px] text-on-surface-variant">Scores are calculated using live market benchmarks.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center text-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-900">
+<span class="material-symbols-outlined">account_tree</span>
+</div>
+<div>
+<h4 class="text-sm font-bold">Risk Weighting</h4>
+<p class="text-[11px] text-on-surface-variant">Algorithm accounts for sector-specific volatility.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center text-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-900">
+<span class="material-symbols-outlined">clinical_notes</span>
+</div>
+<div>
+<h4 class="text-sm font-bold">Instant Report</h4>
+<p class="text-[11px] text-on-surface-variant">Receive a detailed PDF breakdown upon submission.</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-6 mt-8">
+<button class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">save</span> Save Progress
+                </button>
+<div class="w-[1px] h-4 bg-outline-variant/30"></div>
+<button class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">print</span> Print Draft
+                </button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full bg-white flex justify-around items-center py-3 z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] border-t border-slate-100">
+<div class="flex flex-col items-center text-on-surface-variant">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px] mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center text-slate-900 font-bold">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">assignment</span>
+<span class="text-[10px] mt-1">Assess</span>
+</div>
+<div class="flex flex-col items-center text-on-surface-variant">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-[10px] mt-1">Stats</span>
+</div>
+<div class="flex flex-col items-center text-on-surface-variant">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,387 @@
+{
+  "provider": "BESCOM Electricity",
+  "consumer_number": "BESCOM-108924",
+  "connection_date": "2022-10-10",
+  "connection_type": "COMMERCIAL",
+  "data_as_of": "2026-03-23",
+  "bills": [
+    {
+      "bill_id": "BILL-E08A33E1",
+      "bill_date": "2022-10-05",
+      "due_date": "2022-10-20",
+      "paid_date": "2022-10-20",
+      "amount": 2300.56,
+      "units_consumed": 192.5,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-1DB44DA5",
+      "bill_date": "2022-11-05",
+      "due_date": "2022-11-20",
+      "paid_date": "2022-11-16",
+      "amount": 1556.16,
+      "units_consumed": 185.6,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-AE803C5F",
+      "bill_date": "2022-12-05",
+      "due_date": "2022-12-20",
+      "paid_date": "2022-12-17",
+      "amount": 2095.64,
+      "units_consumed": 219.6,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-C6864E60",
+      "bill_date": "2023-01-05",
+      "due_date": "2023-01-20",
+      "paid_date": "2023-01-18",
+      "amount": 2456.67,
+      "units_consumed": 221.7,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-D5694558",
+      "bill_date": "2023-02-05",
+      "due_date": "2023-02-20",
+      "paid_date": "2023-02-15",
+      "amount": 2354.28,
+      "units_consumed": 197.3,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-AF24E338",
+      "bill_date": "2023-03-05",
+      "due_date": "2023-03-20",
+      "paid_date": "2023-03-20",
+      "amount": 2489.89,
+      "units_consumed": 218.7,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-B274CC43",
+      "bill_date": "2023-04-05",
+      "due_date": "2023-04-20",
+      "paid_date": "2023-04-22",
+      "amount": 1975.29,
+      "units_consumed": 252.3,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-B8FBDA8F",
+      "bill_date": "2023-05-05",
+      "due_date": "2023-05-20",
+      "paid_date": "2023-05-17",
+      "amount": 2083.8,
+      "units_consumed": 234.1,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-CB137C7F",
+      "bill_date": "2023-06-05",
+      "due_date": "2023-06-20",
+      "paid_date": "2023-06-22",
+      "amount": 2342.17,
+      "units_consumed": 276.5,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-0A61E8AC",
+      "bill_date": "2023-07-05",
+      "due_date": "2023-07-20",
+      "paid_date": "2023-07-20",
+      "amount": 1931.45,
+      "units_consumed": 236.3,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-14660B00",
+      "bill_date": "2023-08-05",
+      "due_date": "2023-08-20",
+      "paid_date": "2023-08-17",
+      "amount": 2162.4,
+      "units_consumed": 197.8,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-E9EB4CB0",
+      "bill_date": "2023-09-05",
+      "due_date": "2023-09-20",
+      "paid_date": "2023-09-16",
+      "amount": 2445.27,
+      "units_consumed": 234.3,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-D31891AA",
+      "bill_date": "2023-10-05",
+      "due_date": "2023-10-20",
+      "paid_date": "2023-10-19",
+      "amount": 2276.61,
+      "units_consumed": 223.1,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-F0536F66",
+      "bill_date": "2023-11-05",
+      "due_date": "2023-11-20",
+      "paid_date": "2023-11-16",
+      "amount": 2273.79,
+      "units_consumed": 237.9,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-7D39653C",
+      "bill_date": "2023-12-05",
+      "due_date": "2023-12-20",
+      "paid_date": "2023-12-19",
+      "amount": 2295.41,
+      "units_consumed": 236.7,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-90226E69",
+      "bill_date": "2024-01-05",
+      "due_date": "2024-01-20",
+      "paid_date": "2024-01-16",
+      "amount": 2044.78,
+      "units_consumed": 203.1,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-836BB60A",
+      "bill_date": "2024-02-05",
+      "due_date": "2024-02-20",
+      "paid_date": "2024-02-15",
+      "amount": 2693.33,
+      "units_consumed": 197.1,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-2CCBA3A0",
+      "bill_date": "2024-03-05",
+      "due_date": "2024-03-20",
+      "paid_date": "2024-03-17",
+      "amount": 2089.49,
+      "units_consumed": 224.3,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-417E713F",
+      "bill_date": "2024-04-05",
+      "due_date": "2024-04-20",
+      "paid_date": "2024-04-18",
+      "amount": 2434.7,
+      "units_consumed": 240.9,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-C1F4BDEA",
+      "bill_date": "2024-05-05",
+      "due_date": "2024-05-20",
+      "paid_date": "2024-05-18",
+      "amount": 2483.13,
+      "units_consumed": 214.9,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-16BAE1CC",
+      "bill_date": "2024-06-05",
+      "due_date": "2024-06-20",
+      "paid_date": "2024-06-15",
+      "amount": 1826.02,
+      "units_consumed": 195.7,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-AC512C65",
+      "bill_date": "2024-07-05",
+      "due_date": "2024-07-20",
+      "paid_date": "2024-07-19",
+      "amount": 2427.86,
+      "units_consumed": 208.7,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-5728DAA8",
+      "bill_date": "2024-08-05",
+      "due_date": "2024-08-20",
+      "paid_date": "2024-08-19",
+      "amount": 2406.44,
+      "units_consumed": 211.8,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-85CB4E99",
+      "bill_date": "2024-09-05",
+      "due_date": "2024-09-20",
+      "paid_date": "2024-09-19",
+      "amount": 2080.19,
+      "units_consumed": 209.9,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-4377DA90",
+      "bill_date": "2024-10-05",
+      "due_date": "2024-10-20",
+      "paid_date": "2024-10-15",
+      "amount": 2360.7,
+      "units_consumed": 207.6,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-52D917EE",
+      "bill_date": "2024-11-05",
+      "due_date": "2024-11-20",
+      "paid_date": "2024-11-20",
+      "amount": 2347.36,
+      "units_consumed": 237.6,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-4FB76234",
+      "bill_date": "2024-12-05",
+      "due_date": "2024-12-20",
+      "paid_date": "2024-12-15",
+      "amount": 2060.31,
+      "units_consumed": 217.9,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-129DABB1",
+      "bill_date": "2025-01-05",
+      "due_date": "2025-01-20",
+      "paid_date": "2025-01-22",
+      "amount": 1763.51,
+      "units_consumed": 193.7,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-6E771CE1",
+      "bill_date": "2025-02-05",
+      "due_date": "2025-02-20",
+      "paid_date": "2025-02-20",
+      "amount": 2075.21,
+      "units_consumed": 254.3,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-170967FD",
+      "bill_date": "2025-03-05",
+      "due_date": "2025-03-20",
+      "paid_date": "2025-03-20",
+      "amount": 2443.38,
+      "units_consumed": 195.4,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-DA2AF4D6",
+      "bill_date": "2025-04-05",
+      "due_date": "2025-04-20",
+      "paid_date": "2025-04-20",
+      "amount": 2088.12,
+      "units_consumed": 242.2,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-A51746DF",
+      "bill_date": "2025-05-05",
+      "due_date": "2025-05-20",
+      "paid_date": "2025-05-18",
+      "amount": 2343.36,
+      "units_consumed": 226.3,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-D3F3DCA3",
+      "bill_date": "2025-06-05",
+      "due_date": "2025-06-20",
+      "paid_date": "2025-06-15",
+      "amount": 2223.8,
+      "units_consumed": 206.0,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-D4DD31F6",
+      "bill_date": "2025-07-05",
+      "due_date": "2025-07-20",
+      "paid_date": "2025-07-17",
+      "amount": 2207.21,
+      "units_consumed": 262.3,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-01D0C60D",
+      "bill_date": "2025-08-05",
+      "due_date": "2025-08-20",
+      "paid_date": "2025-08-20",
+      "amount": 2259.16,
+      "units_consumed": 225.8,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-6B520A21",
+      "bill_date": "2025-09-05",
+      "due_date": "2025-09-20",
+      "paid_date": "2025-09-19",
+      "amount": 2475.59,
+      "units_consumed": 229.4,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-67F949D0",
+      "bill_date": "2025-10-05",
+      "due_date": "2025-10-20",
+      "paid_date": "2025-10-17",
+      "amount": 1988.88,
+      "units_consumed": 195.5,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-FBC59EA0",
+      "bill_date": "2025-11-05",
+      "due_date": "2025-11-20",
+      "paid_date": "2025-11-20",
+      "amount": 1745.69,
+      "units_consumed": 236.8,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-4DD6ECC7",
+      "bill_date": "2025-12-05",
+      "due_date": "2025-12-20",
+      "paid_date": "2025-12-15",
+      "amount": 1864.86,
+      "units_consumed": 228.3,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-DEBD9D22",
+      "bill_date": "2026-01-05",
+      "due_date": "2026-01-20",
+      "paid_date": "2026-01-22",
+      "amount": 2858.92,
+      "units_consumed": 296.9,
+      "status": "PAID_LATE"
+    },
+    {
+      "bill_id": "BILL-0DFC18FA",
+      "bill_date": "2026-02-05",
+      "due_date": "2026-02-20",
+      "paid_date": "2026-02-17",
+      "amount": 1496.42,
+      "units_consumed": 227.1,
+      "status": "PAID"
+    },
+    {
+      "bill_id": "BILL-BFAD4AC0",
+      "bill_date": "2026-03-05",
+      "due_date": "2026-03-20",
+      "paid_date": "2026-03-17",
+      "amount": 1998.01,
+      "units_consumed": 216.3,
+      "status": "PAID"
+    }
+  ]
+}

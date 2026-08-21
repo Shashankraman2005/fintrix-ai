@@ -1,0 +1,7 @@
+﻿Rows generated    : 25000
+Columns           : 36
+Default rate      : 25.00%
+Top 3 correlations with TARGET:
+  1. stress_composite_score (0.6060)
+  2. eod_balance_volatility (0.5191)
+  3. bounced_transaction_count (0.5053)

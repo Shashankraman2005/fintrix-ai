@@ -1,0 +1,21 @@
+services:
+  # Python FastAPI Backend API Service
+  - type: web
+    name: fintrixai-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OLLAMA_BASE_URL
+        value: http://127.0.0.1:11434
+
+  # React Vite Frontend Static Site
+  - type: web
+    name: fintrixai-frontend
+    env: static
+    buildCommand: cd pdr-frontend && npm install && npm run build
+    staticPublishPath: ./pdr-frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

@@ -1,0 +1,85 @@
+Train: (2099, 20) | VaTrain: (2099, 20) | Val: (451, 20)
+Class balance — Non-default: 1716 | Default: 383 | scale_pos_weight: 4.48
+
+Running RandomizedSearchCV (80 iterations, optimizing KS)...
+Fitting 5 folds for each of 80 candidates, totalling 400 fits
+
+Best CV KS : nan
+Best params: {'subsample': 0.9, 'reg_lambda': 1.5, 'reg_alpha': 0.05, 'n_estimators': 300, 'min_child_weight': 1, 'max_depth': 6, 'learning_rate': 0.05, 'gamma': 0.3, 'colsample_bytree': 0.7}
+Best iteration: 4
+
+=============================================
+  VALIDATION METRICS
+=============================================
+  AUC-ROC  : 0.7084
+  KS Stat  : 0.3184
+  Gini     : 0.4169
+
+              precision    recall  f1-score   support
+
+ Non-Default       0.88      0.75      0.81       369
+     Default       0.31      0.52      0.39        82
+
+    accuracy                           0.71       451
+   macro avg       0.59      0.63      0.60       451
+weighted avg       0.77      0.71      0.73       451
+
+Confusion Matrix:
+  TN=275  FP=94
+  FN=39  TP=43
+
+Top 15 Features:
+                       feature  importance
+              stress_composite    0.093633
+   business_type_agri_seasonal    0.075158
+                gst_risk_score    0.072512
+business_type_service_provider    0.064721
+      turnover_inflation_spike    0.061910
+           cashflow_volatility    0.057575
+          gst_to_bank_variance    0.052485
+ business_type_retailer_kirana    0.051885
+   repeat_customer_revenue_pct    0.048138
+     revenue_seasonality_index    0.047592
+           liquidity_fragility    0.047585
+      operating_cashflow_ratio    0.046764
+                   wc_pressure    0.045633
+  gst_filing_consistency_score    0.042845
+     avg_invoice_payment_delay    0.042348
+
+✅ Model saved → /home/godkiller/pdr_2/msme_model/models/xgb_msme.pkl
+allel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "/home/godkiller/pdr_2/msme_model/venv/lib/python3.14/site-packages/joblib/parallel.py", line 1914, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/home/godkiller/pdr_2/msme_model/venv/lib/python3.14/site-packages/sklearn/utils/parallel.py", line 184, in __call__
+    return self.function(*args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/godkiller/pdr_2/msme_model/venv/lib/python3.14/site-packages/sklearn/model_selection/_validation.py", line 833, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/godkiller/pdr_2/msme_model/venv/lib/python3.14/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/home/godkiller/pdr_2/msme_model/venv/lib/python3.14/site-packages/xgboost/sklearn.py", line 1806, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params,
+        ^^^^^^^
+    ...<9 lines>...
+        callbacks=self.callbacks,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/godkiller/pdr_2/msme_model/venv/lib/python3.14/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/home/godkiller/pdr_2/msme_model/venv/lib/python3.14/site-packages/xgboost/training.py", line 200, in train
+    bst.update(dtrain, iteration=i, fobj=obj)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/godkiller/pdr_2/msme_model/venv/lib/python3.14/site-packages/xgboost/core.py", line 2391, in update
+    _LIB.XGBoosterUpdateOneIter(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.handle, ctypes.c_int(iteration), dtrain.handle
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+KeyboardInterrupt

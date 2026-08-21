@@ -1,0 +1,341 @@
+{
+  "operator": "Jio",
+  "sim_registration_date": "2023-10-05",
+  "number": "+919175999888",
+  "data_as_of": "2026-03-23",
+  "location_history": [
+    {
+      "month": "2023-10",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2023-11",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2023-12",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-01",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-02",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-03",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-04",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-05",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-06",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-07",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-08",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-09",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-10",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-11",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2024-12",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-01",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-02",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-03",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-04",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-05",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-06",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-07",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-08",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-09",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-10",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-11",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2025-12",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2026-01",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2026-02",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    },
+    {
+      "month": "2026-03",
+      "primary_location": "Pune, Maharashtra",
+      "location_changes": 0
+    }
+  ],
+  "recharge_history": [
+    {
+      "month": "2023-10",
+      "recharge_amount": 573.41,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2023-11",
+      "recharge_amount": 608.5,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2023-12",
+      "recharge_amount": 580.47,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-01",
+      "recharge_amount": 626.36,
+      "recharge_count": 1,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-02",
+      "recharge_amount": 577.25,
+      "recharge_count": 1,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-03",
+      "recharge_amount": 576.13,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-04",
+      "recharge_amount": 628.17,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-05",
+      "recharge_amount": 570.88,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-06",
+      "recharge_amount": 627.8,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-07",
+      "recharge_amount": 625.75,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-08",
+      "recharge_amount": 593.1,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-09",
+      "recharge_amount": 573.64,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-10",
+      "recharge_amount": 497.93,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-11",
+      "recharge_amount": 512.32,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2024-12",
+      "recharge_amount": 539.26,
+      "recharge_count": 1,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-01",
+      "recharge_amount": 622.95,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-02",
+      "recharge_amount": 576.35,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-03",
+      "recharge_amount": 676.82,
+      "recharge_count": 1,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-04",
+      "recharge_amount": 643.18,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-05",
+      "recharge_amount": 543.08,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-06",
+      "recharge_amount": 542.09,
+      "recharge_count": 1,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-07",
+      "recharge_amount": 578.69,
+      "recharge_count": 1,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-08",
+      "recharge_amount": 495.53,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-09",
+      "recharge_amount": 625.02,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-10",
+      "recharge_amount": 563.41,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-11",
+      "recharge_amount": 512.38,
+      "recharge_count": 1,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2025-12",
+      "recharge_amount": 567.28,
+      "recharge_count": 3,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2026-01",
+      "recharge_amount": 612.94,
+      "recharge_count": 1,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2026-02",
+      "recharge_amount": 694.95,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    },
+    {
+      "month": "2026-03",
+      "recharge_amount": 584.66,
+      "recharge_count": 2,
+      "plan_type": "PREPAID"
+    }
+  ],
+  "device_history": []
+}

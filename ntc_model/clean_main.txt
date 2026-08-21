@@ -1,0 +1,95 @@
+﻿17:10:45 | INFO | 
+==================================================
+17:10:45 | INFO | * STARTING NTC FULL PIPELINE BUILD
+17:10:45 | INFO | ==================================================
+17:10:45 | INFO | 
+- Step 1: Loading ntc_credit_training_v2.csv directly
+17:10:45 | INFO | 
+- Step 4: split_data()
+17:10:45 | INFO | Splitting dataset into train/val/test using configured ratios...
+17:10:45 | INFO | Train size: 17500 (70.0%)
+17:10:45 | INFO | Val size:   3750 (15.0%)
+17:10:45 | INFO | Test size:  3750 (15.0%)
+17:10:45 | INFO | Stratified Default Rates -> Train: 0.2500, Val: 0.2501, Test: 0.2499
+17:10:45 | INFO | 
+- Step 5: Cache X_test + y_test to models/X_test.parquet
+17:10:45 | INFO | 
+- Step 6: build_preprocessor()
+17:10:45 | INFO | Building ColumnTransformer preprocessor pipeline...
+17:10:45 | INFO | 
+- Step 7: fit_and_transform()
+17:10:45 | INFO | Fitting preprocessor on training data ONLY...
+17:10:45 | INFO | Transforming validation and test validation datasets...
+17:10:45 | INFO | 
+- Step 8: save_preprocessor()
+17:10:45 | INFO | Saving preprocessor to models/ntc_preprocessor.pkl...
+17:10:45 | INFO | 
+- Step 9: train_xgboost()
+17:10:45 | INFO | Initializing XGBoost Training...
+17:10:45 | INFO | Computed scale_pos_weight: 3.0000 (Class 0: 13125 / Class 1: 4375)
+17:10:45 | INFO | Fitting XGBClassifier...
+17:10:46 | INFO | Training complete! Best iteration: 64
+17:10:46 | INFO | Validation AUC (raw uncalibrated XGBoost): 0.9686
+17:10:46 | INFO | 
+- Step 10: calibrate_model() using X_val ONLY
+17:10:46 | INFO | Starting model calibration using sigmoid (Platt Scaling) fitted strictly on Val set...
+17:10:46 | INFO | AUC Shift -> Raw: 0.9686 | Calibrated: 0.9686
+17:10:46 | INFO | Prob Range Shift -> Raw: [0.0208, 0.9726] | Cal: [0.0094, 0.9117]
+17:10:46 | INFO | Checking decile-level calibration quality...
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+ Decile/Bin                | Mean Pred  | Actual Rate | Error     
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+ (0.00844, 0.00949]        | 0.0095     | 0.0000      | 0.0095    
+ (0.00949, 0.00953]        | 0.0095     | 0.0000      | 0.0095    
+ (0.00953, 0.00965]        | 0.0096     | 0.0028      | 0.0068    
+ (0.00965, 0.0108]         | 0.0100     | 0.0080      | 0.0020    
+ (0.0108, 0.0202]          | 0.0151     | 0.0133      | 0.0017    
+ (0.0202, 0.0449]          | 0.0300     | 0.0587      | -0.0287   
+ (0.0449, 0.217]           | 0.0987     | 0.1467      | -0.0479   
+ (0.217, 0.823]            | 0.5389     | 0.4453      | 0.0936    
+ (0.823, 0.896]            | 0.8740     | 0.8594      | 0.0146    
+ (0.896, 0.912]            | 0.9062     | 0.9678      | -0.0616   
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+17:10:46 | INFO | Calibration quality check passed (Max error = 0.0936 <= 0.10 limit).
+17:10:46 | INFO | 
+- Step 11: save_model()
+17:10:46 | INFO | Saving final calibrated model to models/ntc_credit_model.pkl...
+17:10:46 | INFO | 
+- Step 12: evaluate_model() on X_test
+17:10:46 | INFO | Evaluating calibrated model heavily on Test Set...
+17:10:46 | INFO | ROC AUC: 0.9688
+17:10:46 | INFO | Gini Coefficient: 0.9376
+17:10:46 | INFO | Average Precision (PR-AUC): 0.9150
+17:10:46 | INFO | Brier Score (Calibration error): 0.0585
+17:10:46 | INFO | KS Statistic: 0.8193
+17:10:46 | INFO | KS Statistic condition: Excellent (0.8193 >= 0.40). Strong class separation.
+17:10:46 | INFO | Computing Business Decision Bands...
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+ Decision Band   | Count    | % Total  | Actual Default Rate
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+ APPROVE         | 2723     |   72.6% |             3.97%
+ REVIEW          | 76       |    2.0% |            30.26%
+ REJECT          | 951      |   25.4% |            84.75%
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+17:10:47 | INFO | 
+- Step 13: compute_global_shap()
+17:10:47 | INFO | Computing global SHAP feature importances...
+17:10:47 | INFO | 
+- Step 14: Print final summary
+
+========================================
+ + FINAL PIPELINE SUMMARY
+========================================
+ROC AUC:      0.9688
+Gini:         0.9376
+KS Statistic: 0.8193
+Brier Score:  0.0585
+
+Model path:  models/ntc_credit_model.pkl
+Report path: reports/
+========================================
+

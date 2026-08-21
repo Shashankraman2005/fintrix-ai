@@ -1,0 +1,49 @@
+======================================================================
+  CIRCULARITY DIAGNOSTIC
+======================================================================
+
+--- Behavioral vs Demographic Risk Correlation ---
+  Feature                                      Corr  Verdict
+-----------------------------------------------------------------
+  utility_payment_consistency               -0.0761  OK
+  avg_utility_dpd                            0.0951  OK
+  rent_wallet_share                         -0.3787  HIGH
+  emergency_buffer_months                    0.3788  HIGH
+  eod_balance_volatility                     0.1663  OK
+  essential_vs_lifestyle_ratio              -0.1698  OK
+  cash_withdrawal_dependency                 0.1697  OK
+  bounced_transaction_count                  0.0230  OK
+  telecom_recharge_drop_ratio                0.0767  OK
+  min_balance_violation_count                0.1172  OK
+  income_stability_score                    -0.0716  OK
+  cashflow_volatility                        0.1691  OK
+  gst_to_bank_variance                      -0.2853  OK
+  customer_concentration_ratio               0.4077  HIGH
+  night_transaction_ratio                    0.0716  OK
+  weekend_spending_ratio                     0.0716  OK
+  payment_diversity_score                   -0.0716  OK
+  device_consistency_score                  -0.0716  OK
+
+  TARGET                                     0.0783  HIGH
+
+--- Can demographics ALONE predict TARGET? ---
+  Demographics only AUC: 0.6428 +/- 0.0089
+
+--- Can behavioral features ALONE predict TARGET? ---
+  Behavioral only AUC: 0.8481 +/- 0.0076
+
+--- Both together ---
+  Combined AUC: 0.8495 +/- 0.0089
+
+  AUC lift from behavioral: +0.2067
+  Circularity is sufficiently broken (but check if still too correlated).
+
+======================================================================
+  SUMMARY
+======================================================================
+  Circular features (|corr|>0.50): 0/18
+  TARGET vs demo_risk corr:        0.0783
+  Demo-only AUC:                   0.6428
+  Behavioral-only AUC:             0.8481
+  Combined AUC:                    0.8495
+  Lift from behavioral:            +0.2067

@@ -1,0 +1,556 @@
+{
+  "gstin": "29AABCT9667F1Z3",
+  "business_name": "Demo MSME (full_data_good_kirana)",
+  "registration_date": "2022-10-10",
+  "data_as_of": "2026-03-23",
+  "filings": [
+    {
+      "period": "2022-10",
+      "return_type": "GSTR-3B",
+      "due_date": "2022-11-20",
+      "filed_date": "2022-11-20",
+      "status": "FILED",
+      "declared_turnover": 200262.18,
+      "tax_paid": 36047.19
+    },
+    {
+      "period": "2022-11",
+      "return_type": "GSTR-3B",
+      "due_date": "2022-12-20",
+      "filed_date": "2022-12-20",
+      "status": "FILED",
+      "declared_turnover": 183451.69,
+      "tax_paid": 33021.3
+    },
+    {
+      "period": "2022-12",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-01-20",
+      "filed_date": "2023-01-20",
+      "status": "FILED",
+      "declared_turnover": 203743.75,
+      "tax_paid": 36673.88
+    },
+    {
+      "period": "2023-01",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-02-20",
+      "filed_date": "2023-02-25",
+      "status": "FILED_LATE",
+      "declared_turnover": 192622.75,
+      "tax_paid": 34672.1
+    },
+    {
+      "period": "2023-02",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-03-20",
+      "filed_date": "2023-03-20",
+      "status": "FILED",
+      "declared_turnover": 203718.16,
+      "tax_paid": 36669.27
+    },
+    {
+      "period": "2023-03",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-04-20",
+      "filed_date": "2023-04-20",
+      "status": "FILED",
+      "declared_turnover": 213008.62,
+      "tax_paid": 38341.55
+    },
+    {
+      "period": "2023-04",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-05-20",
+      "filed_date": "2023-05-20",
+      "status": "FILED",
+      "declared_turnover": 194372.35,
+      "tax_paid": 34987.02
+    },
+    {
+      "period": "2023-05",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-06-20",
+      "filed_date": "2023-06-23",
+      "status": "FILED_LATE",
+      "declared_turnover": 237824.49,
+      "tax_paid": 42808.41
+    },
+    {
+      "period": "2023-06",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-07-20",
+      "filed_date": "2023-07-20",
+      "status": "FILED",
+      "declared_turnover": 196631.44,
+      "tax_paid": 35393.66
+    },
+    {
+      "period": "2023-07",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-08-20",
+      "filed_date": "2023-08-20",
+      "status": "FILED",
+      "declared_turnover": 157739.01,
+      "tax_paid": 28393.02
+    },
+    {
+      "period": "2023-08",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-09-20",
+      "filed_date": "2023-09-23",
+      "status": "FILED_LATE",
+      "declared_turnover": 162031.24,
+      "tax_paid": 29165.62
+    },
+    {
+      "period": "2023-09",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-10-20",
+      "filed_date": "2023-10-22",
+      "status": "FILED_LATE",
+      "declared_turnover": 203528.58,
+      "tax_paid": 36635.14
+    },
+    {
+      "period": "2023-10",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-11-20",
+      "filed_date": "2023-11-22",
+      "status": "FILED_LATE",
+      "declared_turnover": 187806.22,
+      "tax_paid": 33805.12
+    },
+    {
+      "period": "2023-11",
+      "return_type": "GSTR-3B",
+      "due_date": "2023-12-20",
+      "filed_date": "2023-12-21",
+      "status": "FILED_LATE",
+      "declared_turnover": 167299.94,
+      "tax_paid": 30113.99
+    },
+    {
+      "period": "2023-12",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-01-20",
+      "filed_date": "2024-01-26",
+      "status": "FILED_LATE",
+      "declared_turnover": 156622.56,
+      "tax_paid": 28192.06
+    },
+    {
+      "period": "2024-01",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-02-20",
+      "filed_date": "2024-02-20",
+      "status": "FILED",
+      "declared_turnover": 184394.33,
+      "tax_paid": 33190.98
+    },
+    {
+      "period": "2024-02",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-03-20",
+      "filed_date": "2024-03-24",
+      "status": "FILED_LATE",
+      "declared_turnover": 170584.42,
+      "tax_paid": 30705.2
+    },
+    {
+      "period": "2024-03",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-04-20",
+      "filed_date": "2024-04-21",
+      "status": "FILED_LATE",
+      "declared_turnover": 145556.47,
+      "tax_paid": 26200.16
+    },
+    {
+      "period": "2024-04",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-05-20",
+      "filed_date": "2024-05-23",
+      "status": "FILED_LATE",
+      "declared_turnover": 183845.49,
+      "tax_paid": 33092.19
+    },
+    {
+      "period": "2024-05",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-06-20",
+      "filed_date": "2024-06-22",
+      "status": "FILED_LATE",
+      "declared_turnover": 196890.94,
+      "tax_paid": 35440.37
+    },
+    {
+      "period": "2024-06",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-07-20",
+      "filed_date": "2024-07-20",
+      "status": "FILED",
+      "declared_turnover": 170197.55,
+      "tax_paid": 30635.56
+    },
+    {
+      "period": "2024-07",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-08-20",
+      "filed_date": "2024-08-23",
+      "status": "FILED_LATE",
+      "declared_turnover": 167326.14,
+      "tax_paid": 30118.71
+    },
+    {
+      "period": "2024-08",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-09-20",
+      "filed_date": "2024-09-23",
+      "status": "FILED_LATE",
+      "declared_turnover": 197965.4,
+      "tax_paid": 35633.77
+    },
+    {
+      "period": "2024-09",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-10-20",
+      "filed_date": "2024-10-21",
+      "status": "FILED_LATE",
+      "declared_turnover": 134441.97,
+      "tax_paid": 24199.55
+    },
+    {
+      "period": "2024-10",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-11-20",
+      "filed_date": "2024-11-20",
+      "status": "FILED",
+      "declared_turnover": 190793.9,
+      "tax_paid": 34342.9
+    },
+    {
+      "period": "2024-11",
+      "return_type": "GSTR-3B",
+      "due_date": "2024-12-20",
+      "filed_date": "2024-12-25",
+      "status": "FILED_LATE",
+      "declared_turnover": 170380.87,
+      "tax_paid": 30668.56
+    },
+    {
+      "period": "2024-12",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-01-20",
+      "filed_date": "2025-01-21",
+      "status": "FILED_LATE",
+      "declared_turnover": 154349.4,
+      "tax_paid": 27782.89
+    },
+    {
+      "period": "2025-01",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-02-20",
+      "filed_date": "2025-02-20",
+      "status": "FILED",
+      "declared_turnover": 191729.44,
+      "tax_paid": 34511.3
+    },
+    {
+      "period": "2025-02",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-03-20",
+      "filed_date": "2025-03-20",
+      "status": "FILED",
+      "declared_turnover": 181947.5,
+      "tax_paid": 32750.55
+    },
+    {
+      "period": "2025-03",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-04-20",
+      "filed_date": "2025-04-22",
+      "status": "FILED_LATE",
+      "declared_turnover": 223248.03,
+      "tax_paid": 40184.65
+    },
+    {
+      "period": "2025-04",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-05-20",
+      "filed_date": "2025-05-22",
+      "status": "FILED_LATE",
+      "declared_turnover": 185939.91,
+      "tax_paid": 33469.18
+    },
+    {
+      "period": "2025-05",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-06-20",
+      "filed_date": "2025-06-23",
+      "status": "FILED_LATE",
+      "declared_turnover": 219509.18,
+      "tax_paid": 39511.65
+    },
+    {
+      "period": "2025-06",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-07-20",
+      "filed_date": "2025-07-20",
+      "status": "FILED",
+      "declared_turnover": 169475.14,
+      "tax_paid": 30505.53
+    },
+    {
+      "period": "2025-07",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-08-20",
+      "filed_date": "2025-08-21",
+      "status": "FILED_LATE",
+      "declared_turnover": 140288.23,
+      "tax_paid": 25251.88
+    },
+    {
+      "period": "2025-08",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-09-20",
+      "filed_date": "2025-09-24",
+      "status": "FILED_LATE",
+      "declared_turnover": 233911.73,
+      "tax_paid": 42104.11
+    },
+    {
+      "period": "2025-09",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-10-20",
+      "filed_date": null,
+      "status": "NOT_FILED",
+      "declared_turnover": 153282.47,
+      "tax_paid": 27590.84
+    },
+    {
+      "period": "2025-10",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-11-20",
+      "filed_date": "2025-11-20",
+      "status": "FILED",
+      "declared_turnover": 168785.35,
+      "tax_paid": 30381.36
+    },
+    {
+      "period": "2025-11",
+      "return_type": "GSTR-3B",
+      "due_date": "2025-12-20",
+      "filed_date": "2025-12-25",
+      "status": "FILED_LATE",
+      "declared_turnover": 184240.31,
+      "tax_paid": 33163.26
+    },
+    {
+      "period": "2025-12",
+      "return_type": "GSTR-3B",
+      "due_date": "2026-01-20",
+      "filed_date": "2026-01-20",
+      "status": "FILED",
+      "declared_turnover": 166869.69,
+      "tax_paid": 30036.54
+    },
+    {
+      "period": "2026-01",
+      "return_type": "GSTR-3B",
+      "due_date": "2026-02-20",
+      "filed_date": "2026-02-27",
+      "status": "FILED_LATE",
+      "declared_turnover": 183517.41,
+      "tax_paid": 33033.13
+    },
+    {
+      "period": "2026-02",
+      "return_type": "GSTR-3B",
+      "due_date": "2026-03-20",
+      "filed_date": null,
+      "status": "NOT_FILED",
+      "declared_turnover": 148006.52,
+      "tax_paid": 26641.17
+    },
+    {
+      "period": "2026-03",
+      "return_type": "GSTR-3B",
+      "due_date": "2026-04-20",
+      "filed_date": "2026-04-28",
+      "status": "FILED_LATE",
+      "declared_turnover": 157822.56,
+      "tax_paid": 28408.06
+    }
+  ],
+  "bank_credits_monthly": [
+    {
+      "month": "2022-10",
+      "total_credits": 219102.61
+    },
+    {
+      "month": "2022-11",
+      "total_credits": 206405.63
+    },
+    {
+      "month": "2022-12",
+      "total_credits": 239270.09
+    },
+    {
+      "month": "2023-01",
+      "total_credits": 179049.31
+    },
+    {
+      "month": "2023-02",
+      "total_credits": 218198.96
+    },
+    {
+      "month": "2023-03",
+      "total_credits": 247642.2
+    },
+    {
+      "month": "2023-04",
+      "total_credits": 168196.48
+    },
+    {
+      "month": "2023-05",
+      "total_credits": 282684.94
+    },
+    {
+      "month": "2023-06",
+      "total_credits": 180176.33
+    },
+    {
+      "month": "2023-07",
+      "total_credits": 171057.69
+    },
+    {
+      "month": "2023-08",
+      "total_credits": 183365.49
+    },
+    {
+      "month": "2023-09",
+      "total_credits": 182954.56
+    },
+    {
+      "month": "2023-10",
+      "total_credits": 203337.38
+    },
+    {
+      "month": "2023-11",
+      "total_credits": 175507.58
+    },
+    {
+      "month": "2023-12",
+      "total_credits": 158953.68
+    },
+    {
+      "month": "2024-01",
+      "total_credits": 192462.1
+    },
+    {
+      "month": "2024-02",
+      "total_credits": 171070.77
+    },
+    {
+      "month": "2024-03",
+      "total_credits": 135640.99
+    },
+    {
+      "month": "2024-04",
+      "total_credits": 198860.29
+    },
+    {
+      "month": "2024-05",
+      "total_credits": 195362.16
+    },
+    {
+      "month": "2024-06",
+      "total_credits": 150031.99
+    },
+    {
+      "month": "2024-07",
+      "total_credits": 171570.48
+    },
+    {
+      "month": "2024-08",
+      "total_credits": 194670.75
+    },
+    {
+      "month": "2024-09",
+      "total_credits": 118400.01
+    },
+    {
+      "month": "2024-10",
+      "total_credits": 208899.76
+    },
+    {
+      "month": "2024-11",
+      "total_credits": 187574.27
+    },
+    {
+      "month": "2024-12",
+      "total_credits": 179957.64
+    },
+    {
+      "month": "2025-01",
+      "total_credits": 201838.73
+    },
+    {
+      "month": "2025-02",
+      "total_credits": 200471.95
+    },
+    {
+      "month": "2025-03",
+      "total_credits": 240537.77
+    },
+    {
+      "month": "2025-04",
+      "total_credits": 190197.34
+    },
+    {
+      "month": "2025-05",
+      "total_credits": 231730.49
+    },
+    {
+      "month": "2025-06",
+      "total_credits": 164628.9
+    },
+    {
+      "month": "2025-07",
+      "total_credits": 142926.52
+    },
+    {
+      "month": "2025-08",
+      "total_credits": 238998.71
+    },
+    {
+      "month": "2025-09",
+      "total_credits": 155692.27
+    },
+    {
+      "month": "2025-10",
+      "total_credits": 169396.19
+    },
+    {
+      "month": "2025-11",
+      "total_credits": 165648.1
+    },
+    {
+      "month": "2025-12",
+      "total_credits": 158264.52
+    },
+    {
+      "month": "2026-01",
+      "total_credits": 162910.12
+    },
+    {
+      "month": "2026-02",
+      "total_credits": 127743.6
+    },
+    {
+      "month": "2026-03",
+      "total_credits": 178795.29
+    }
+  ]
+}
